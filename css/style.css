@@ -47,7 +47,9 @@ a {
   }
 }
 .container {
-  max-width: 1180px;
+  width: 100%;
+  max-width: 1290px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */
