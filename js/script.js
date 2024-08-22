@@ -39,3 +39,21 @@ function PrintItemsAnim(array, elem){
         elem.insertAdjacentHTML('beforeend', span)
     })
 }
+
+const icons = document.querySelectorAll('.content-item');
+
+icons.forEach((icon, index) => {
+    icon.addEventListener('mouseover', () => {
+        for (let i = 0; i <= index; i++) {
+            icons[i].querySelector('.checkboxIcon').classList.remove('icon-Frame-393');
+            icons[i].querySelector('.checkboxIcon').classList.add('icon-Frame-394');
+        }
+    });
+
+    icon.addEventListener('mouseout', () => {
+        for (let i = 0; i <= index; i++) {
+            icons[i].querySelector('.checkboxIcon').classList.remove('icon-Frame-394');
+            icons[i].querySelector('.checkboxIcon').classList.add('icon-Frame-393');
+        }
+    });
+});

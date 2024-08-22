@@ -216,7 +216,6 @@ nav .nav-left-info .icon-menu {
 .how-working-title {
   width: 515.15px;
   color: #282828;
-  font-family: "RF Dewi";
   font-size: 48px;
   font-weight: 700;
   text-transform: uppercase;
@@ -316,6 +315,7 @@ nav .nav-left-info .icon-menu {
   display: flex;
   align-items: center;
   padding: 15px 10px;
+  cursor: pointer;
 }
 .our-clients .our-clients-container .left-container .left-content .content-item .icon-Frame-394 {
   font-size: 48px;

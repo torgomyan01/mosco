@@ -221,7 +221,6 @@ nav{
   &-title{
     width: 515.15px;
     color: #282828;
-    font-family: "RF Dewi";
     font-size: 48px;
     font-weight: 700;
     text-transform: uppercase;
@@ -326,6 +325,7 @@ nav{
           display: flex;
           align-items: center;
           padding: 15px 10px;
+          cursor: pointer;
           .icon-Frame-394{
             font-size: 48px;
           }
@@ -339,7 +339,6 @@ nav{
             font-weight: 400;
             line-height: normal;
             margin-left: 20px;
-
           }
         }
       }
