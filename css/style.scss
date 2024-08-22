@@ -52,11 +52,15 @@ a {
   }
 }
 
+button{
+  border: 0;
+}
 
 .container {
   width: 100%;
   max-width: 1290px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 
