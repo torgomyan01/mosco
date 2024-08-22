@@ -407,3 +407,34 @@ nav{
     }
   }
 }
+
+.we-care{
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .we-care-item{
+      max-width: 280px;
+      width: 100%;
+      margin: 40px 0;
+      span{
+        padding: 5px 10px;
+        background: #214788;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+      }
+      h3{
+        margin: 10px 0 10px;
+        color: #282828;
+        font-size: 18px;
+        font-weight: 600;
+      }
+      p{
+        color: #6C6C6C;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+  }
+}
