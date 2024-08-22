@@ -134,7 +134,7 @@ nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 0;
+  padding: 1.25rem 0;
   .nav-right-info{
     max-width: 24.25rem;
     width: 100%;
@@ -145,7 +145,7 @@ nav{
       background-image: url("../images/Vector.svg");
       background-repeat: no-repeat;
       background-position: center;
-      padding: 12px 25px 12px 0;
+      padding: 0.75rem 1.5625rem 0.75rem 0;
       transition: 0.3s;
     }
     .personal-account a:hover{
@@ -156,12 +156,12 @@ nav{
       font-size: 14px;
       font-weight: 600;
       .icon-person{
-        font-size: 16px;
-        margin-right: 5px;
+        font-size: 1rem;
+        margin-right: 0.3125rem;
       }
       .icon-phone{
-        font-size: 16px;
-        margin-right: 5px;
+        font-size: 1rem;
+        margin-right: 0.3125rem;
       }
     }
     .language{
@@ -172,12 +172,61 @@ nav{
     max-width: 24.25rem;
     width: 100%;
     .icon-menu{
-      font-size: 24px;
+      font-size: 1.5rem;
       cursor: pointer;
     }
   }
 }
 
 .our-clients{
+  .our-clients-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1420px;
+    width: 100%;
+    margin: auto;
+    .left-container{
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      .left-content{
+        max-width: 44.375rem;
+        width: 100%;
+        h3{
+          margin: 5rem 0 2.5rem;
+          color: #282828;
+          font-size: 1.5rem;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          text-transform: uppercase;
+        }
+        .content-item{
+          max-width: 36.875rem;
+          width: 100%;
+          border-bottom: 1px solid #E8E8E8;
+          display: flex;
+          align-items: center;
+          padding: 15px 10px;
+          .icon-Frame-394{
+            font-size: 48px;
+          }
+          .icon-Frame-393{
+            font-size: 48px;
+          }
+          span{
+            color: #282828;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-left: 20px;
 
+          }
+        }
+      }
+    }
+
+  }
 }
