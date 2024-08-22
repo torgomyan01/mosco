@@ -53,7 +53,7 @@ button {
 
 .container {
   width: 100%;
-  max-width: 1290px;
+  max-width: 1310px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -309,33 +309,38 @@ nav .nav-left-info.show svg path:nth-of-type(3) {
     opacity: 0;
   }
 }
-.our-clients .our-clients-container {
+.our-clients .container {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  max-width: 1420px;
-  width: 100%;
-  margin: auto;
 }
-.our-clients .our-clients-container .left-container {
+.our-clients .container .left-container {
   display: flex;
   justify-content: flex-end;
   width: 100%;
+  padding-bottom: 75px;
 }
-.our-clients .our-clients-container .left-container .left-content {
+.our-clients .container .left-container .left-content {
   max-width: 44.375rem;
   width: 100%;
 }
-.our-clients .our-clients-container .left-container .left-content h3 {
-  margin: 5rem 0 2.5rem;
+.our-clients .container .left-container .left-content h3 {
+  margin: 2.5rem 0 1.875rem;
   color: #282828;
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
+  position: relative;
 }
-.our-clients .our-clients-container .left-container .left-content .content-item {
+.our-clients .container .left-container .left-content h3 img {
+  position: absolute;
+  opacity: 0.05;
+  left: -200px;
+  top: -60px;
+}
+.our-clients .container .left-container .left-content .content-item {
   max-width: 36.875rem;
   width: 100%;
   border-bottom: 1px solid #E8E8E8;
@@ -344,19 +349,180 @@ nav .nav-left-info.show svg path:nth-of-type(3) {
   padding: 15px 10px;
   cursor: pointer;
 }
-.our-clients .our-clients-container .left-container .left-content .content-item .icon-Frame-394 {
+.our-clients .container .left-container .left-content .content-item .icon-Frame-394 {
   font-size: 48px;
 }
-.our-clients .our-clients-container .left-container .left-content .content-item .icon-Frame-393 {
+.our-clients .container .left-container .left-content .content-item .icon-Frame-394:before {
+  transition: 0.3s;
+}
+.our-clients .container .left-container .left-content .content-item .icon-Frame-393 {
   font-size: 48px;
 }
-.our-clients .our-clients-container .left-container .left-content .content-item span {
+.our-clients .container .left-container .left-content .content-item .icon-Frame-393:before {
+  transition: 0.3s;
+}
+.our-clients .container .left-container .left-content .content-item span {
   color: #282828;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   margin-left: 20px;
+}
+.our-clients .container .right-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+.our-clients .container .right-container .top-bg {
+  position: absolute;
+  top: -190px;
+  right: -70px;
+}
+.our-clients .container .right-container img {
+  max-width: 470px;
+  width: 100%;
+  margin: 2.8125rem 0 0;
+}
+.our-clients .container .right-container .bottom-bg {
+  position: absolute;
+  bottom: -60px;
+  left: 30px;
+}
+
+.we-care .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.we-care .container .we-care-item {
+  max-width: 280px;
+  width: 100%;
+  margin: 40px 0;
+}
+.we-care .container .we-care-item span {
+  padding: 5px 10px;
+  background: #214788;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+.we-care .container .we-care-item h3 {
+  margin: 10px 0 10px;
+  color: #282828;
+  font-size: 18px;
+  font-weight: 600;
+}
+.we-care .container .we-care-item p {
+  color: #6C6C6C;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.logos-section {
+  background-image: url("../images/Frame 100.webp");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 30px 0;
+  margin-top: 10px;
+}
+.logos-section .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logos-section .container .line {
+  width: 1px;
+  height: 60px;
+  background: #5F5F5F;
+}
+
+.cooperation-section {
+  margin: 100px 0;
+}
+.cooperation-section .container {
+  min-height: 490px;
+  background-image: url("../images/cooperation.webp");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.cooperation-section .container .from-section {
+  display: flex;
+  align-items: end;
+}
+.cooperation-section .container .from-section .form-section-from {
+  display: flex;
+  flex-direction: column;
+  width: 23.125rem;
+}
+.cooperation-section .container .from-section .form-section-from input {
+  background: transparent;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 15px 10px;
+  margin-top: 10px;
+  border-bottom: 1px solid rgba(232, 232, 232, 0.3);
+}
+.cooperation-section .container .from-section .form-section-from input::placeholder {
+  color: #fff;
+}
+.cooperation-section .container .from-section .form-section-from input:focus {
+  border-bottom: 1px solid #fff;
+}
+.cooperation-section .container .from-section .form-section-from button {
+  margin-top: 20px;
+  background-image: url("../images/sendButton.svg");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  padding: 20px 30px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cooperation-section .container .from-section .form-section-from button i {
+  font-size: 16px;
+  margin-left: 10px;
+}
+.cooperation-section .container .text-section {
+  max-width: 645px;
+  width: 100%;
+}
+.cooperation-section .container .text-section h3 {
+  color: #FFF;
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+footer {
+  border-top: 1px solid #E8E8E8;
+  padding: 30px 0;
+}
+footer .container .footer-top {
+  display: flex;
+  justify-content: space-between;
+}
+footer .container .footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #E8E8E8;
+  padding-top: 20px;
+  margin-top: 20px;
 }
 
 #CanvasMenu {
