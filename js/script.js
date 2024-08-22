@@ -39,3 +39,6 @@ function PrintItemsAnim(array, elem){
         elem.insertAdjacentHTML('beforeend', span)
     })
 }
+
+
+const btnSeeMore = $('.btn-see-more')

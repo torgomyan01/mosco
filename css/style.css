@@ -267,20 +267,28 @@ nav .nav-left-info .icon-menu {
   margin-top: 0.75rem;
 }
 
-.airplane-animation .airplane {
+.airplane-animation.active .airplane {
   animation: airplane 6s infinite ease;
+}
+.airplane-animation svg {
+  margin-top: -92px;
+}
+.airplane-animation .airplane {
   transform: translate(0, 0);
 }
 
 @keyframes airplane {
   0% {
-    transform: translate(0, 0);
+    transform: translate(0, 0) rotate(0);
   }
   50% {
-    transform: translate(200px, -40px);
+    transform: translate(80px, -5px) rotate(-5deg);
+  }
+  90% {
+    transform: translate(300px, -40px) rotate(-20deg);
   }
   100% {
-    transform: translate(0, 0);
+    transform: translate(300px, -40px) rotate(-20deg);
   }
 }
 .our-clients .our-clients-container {
