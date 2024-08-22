@@ -93,9 +93,20 @@ button {
 
 .header {
   height: 22.625rem;
-  background: url("../images/header-background.webp") no-repeat center;
   background-size: cover;
   position: relative;
+  box-shadow: 4px 4px 67.7px 1px rgba(146, 146, 146, 0.25);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-images {
+  object-fit: cover;
+  filter: brightness(0.5);
+  transition: 0.7s;
+}
+.header-images:hover {
+  filter: brightness(1);
 }
 .header-animation {
   position: absolute;
@@ -228,14 +239,6 @@ nav .nav-left-info .icon-menu {
   width: 100%;
   max-width: 250px;
 }
-.how-working-seeMore {
-  margin-top: 1.25rem;
-  display: flex;
-  justify-content: start;
-}
-.how-working-seeMore .airplane-animation {
-  margin-left: 30px;
-}
 .how-working-your {
   color: #282828;
   text-align: right;
@@ -266,28 +269,46 @@ nav .nav-left-info .icon-menu {
   margin-top: 0.75rem;
 }
 
-.airplane-animation.active .airplane {
-  animation: airplane 6s infinite ease;
+.seeMore {
+  margin-top: 1.25rem;
+  display: flex;
+  justify-content: start;
 }
-.airplane-animation svg {
+.seeMore .btn-see-more:hover ~ .airplane-animation {
+  opacity: 1;
+}
+.seeMore .btn-see-more:hover ~ .airplane-animation .airplane {
+  animation: airplane 6s infinite ease;
+  animation-iteration-count: 1;
+}
+.seeMore .airplane-animation {
+  margin-left: 30px;
+  transition: 0.3s;
+  opacity: 0;
+}
+.seeMore .airplane-animation svg {
   margin-top: -92px;
 }
-.airplane-animation .airplane {
+.seeMore .airplane-animation .airplane {
   transform: translate(0, 0);
 }
 
 @keyframes airplane {
   0% {
     transform: translate(0, 0) rotate(0);
+    opacity: 1;
   }
   50% {
     transform: translate(80px, -5px) rotate(-5deg);
+    opacity: 1;
   }
   90% {
     transform: translate(300px, -40px) rotate(-20deg);
+    opacity: 1;
   }
   100% {
     transform: translate(300px, -40px) rotate(-20deg);
+    opacity: 0;
   }
 }
 .our-clients .our-clients-container {
