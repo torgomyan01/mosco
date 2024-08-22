@@ -52,10 +52,71 @@ a {
   margin: 0 auto;
 }
 
-header {
+.header {
   height: 22.625rem;
   background: url("../images/header-background.webp") no-repeat center;
   background-size: cover;
+  position: relative;
+}
+.header-animation {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.title-animation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title-animation span {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  animation: title-animation-parent 6s infinite ease;
+  border-right: 1px solid rgba(232, 232, 232, 0.4);
+}
+.title-animation span:before {
+  content: var(--letter);
+  position: relative;
+  right: -100px;
+  color: #FFF;
+  text-align: center;
+  font-size: 78px;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 8px 10px 0 10px;
+  animation: title-animation 6s infinite ease;
+}
+
+@keyframes title-animation {
+  0% {
+    right: -100px;
+  }
+  30% {
+    right: 0;
+  }
+  70% {
+    right: 0;
+  }
+  99% {
+    right: -100px;
+  }
+}
+@keyframes title-animation-parent {
+  0% {
+    border-right: 1px solid rgba(232, 232, 232, 0.4);
+  }
+  30% {
+    border-right: 1px solid rgba(232, 232, 232, 0.4);
+  }
+  85% {
+    border-right: 1px solid rgba(232, 232, 232, 0.4);
+  }
+  100% {
+    border-right: 1px solid rgba(232, 232, 232, 0);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
