@@ -58,4 +58,43 @@ header {
   background-size: cover;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+nav .nav-right-info {
+  max-width: 24.25rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .nav-right-info .personal-account {
+  background-image: url("../images/mosco.svg");
+}
+nav .nav-right-info a {
+  color: #282828;
+  font-size: 14px;
+  font-weight: 600;
+}
+nav .nav-right-info a .icon-person {
+  font-size: 16px;
+}
+nav .nav-right-info a .icon-phone {
+  font-size: 16px;
+}
+nav .nav-right-info .language {
+  text-decoration: underline;
+}
+nav .nav-left-info {
+  max-width: 24.25rem;
+  width: 100%;
+}
+nav .nav-left-info .icon-menu {
+  font-size: 24px;
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=style.css.map */

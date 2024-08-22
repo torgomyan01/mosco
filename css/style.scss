@@ -7,6 +7,7 @@
   border-radius: 5px;
 }
 
+
 /* Track */
 ::-webkit-scrollbar-track {
   background: #ffff;
@@ -63,4 +64,43 @@ header{
   height: 22.625rem;
   background: url("../images/header-background.webp") no-repeat center;
   background-size: cover;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  .nav-right-info{
+    max-width: 24.25rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .personal-account{
+      background-image: url("../images/mosco.svg");
+    }
+    a{
+      color: #282828;
+      font-size: 14px;
+      font-weight: 600;
+      .icon-person{
+        font-size: 16px;
+      }
+      .icon-phone{
+        font-size: 16px;
+      }
+    }
+    .language{
+      text-decoration: underline;
+    }
+  }
+  .nav-left-info{
+    max-width: 24.25rem;
+    width: 100%;
+    .icon-menu{
+      font-size: 24px;
+      cursor: pointer;
+    }
+  }
 }
