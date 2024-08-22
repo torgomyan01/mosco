@@ -438,3 +438,22 @@ nav{
     }
   }
 }
+
+.logos-section{
+  background-image: url("../images/Frame 100.webp");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 30px 0;
+  margin-top: 10px;
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .line{
+      width: 1px;
+      height: 60px;
+      background: #5F5F5F;
+    }
+  }
+}
