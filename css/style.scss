@@ -325,24 +325,33 @@ nav{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    max-width: 1420px;
+    max-width: 1290px;
     width: 100%;
+    padding: 0 10px;
     margin: auto;
     .left-container{
       display: flex;
       justify-content: flex-end;
       width: 100%;
+      padding-bottom: 75px;
       .left-content{
         max-width: 44.375rem;
         width: 100%;
         h3{
-          margin: 5rem 0 2.5rem;
+          margin: 2.5rem 0 1.875rem;
           color: #282828;
           font-size: 1.5rem;
           font-style: normal;
           font-weight: 700;
           line-height: normal;
           text-transform: uppercase;
+          position: relative;
+          img{
+            position: absolute;
+            opacity: 0.05;
+            left: -200px;
+            top: -60px;
+          }
         }
         .content-item{
           max-width: 36.875rem;
@@ -355,8 +364,14 @@ nav{
           .icon-Frame-394{
             font-size: 48px;
           }
+          .icon-Frame-394:before {
+            transition: 0.3s;
+          }
           .icon-Frame-393{
             font-size: 48px;
+          }
+          .icon-Frame-393:before {
+            transition: 0.3s;
           }
           span{
             color: #282828;
@@ -369,6 +384,26 @@ nav{
         }
       }
     }
-
+    .right-container{
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+      .top-bg{
+        position: absolute;
+        top: -190px;
+        right: -70px;
+      }
+      img{
+        max-width: 470px;
+        width: 100%;
+        margin: 2.8125rem 0 0;
+      }
+      .bottom-bg{
+        position: absolute;
+        bottom: -60px;
+        left: 30px;
+      }
+    }
   }
 }

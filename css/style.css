@@ -315,27 +315,36 @@ nav .nav-left-info .icon-menu {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  max-width: 1420px;
+  max-width: 1290px;
   width: 100%;
+  padding: 0 10px;
   margin: auto;
 }
 .our-clients .our-clients-container .left-container {
   display: flex;
   justify-content: flex-end;
   width: 100%;
+  padding-bottom: 75px;
 }
 .our-clients .our-clients-container .left-container .left-content {
   max-width: 44.375rem;
   width: 100%;
 }
 .our-clients .our-clients-container .left-container .left-content h3 {
-  margin: 5rem 0 2.5rem;
+  margin: 2.5rem 0 1.875rem;
   color: #282828;
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
+  position: relative;
+}
+.our-clients .our-clients-container .left-container .left-content h3 img {
+  position: absolute;
+  opacity: 0.05;
+  left: -200px;
+  top: -60px;
 }
 .our-clients .our-clients-container .left-container .left-content .content-item {
   max-width: 36.875rem;
@@ -349,8 +358,14 @@ nav .nav-left-info .icon-menu {
 .our-clients .our-clients-container .left-container .left-content .content-item .icon-Frame-394 {
   font-size: 48px;
 }
+.our-clients .our-clients-container .left-container .left-content .content-item .icon-Frame-394:before {
+  transition: 0.3s;
+}
 .our-clients .our-clients-container .left-container .left-content .content-item .icon-Frame-393 {
   font-size: 48px;
+}
+.our-clients .our-clients-container .left-container .left-content .content-item .icon-Frame-393:before {
+  transition: 0.3s;
 }
 .our-clients .our-clients-container .left-container .left-content .content-item span {
   color: #282828;
@@ -359,6 +374,27 @@ nav .nav-left-info .icon-menu {
   font-weight: 400;
   line-height: normal;
   margin-left: 20px;
+}
+.our-clients .our-clients-container .right-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+.our-clients .our-clients-container .right-container .top-bg {
+  position: absolute;
+  top: -190px;
+  right: -70px;
+}
+.our-clients .our-clients-container .right-container img {
+  max-width: 470px;
+  width: 100%;
+  margin: 2.8125rem 0 0;
+}
+.our-clients .our-clients-container .right-container .bottom-bg {
+  position: absolute;
+  bottom: -60px;
+  left: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
