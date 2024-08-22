@@ -1,4 +1,5 @@
 @import "helper";
+@import "../fonts/stylesheet.css";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 ::-webkit-scrollbar {
@@ -63,6 +64,40 @@ button{
   padding: 0 10px;
 }
 
+.btn-see-more{
+  background: transparent;
+  position: relative;
+  @include flex('c', 'c');
+  color: #FFF;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 11.25rem;
+  height: 2.5rem;
+  cursor: pointer;
+  svg{
+    position: absolute;
+    left: -31px;
+    top: -7px;
+    z-index: -1;
+    zoom: 1.1;
+    path{
+      fill: #11366F;
+      transition: 0.3s;
+    }
+  }
+  i{
+    margin-left: 0.625rem;
+  }
+  &:hover{
+    svg{
+      path{
+        fill: #092756;
+        transition: 0.3s;
+      }
+    }
+  }
+}
 
 .header{
   height: 22.625rem;
@@ -177,6 +212,88 @@ nav{
     }
   }
 }
+
+.how-working{
+  margin-top: 2.5rem;
+  &-body{
+    @include flex('sb', 's');
+  }
+  &-title{
+    width: 515.15px;
+    color: #282828;
+    font-family: "RF Dewi";
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  &-description{
+    color: #6C6C6C;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 1.25rem;
+    width: 100%;
+    max-width: 250px;
+  }
+  &-seeMore{
+    margin-top: 1.25rem;
+    display: flex;
+    justify-content: start;
+    .airplane-animation{
+      margin-left: 30px;
+    }
+  }
+  &-your{
+    color: #282828;
+    text-align: right;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  &-data{
+    display: flex;
+    @include flex('e', 'e');
+    color: #282828;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: normal;
+    span{
+      font-size: 3.125rem;
+      position: relative;
+      bottom: -9px;
+      margin-right: 5px;
+    }
+  }
+  &-day{
+    color: #282828;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 0.75rem;
+  }
+}
+
+.airplane-animation{
+  &.active{
+
+  }
+  .airplane{
+    animation: airplane 6s infinite ease;
+    transform: translate(0, 0);
+  }
+}
+
+
+@keyframes airplane {
+  0%{
+    transform: translate(0, 0);
+  }
+  50%{
+    transform: translate(200px, -30px);
+  }
+  100%{
+    transform: translate(0, 0);
+  }
+}
+
 
 .our-clients{
 

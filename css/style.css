@@ -1,3 +1,4 @@
+@import "../fonts/stylesheet.css";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 ::-webkit-scrollbar {
   width: 5px;
@@ -55,6 +56,39 @@ button {
   max-width: 1290px;
   margin: 0 auto;
   padding: 0 10px;
+}
+
+.btn-see-more {
+  background: transparent;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 11.25rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
+.btn-see-more svg {
+  position: absolute;
+  left: -31px;
+  top: -7px;
+  z-index: -1;
+  zoom: 1.1;
+}
+.btn-see-more svg path {
+  fill: #11366F;
+  transition: 0.3s;
+}
+.btn-see-more i {
+  margin-left: 0.625rem;
+}
+.btn-see-more:hover svg path {
+  fill: #092756;
+  transition: 0.3s;
 }
 
 .header {
@@ -169,6 +203,85 @@ nav .nav-left-info {
 nav .nav-left-info .icon-menu {
   font-size: 24px;
   cursor: pointer;
+}
+
+.how-working {
+  margin-top: 2.5rem;
+}
+.how-working-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.how-working-title {
+  width: 515.15px;
+  color: #282828;
+  font-family: "RF Dewi";
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.how-working-description {
+  color: #6C6C6C;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 1.25rem;
+  width: 100%;
+  max-width: 250px;
+}
+.how-working-seeMore {
+  margin-top: 1.25rem;
+  display: flex;
+  justify-content: start;
+}
+.how-working-seeMore .airplane-animation {
+  margin-left: 30px;
+}
+.how-working-your {
+  color: #282828;
+  text-align: right;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.how-working-data {
+  display: flex;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  color: #282828;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: normal;
+}
+.how-working-data span {
+  font-size: 3.125rem;
+  position: relative;
+  bottom: -9px;
+  margin-right: 5px;
+}
+.how-working-day {
+  color: #282828;
+  text-align: right;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 0.75rem;
+}
+
+.airplane-animation .airplane {
+  animation: airplane 6s infinite ease;
+  transform: translate(0, 0);
+}
+
+@keyframes airplane {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(200px, -30px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
