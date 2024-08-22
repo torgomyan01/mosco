@@ -533,12 +533,114 @@ nav{
 
 footer{
   border-top: 1px solid  #E8E8E8;
-  padding: 30px 0;
+  padding: 30px 0 15px;
   .container{
 
     .footer-top{
       display: flex;
       justify-content: space-between;
+
+      .footer-top-left{
+        max-width: 720px;
+        width: 100%;
+        div{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 20px;
+          a{
+            color: #282828;
+            font-size: 13px;
+            font-weight: 500;
+            text-transform: uppercase;
+            opacity: 0.4;
+            transition: 0.3s;
+          }
+          :hover{
+            color: #214788;
+            opacity: 1;
+          }
+        }
+        .black-text-block{
+          a{
+            color: #000;
+            opacity: 1;
+          }
+          :hover{
+            color: #214788;
+          }
+        }
+        .last-block{
+          margin-top: 35px;
+          button{
+            width: 190px;
+            border-top: 1px solid #282828;
+            color: #282828;
+            font-size: 13px;
+            font-weight: 500;
+            text-transform: uppercase;
+            background: transparent;
+            padding: 15px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            outline: none;
+            i{
+              font-size: 18px;
+              outline: none;
+            }
+          }:hover{
+             color: #214788;
+             border-color:  #214788;
+           }
+        }
+      }
+
+      .footer-top-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        .footer-top-right-bgText{
+          color: #282828;
+          font-size: 24px;
+          font-weight: 700;
+          line-height: normal;
+          text-decoration-line: underline;
+          text-transform: uppercase;
+          transition: 0.3s;
+          .icon-arrow-right2{
+            font-size: 18px;
+          }
+        }
+        :hover{
+          color: #214788;
+        }
+
+        .footer-top-right-text{
+          color: #282828;
+          text-align: right;
+          font-size: 13px;
+          font-weight: 500;
+          :hover{
+            color: #282828;
+          }
+        }
+
+        .personal-account{
+          background-image: url("../images/Vector.svg");
+          background-repeat: no-repeat;
+          background-position: center;
+          padding: 0.75rem 1.5625rem 0.75rem 0;
+          transition: 0.3s;
+        }
+        .personal-account:hover{
+          background-image: url("../images/Vector-bg.svg");
+        }
+
+      }
     }
 
     .footer-bottom{
@@ -548,6 +650,12 @@ footer{
       border-top: 1px solid  #E8E8E8;
       padding-top: 20px;
       margin-top: 20px;
+      p{
+        color: #282828;
+        font-size: 12px;
+        font-weight: 500;
+        opacity: 0.4;
+      }
     }
   }
 }
