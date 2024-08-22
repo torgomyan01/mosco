@@ -59,7 +59,7 @@ button{
 
 .container {
   width: 100%;
-  max-width: 1290px;
+  max-width: 1310px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -321,14 +321,10 @@ nav{
 
 
 .our-clients{
-  .our-clients-container{
+  .container{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    max-width: 1290px;
-    width: 100%;
-    padding: 0 10px;
-    margin: auto;
     .left-container{
       display: flex;
       justify-content: flex-end;
