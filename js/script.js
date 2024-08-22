@@ -40,6 +40,8 @@ function PrintItemsAnim(array, elem){
     })
 }
 
+
+const btnSeeMore = $('.btn-see-more')
 const icons = document.querySelectorAll('.content-item');
 
 icons.forEach((icon, index) => {

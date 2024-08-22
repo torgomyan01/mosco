@@ -272,10 +272,14 @@ nav{
 
 .airplane-animation{
   &.active{
-
+    .airplane{
+      animation: airplane 6s infinite ease;
+    }
+  }
+  svg{
+    margin-top: -92px;
   }
   .airplane{
-    animation: airplane 6s infinite ease;
     transform: translate(0, 0);
   }
 }
@@ -283,13 +287,16 @@ nav{
 
 @keyframes airplane {
   0%{
-    transform: translate(0, 0);
+    transform: translate(0, 0) rotate(0);
   }
   50%{
-    transform: translate(200px, -40px);
+    transform: translate(80px, -5px) rotate(-5deg);
+  }
+  90%{
+    transform: translate(300px, -40px) rotate(-20deg);
   }
   100%{
-    transform: translate(0, 0);
+    transform: translate(300px, -40px) rotate(-20deg);
   }
 }
 
