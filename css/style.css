@@ -131,8 +131,15 @@ nav .nav-right-info {
   align-items: center;
   justify-content: space-between;
 }
-nav .nav-right-info .personal-account {
-  background-image: url("../images/mosco.svg");
+nav .nav-right-info .personal-account a {
+  background-image: url("../images/Vector.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 12px 25px 12px 0;
+  transition: 0.3s;
+}
+nav .nav-right-info .personal-account a:hover {
+  background-image: url("../images/Vector-bg.svg");
 }
 nav .nav-right-info a {
   color: #282828;
@@ -141,9 +148,11 @@ nav .nav-right-info a {
 }
 nav .nav-right-info a .icon-person {
   font-size: 16px;
+  margin-right: 5px;
 }
 nav .nav-right-info a .icon-phone {
   font-size: 16px;
+  margin-right: 5px;
 }
 nav .nav-right-info .language {
   text-decoration: underline;
