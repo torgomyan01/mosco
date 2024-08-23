@@ -107,10 +107,39 @@ button{
   @include flex('sb', 'c');
   &-images{
     object-fit: cover;
-    filter: brightness(0.5);
     transition: 0.7s;
+    overflow: hidden;
+    height: 22.625rem;
+    position: relative;
+    @include bg;
+    @include col(5, 0px);
+    &:after{
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(210deg, #00000040, transparent, transparent);
+      background-size: 490%;
+      transition: 0.7s;
+      background-position: -40% 0;
+    }
+    img{
+      opacity: 0.2;
+      position: absolute;
+      left: 0;
+      transform: translateY(-50%);
+      transition: opacity 0.7s;
+    }
+
     &:hover{
-      filter: brightness(1);
+      img{
+        opacity: 0;
+      }
+      &:after{
+        background-position: -90% 0;
+      }
     }
   }
   &-animation{
@@ -127,6 +156,9 @@ button{
     overflow: hidden;
     display: block;
     border-right: 1px solid rgba(232, 232, 232, 0.40);
+    width: 102px;
+    height: 102px;
+    @include flex('c', 'c');
     &:before{
       content: var(--letter);
       position: relative;
@@ -170,16 +202,34 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    .personal-account a{
-      background-image: url("../images/Vector.svg");
+    .personal-account{
+      //background-image: url("../images/Vector.svg");
       background-repeat: no-repeat;
       background-position: center;
       padding: 0.75rem 1.5625rem 0.75rem 0;
       transition: 0.3s;
+      position: relative;
+      svg{
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: 0.3s;
+        z-index: -1;
+        *{
+          transition: 2s;
+        }
+      }
+
+      &:hover{
+        .anim-solid{
+          stroke-dasharray: 982px;
+          stroke-dashoffset: 0;
+        }
+      }
     }
-    .personal-account a:hover{
-      background-image: url("../images/Vector-bg.svg");
-    }
+    //.personal-account a:hover{
+    //  background-image: url("../images/Vector-bg.svg");
+    //}
     a{
       color: #282828;
       font-size: 14px;
@@ -643,8 +693,8 @@ footer{
           background-image: url("../images/Vector.svg");
           background-repeat: no-repeat;
           background-position: center;
-          padding: 0.75rem 1.5625rem 0.75rem 0;
           transition: 0.3s;
+
         }
         .personal-account:hover{
           background-image: url("../images/Vector-bg.svg");

@@ -102,11 +102,39 @@ button {
 }
 .header-images {
   object-fit: cover;
-  filter: brightness(0.5);
   transition: 0.7s;
+  overflow: hidden;
+  height: 22.625rem;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: calc(8.3333333333% * 5 - 0px);
 }
-.header-images:hover {
-  filter: brightness(1);
+.header-images:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(210deg, rgba(0, 0, 0, 0.2509803922), transparent, transparent);
+  background-size: 490%;
+  transition: 0.7s;
+  background-position: -40% 0;
+}
+.header-images img {
+  opacity: 0.2;
+  position: absolute;
+  left: 0;
+  transform: translateY(-50%);
+  transition: opacity 0.7s;
+}
+.header-images:hover img {
+  opacity: 0;
+}
+.header-images:hover:after {
+  background-position: -90% 0;
 }
 .header-animation {
   position: absolute;
@@ -124,6 +152,11 @@ button {
   overflow: hidden;
   display: block;
   border-right: 1px solid rgba(232, 232, 232, 0.4);
+  width: 102px;
+  height: 102px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .title-animation span:before {
   content: var(--letter);
@@ -167,15 +200,26 @@ nav .nav-right-info {
   align-items: center;
   justify-content: space-between;
 }
-nav .nav-right-info .personal-account a {
-  background-image: url("../images/Vector.svg");
+nav .nav-right-info .personal-account {
   background-repeat: no-repeat;
   background-position: center;
   padding: 0.75rem 1.5625rem 0.75rem 0;
   transition: 0.3s;
+  position: relative;
 }
-nav .nav-right-info .personal-account a:hover {
-  background-image: url("../images/Vector-bg.svg");
+nav .nav-right-info .personal-account svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 0.3s;
+  z-index: -1;
+}
+nav .nav-right-info .personal-account svg * {
+  transition: 2s;
+}
+nav .nav-right-info .personal-account:hover .anim-solid {
+  stroke-dasharray: 982px;
+  stroke-dashoffset: 0;
 }
 nav .nav-right-info a {
   color: #282828;
@@ -613,7 +657,6 @@ footer .container .footer-top .footer-top-right .personal-account {
   background-image: url("../images/Vector.svg");
   background-repeat: no-repeat;
   background-position: center;
-  padding: 0.75rem 1.5625rem 0.75rem 0;
   transition: 0.3s;
 }
 footer .container .footer-top .footer-top-right .personal-account:hover {
