@@ -50,12 +50,38 @@ titleAnimation.forEach((item) => {
   }, 6000)
 })
 
-function PrintItemsAnim(array, elem) {
-  elem.innerHTML = '';
-  array.forEach((letter) => {
-    const span = `<span style="--letter: '${letter}'"></span>`
-    elem.insertAdjacentHTML('beforeend', span)
-  })
+function PrintItemsAnim(array, elem, count = 7) {
+
+  console.log(array)
+  if(count === 7){
+
+    const reversArray = [];
+
+    const newArr = Array.from({length: 7}).map((letter, i) =>  {
+      if(array[i]){
+        return array[i];
+      } else {
+        reversArray.push('')
+      }
+    }).filter((e) => e)
+
+    newArr.forEach((l) => {
+      reversArray.push(l)
+    })
+
+
+    elem.innerHTML = '';
+    reversArray.forEach((i) => {
+        const span = `<span style="--letter: '${i}'"></span>`
+        elem.insertAdjacentHTML('beforeend', span)
+    })
+  } else {
+    array.forEach((letter) => {
+      const span = `<span style="--letter: '${letter}'"></span>`
+      elem.insertAdjacentHTML('beforeend', span)
+    })
+  }
+
 }
 
 const icons = document.querySelectorAll('.content-item');

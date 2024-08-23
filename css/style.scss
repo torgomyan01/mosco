@@ -156,6 +156,9 @@ button{
     overflow: hidden;
     display: block;
     border-right: 1px solid rgba(232, 232, 232, 0.40);
+    width: 102px;
+    height: 102px;
+    @include flex('c', 'c');
     &:before{
       content: var(--letter);
       position: relative;
