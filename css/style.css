@@ -981,6 +981,10 @@ footer .container .footer-bottom p {
   .menu .container .menu-column {
     width: 100%;
   }
+  .menu .container .menu-column ul li {
+    padding: 3px 12px;
+    margin-bottom: 0;
+  }
   .how-working .how-working-body .how-working-data {
     font-size: 14px;
   }
