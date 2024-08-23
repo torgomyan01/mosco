@@ -14,6 +14,28 @@ const {
 
 AOS.init();
 
+function updateSVGImages() {
+  const svgElement = document.querySelector('.personal-account-background');
+  const imageElement = document.querySelector('#texture-image');
+  const imagePattern = document.querySelector('#texture-pattern');
+
+  if (window.innerWidth <= 1024) {
+    imageElement.setAttribute('href', 'images/person-icon-mobile.svg');
+    imagePattern.setAttribute('width', '48');
+    imagePattern.setAttribute('height', '48');
+    svgElement.setAttribute('height', '48');
+    svgElement.setAttribute('width', '48');
+  } else {
+    imageElement.setAttribute('href', 'images/Vector-bg.svg');
+    imagePattern.setAttribute('width', '149');
+    imagePattern.setAttribute('height', '42');
+    svgElement.setAttribute('height', '42');
+    svgElement.setAttribute('width', '149');
+  }
+}
+  updateSVGImages();
+  window.addEventListener('resize', updateSVGImages);
+
 
 function BodyOverflow(status){
     if(status){

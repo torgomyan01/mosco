@@ -191,7 +191,6 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 1.6rem 0;
-  position: relative;
 }
 nav .nav-right-info {
   max-width: 24.25rem;
@@ -237,13 +236,12 @@ nav .nav-right-info a .icon-phone {
 nav .nav-right-info .language {
   text-decoration: underline;
 }
-nav .logo-block {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 nav .nav-left-info {
+  max-width: 24.25rem;
+  width: 100%;
+  z-index: 100;
+}
+nav .nav-left-info .nav-menu-button-icon {
   width: 40px;
   height: 40px;
   display: flex;
@@ -252,16 +250,16 @@ nav .nav-left-info {
   z-index: 100;
   cursor: pointer;
 }
-nav .nav-left-info svg path {
+nav .nav-left-info .nav-menu-button-icon svg path {
   transition: 0.3s;
 }
-nav .nav-left-info.show svg path:nth-of-type(1) {
+nav .nav-left-info .nav-menu-button-icon.show svg path:nth-of-type(1) {
   opacity: 0;
 }
-nav .nav-left-info.show svg path:nth-of-type(2) {
+nav .nav-left-info .nav-menu-button-icon.show svg path:nth-of-type(2) {
   transform: translate(-4px, 13px) rotate(-45deg);
 }
-nav .nav-left-info.show svg path:nth-of-type(3) {
+nav .nav-left-info .nav-menu-button-icon.show svg path:nth-of-type(3) {
   transform: translate(17px, -7px) rotate(45deg);
 }
 
@@ -748,6 +746,25 @@ footer .container .footer-bottom p {
   }
 }
 @media (max-width: 1024px) {
+  nav .nav-right-info {
+    max-width: 115px;
+  }
+  nav .nav-right-info .nav-right-info-text {
+    display: none;
+  }
+  nav .nav-right-info .personal-account {
+    margin-left: 20px;
+  }
+  nav .nav-right-info .personal-account svg {
+    left: -15px;
+    top: -7px;
+  }
+  nav .nav-right-info svg {
+    background: url("../images/person-icon-mobile.svg") !important;
+  }
+  nav .nav-left-info {
+    max-width: 115px;
+  }
   .how-working .how-working-body {
     flex-wrap: wrap;
     justify-content: center;
@@ -793,6 +810,15 @@ footer .container .footer-bottom p {
   }
 }
 @media (max-width: 768px) {
+  nav .nav-right-info {
+    max-width: 90px;
+  }
+  nav .nav-right-info .language {
+    display: none;
+  }
+  nav .nav-left-info {
+    max-width: 90px;
+  }
   .how-working .how-working-body .how-working-title {
     width: 100%;
   }
@@ -808,6 +834,9 @@ footer .container .footer-bottom p {
   }
   .our-clients .container .right-container .top-bg {
     display: none;
+  }
+  .our-clients .container .right-container .bottom-bg {
+    left: 15px;
   }
   .we-care .container {
     flex-wrap: wrap;
