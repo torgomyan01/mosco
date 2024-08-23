@@ -877,6 +877,23 @@ footer .container .footer-bottom p {
   }
 }
 @media (max-width: 768px) {
+  .menu {
+    margin-top: 6.5rem;
+  }
+  .menu .container {
+    flex-wrap: wrap;
+  }
+  .menu .container .menu-title {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  .menu .container .menu-column {
+    width: 47%;
+    margin: 0 10px 0 0;
+  }
+  .menu .container .menu-column ul li {
+    padding: 5px 12px;
+  }
   nav .nav-right-info {
     max-width: 90px;
   }
@@ -885,6 +902,19 @@ footer .container .footer-bottom p {
   }
   nav .nav-left-info {
     max-width: 90px;
+  }
+  header .header-images:first-child {
+    display: block;
+    width: 100%;
+  }
+  header .header-images {
+    display: none;
+  }
+  header .header-images img {
+    display: none;
+  }
+  header .header-animation {
+    display: none;
   }
   .how-working .how-working-body .how-working-title {
     width: 100%;
@@ -948,6 +978,9 @@ footer .container .footer-bottom p {
   }
 }
 @media (max-width: 425px) {
+  .menu .container .menu-column {
+    width: 100%;
+  }
   .how-working .how-working-body .how-working-data {
     font-size: 14px;
   }

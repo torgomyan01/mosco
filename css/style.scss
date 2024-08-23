@@ -965,6 +965,26 @@ footer{
 
 @media (max-width: 768px) {
 
+  .menu{
+    margin-top: 6.5rem;
+    .container{
+      flex-wrap: wrap;
+      .menu-title{
+        font-size: 18px;
+        margin: 10px 0;
+      }
+      .menu-column {
+        width: 47%;
+        margin: 0 10px 0 0;
+        ul{
+          li{
+            padding: 5px 12px;
+          }
+        }
+      }
+    }
+  }
+
   nav{
     .nav-right-info{
       max-width: 90px;
@@ -974,6 +994,22 @@ footer{
     }
     .nav-left-info{
       max-width: 90px;
+    }
+  }
+
+  header{
+    .header-images:first-child{
+      display: block;
+      width: 100%;
+    }
+    .header-images{
+      display: none;
+      img{
+        display: none;
+      }
+    }
+    .header-animation{
+      display: none;
     }
   }
 
@@ -1078,6 +1114,14 @@ footer{
   }
 }
 @media (max-width: 425px) {
+
+  .menu{
+    .container{
+      .menu-column {
+        width: 100%;
+      }
+    }
+  }
 
   .how-working{
     .how-working-body{
