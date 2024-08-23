@@ -124,7 +124,7 @@ button {
   background-position: -40% 0;
 }
 .header-images img {
-  opacity: 0.2;
+  opacity: 0.3;
   position: absolute;
   left: 0;
   transform: translateY(-50%);
@@ -203,7 +203,7 @@ nav .nav-right-info {
 }
 nav .nav-right-info a {
   color: #282828;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
 }
 nav .nav-right-info a .icon-person {
@@ -273,8 +273,9 @@ nav .nav-left-info .nav-menu-button-icon.show svg path:nth-of-type(3) {
 .how-working-your {
   color: #282828;
   text-align: right;
-  font-size: 0.875rem;
+  font-size: 14px;
   font-weight: 500;
+  margin-bottom: 10px;
 }
 .how-working-data {
   display: flex;
@@ -282,12 +283,12 @@ nav .nav-left-info .nav-menu-button-icon.show svg path:nth-of-type(3) {
   justify-content: end;
   align-items: end;
   color: #282828;
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: 700;
   line-height: normal;
 }
 .how-working-data span {
-  font-size: 3.125rem;
+  font-size: 2.8125rem;
   position: relative;
   bottom: -9px;
   margin-right: 5px;
@@ -297,7 +298,7 @@ nav .nav-left-info .nav-menu-button-icon.show svg path:nth-of-type(3) {
   text-align: right;
   font-size: 14px;
   font-weight: 500;
-  margin-top: 0.75rem;
+  margin-top: 20px;
 }
 
 .seeMore {
@@ -342,6 +343,9 @@ nav .nav-left-info .nav-menu-button-icon.show svg path:nth-of-type(3) {
     opacity: 0;
   }
 }
+.our-clients {
+  margin-top: 10px;
+}
 .our-clients .container {
   display: flex;
   align-items: flex-start;
@@ -372,6 +376,7 @@ nav .nav-left-info .nav-menu-button-icon.show svg path:nth-of-type(3) {
   opacity: 0.05;
   left: -200px;
   top: -60px;
+  z-index: -1;
 }
 .our-clients .container .left-container .left-content .content-item {
   max-width: 36.875rem;
@@ -417,11 +422,13 @@ nav .nav-left-info .nav-menu-button-icon.show svg path:nth-of-type(3) {
   max-width: 470px;
   width: 100%;
   margin: 2.8125rem 0 0 10px;
+  z-index: 1;
 }
 .our-clients .container .right-container .bottom-bg {
   position: absolute;
-  bottom: -60px;
-  left: 30px;
+  bottom: -75px;
+  left: 0;
+  max-width: 600px;
 }
 
 .we-care .container {
@@ -482,9 +489,10 @@ nav .nav-left-info .nav-menu-button-icon.show svg path:nth-of-type(3) {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 40px;
+  padding: 30px 20px;
   display: flex;
   justify-content: space-between;
+  max-width: 1290px;
 }
 .cooperation-section .container .from-section {
   display: flex;
@@ -575,7 +583,7 @@ footer .container .footer-top .footer-top-left div :hover {
   opacity: 1;
 }
 footer .container .footer-top .footer-top-left .black-text-block a {
-  color: #000;
+  color: #282828;
   opacity: 1;
 }
 footer .container .footer-top .footer-top-left .black-text-block :hover {
@@ -631,6 +639,7 @@ footer .container .footer-top .footer-top-right .footer-top-right-text {
   text-align: right;
   font-size: 13px;
   font-weight: 500;
+  margin-bottom: 20px;
 }
 footer .container .footer-top .footer-top-right .footer-top-right-text :hover {
   color: #282828;
@@ -659,6 +668,7 @@ footer .container .footer-bottom p {
 }
 .personal-account a {
   color: #282828;
+  font-size: 14px;
 }
 .personal-account svg {
   position: absolute;
@@ -1020,6 +1030,12 @@ footer .container .footer-bottom p {
   footer .container .footer-top .footer-top-right {
     align-items: center;
   }
+  footer .container .footer-top .footer-top-right .footer-top-right-top {
+    margin-bottom: 50px;
+  }
+  footer .container .footer-top .footer-top-right .footer-top-right-top .footer-top-right-text {
+    text-align: center;
+  }
   footer .container .footer-top .footer-top-right .footer-top-right-bgText {
     margin: 35px 0;
   }
@@ -1069,6 +1085,12 @@ footer .container .footer-bottom p {
   }
   .how-working .how-working-body .seeMore .btn-see-more {
     margin: auto;
+  }
+  .how-working .how-working-body .how-working-data {
+    font-size: 14px;
+  }
+  .how-working .how-working-body .how-working-data {
+    font-size: 13px;
   }
   .our-clients .container .left-container .left-content h3 img {
     display: none;
@@ -1132,12 +1154,6 @@ footer .container .footer-bottom p {
   .menu .container .menu-column ul li {
     padding: 3px 12px;
     margin-bottom: 0;
-  }
-  .how-working .how-working-body .how-working-data {
-    font-size: 14px;
-  }
-  .how-working .how-working-body .how-working-data {
-    font-size: 13px;
   }
   .we-care .container .we-care-item {
     max-width: 100%;

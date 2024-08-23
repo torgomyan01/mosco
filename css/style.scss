@@ -126,7 +126,7 @@ button{
       background-position: -40% 0;
     }
     img{
-      opacity: 0.2;
+      opacity: 0.3;
       position: absolute;
       left: 0;
       transform: translateY(-50%);
@@ -206,7 +206,7 @@ nav{
 
     a{
       color: #282828;
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 600;
       .icon-person{
         font-size: 1rem;
@@ -286,18 +286,19 @@ nav{
   &-your{
     color: #282828;
     text-align: right;
-    font-size: 0.875rem;
+    font-size: 14px;
     font-weight: 500;
+    margin-bottom: 10px;
   }
   &-data{
     display: flex;
     @include flex('e', 'e');
     color: #282828;
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: 700;
     line-height: normal;
     span{
-      font-size: 3.125rem;
+      font-size: 2.8125rem;
       position: relative;
       bottom: -9px;
       margin-right: 5px;
@@ -308,7 +309,7 @@ nav{
     text-align: right;
     font-size: 14px;
     font-weight: 500;
-    margin-top: 0.75rem;
+    margin-top: 20px;
   }
 }
 
@@ -361,6 +362,7 @@ nav{
 
 
 .our-clients{
+  margin-top: 10px;
   .container{
     display: flex;
     align-items: flex-start;
@@ -387,6 +389,7 @@ nav{
             opacity: 0.05;
             left: -200px;
             top: -60px;
+            z-index: -1;
           }
         }
         .content-item{
@@ -434,11 +437,13 @@ nav{
         max-width: 470px;
         width: 100%;
         margin: 2.8125rem 0 0 10px;
+        z-index: 1;
       }
       .bottom-bg{
         position: absolute;
-        bottom: -60px;
-        left: 30px;
+        bottom: -75px;
+        left: 0;
+        max-width: 600px;
       }
     }
   }
@@ -503,9 +508,10 @@ nav{
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 40px;
+    padding: 30px 20px;
     display: flex;
     justify-content: space-between;
+    max-width: 1290px;
     .from-section{
       display: flex;
       align-items: end;
@@ -600,7 +606,7 @@ footer{
         }
         .black-text-block{
           a{
-            color: #000;
+            color: #282828;
             opacity: 1;
           }
           :hover{
@@ -640,6 +646,7 @@ footer{
         justify-content: space-between;
         align-items: flex-end;
 
+
         .footer-top-right-bgText{
           color: #282828;
           font-size: 24px;
@@ -661,6 +668,7 @@ footer{
           text-align: right;
           font-size: 13px;
           font-weight: 500;
+          margin-bottom: 20px;
           :hover{
             color: #282828;
           }
@@ -693,6 +701,7 @@ footer{
   position: relative;
   a{
     color: #282828;
+    font-size: 14px;
   }
   svg{
     position: absolute;
@@ -1110,6 +1119,12 @@ footer{
         }
         .footer-top-right{
           align-items: center;
+          .footer-top-right-top{
+            margin-bottom: 50px;
+            .footer-top-right-text{
+              text-align: center;
+            }
+          }
           .footer-top-right-bgText{
             margin: 35px 0;
           }
@@ -1178,6 +1193,12 @@ footer{
         .btn-see-more{
           margin: auto;
         }
+      }
+      .how-working-data{
+        font-size: 14px;
+      }
+      .how-working-data{
+        font-size: 13px;
       }
     }
   }
@@ -1282,18 +1303,6 @@ footer{
             margin-bottom: 0;
           }
         }
-      }
-    }
-  }
-
-
-  .how-working{
-    .how-working-body{
-      .how-working-data{
-        font-size: 14px;
-      }
-      .how-working-data{
-        font-size: 13px;
       }
     }
   }

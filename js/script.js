@@ -544,7 +544,9 @@ window.onload = function () {
   }
 }
 
-window.addEventListener('load', function() {
-  const element = document.querySelector('.background-color-changed');
-  element.classList.add('changed');
-});
+// ************** chjnjel sa petqa mez **************
+
+// window.addEventListener('load', function() {
+//   const element = document.querySelector('.background-color-changed');
+//   element.classList.add('changed');
+// });
