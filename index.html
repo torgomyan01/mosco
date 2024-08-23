@@ -43,7 +43,7 @@
 
     <div class="logo-block">
       <a href="#">
-        <img src="./images/mosco.svg" alt="logo">
+        <img src="images/mosco.svg" alt="logo" id="site-nav-logo">
       </a>
     </div>
 
@@ -320,10 +320,30 @@
           О компании
           <i class="icon icon-arrow-right2"></i>
         </a>
-        <a href="#" class="footer-top-right-text personal-account">
-          <i class="icon icon-person"></i>
-          Личный кабинет
-        </a>
+        <div class="personal-account">
+          <svg style="background: url(images/Vector.svg); " xmlns="http://www.w3.org/2000/svg" width="149" height="42" viewBox="0 0 149 42">
+            <defs>
+              <pattern id="texture-pattern" patternUnits="userSpaceOnUse" width="149" height="42">
+                <image id="texture-image" href="images/Vector-bg.svg" width="100%" height="100%" filter="url(#colorize)"></image>
+              </pattern>
+              <filter id="colorize">
+                <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.2078
+                             0 0 0 0 0.2784
+                             0 0 0 0 0.5294
+                             0 0 0 1 0"></feColorMatrix>
+              </filter>
+            </defs>
+
+            <path class="anim-solid" d="M71.743,4.158C59.352,4.846,12.7,8.925,12.7,23.345c21.762,21.768,108.789,14.086,130.933-8.058,0-9.982-53.794-8.248-64.073-8.248" fill="none" stroke="url(#texture-pattern)" stroke-width="30" stroke-dasharray="282" stroke-dashoffset="282">
+              <!--            <animate attributeName="stroke-dashoffset" values="282; 0; 0; " keyTimes="0; 0.6; 1" dur="1.5s" repeatCount="indefinite"></animate>-->
+            </path>
+          </svg>
+          <a href="#">
+            <i class="icon icon-person"></i>
+            Личный кабинет
+          </a>
+        </div>
+
       </div>
     </div>
     <div class="footer-bottom">
