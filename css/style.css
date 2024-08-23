@@ -191,8 +191,6 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 1.6rem 0;
-  position: relative;
-  z-index: 100;
 }
 nav .nav-right-info {
   max-width: 24.25rem;
@@ -217,16 +215,15 @@ nav .nav-right-info a .icon-phone {
 nav .nav-right-info .language {
   text-decoration: underline;
 }
-nav .logo-block {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 nav .logo-block img {
   transition: 0.3s;
 }
 nav .nav-left-info {
+  max-width: 24.25rem;
+  width: 100%;
+  z-index: 100;
+}
+nav .nav-left-info .nav-menu-button-icon {
   width: 40px;
   height: 40px;
   display: flex;
@@ -235,42 +232,17 @@ nav .nav-left-info {
   z-index: 100;
   cursor: pointer;
 }
-nav .nav-left-info svg path {
+nav .nav-left-info .nav-menu-button-icon svg path {
   transition: 0.3s;
 }
-nav .nav-left-info.show svg path:nth-of-type(1) {
+nav .nav-left-info .nav-menu-button-icon.show svg path:nth-of-type(1) {
   opacity: 0;
 }
-nav .nav-left-info.show svg path:nth-of-type(2) {
+nav .nav-left-info .nav-menu-button-icon.show svg path:nth-of-type(2) {
   transform: translate(-4px, 13px) rotate(-45deg);
 }
-nav .nav-left-info.show svg path:nth-of-type(3) {
+nav .nav-left-info .nav-menu-button-icon.show svg path:nth-of-type(3) {
   transform: translate(17px, -7px) rotate(45deg);
-}
-
-.personal-account {
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 0.75rem 1.5625rem 0.75rem 0;
-  transition: 0.3s;
-  position: relative;
-}
-.personal-account svg {
-  position: absolute;
-  left: 0;
-  top: 0;
-  transition: 0.3s;
-  z-index: -1;
-}
-.personal-account svg * {
-  transition: 2s;
-}
-.personal-account:hover .anim-solid {
-  stroke-dasharray: 982px;
-  stroke-dashoffset: 0;
-}
-.personal-account a {
-  color: #282828;
 }
 
 .how-working {
@@ -676,6 +648,31 @@ footer .container .footer-bottom p {
   opacity: 0.4;
 }
 
+.personal-account {
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0.75rem 1.5625rem 0.75rem 0;
+  transition: 0.3s;
+  position: relative;
+}
+.personal-account a {
+  color: #282828;
+}
+.personal-account svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 0.3s;
+  z-index: -1;
+}
+.personal-account svg * {
+  transition: 2s;
+}
+.personal-account:hover .anim-solid {
+  stroke-dasharray: 982px;
+  stroke-dashoffset: 0;
+}
+
 #CanvasMenu {
   position: absolute;
   left: 0;
@@ -814,6 +811,25 @@ footer .container .footer-bottom p {
   }
 }
 @media (max-width: 1024px) {
+  nav .nav-right-info {
+    max-width: 115px;
+  }
+  nav .nav-right-info .nav-right-info-text {
+    display: none;
+  }
+  nav .nav-right-info .personal-account {
+    margin-left: 20px;
+  }
+  nav .nav-right-info .personal-account svg {
+    left: -15px;
+    top: -7px;
+  }
+  nav .nav-right-info svg {
+    background: url("../images/person-icon-mobile.svg") !important;
+  }
+  nav .nav-left-info {
+    max-width: 115px;
+  }
   .how-working .how-working-body {
     flex-wrap: wrap;
     justify-content: center;
@@ -859,6 +875,15 @@ footer .container .footer-bottom p {
   }
 }
 @media (max-width: 768px) {
+  nav .nav-right-info {
+    max-width: 90px;
+  }
+  nav .nav-right-info .language {
+    display: none;
+  }
+  nav .nav-left-info {
+    max-width: 90px;
+  }
   .how-working .how-working-body .how-working-title {
     width: 100%;
   }
@@ -874,6 +899,9 @@ footer .container .footer-bottom p {
   }
   .our-clients .container .right-container .top-bg {
     display: none;
+  }
+  .our-clients .container .right-container .bottom-bg {
+    left: 15px;
   }
   .we-care .container {
     flex-wrap: wrap;

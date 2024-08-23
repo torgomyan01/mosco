@@ -201,30 +201,6 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    .personal-account{
-      background-repeat: no-repeat;
-      background-position: center;
-      padding: 0.75rem 1.5625rem 0.75rem 0;
-      transition: 0.3s;
-      position: relative;
-      svg{
-        position: absolute;
-        left: 0;
-        top: 0;
-        transition: 0.3s;
-        z-index: -1;
-        *{
-          transition: 2s;
-        }
-      }
-
-      &:hover{
-        .anim-solid{
-          stroke-dasharray: 982px;
-          stroke-dashoffset: 0;
-        }
-      }
-    }
 
     a{
       color: #282828;
@@ -249,63 +225,38 @@ nav{
     }
   }
   .nav-left-info{
-    width: 40px;
-    height: 40px;
-    @include flex('c', 'c');
+    max-width: 24.25rem;
+    width: 100%;
     z-index: 100;
-    cursor: pointer;
+    .nav-menu-button-icon{
+      width: 40px;
+      height: 40px;
+      @include flex('c', 'c');
+      z-index: 100;
+      cursor: pointer;
 
-    svg{
-      path{
-        transition: 0.3s;
-      }
-    }
-
-    &.show{
       svg{
         path{
-          &:nth-of-type(1){
-            opacity: 0;
-          }
-          &:nth-of-type(2){
-            transform: translate(-4px, 13px) rotate(-45deg);
-          }
-          &:nth-of-type(3){
-            transform: translate(17px, -7px) rotate(45deg);
+          transition: 0.3s;
+        }
+      }
+
+      &.show{
+        svg{
+          path{
+            &:nth-of-type(1){
+              opacity: 0;
+            }
+            &:nth-of-type(2){
+              transform: translate(-4px, 13px) rotate(-45deg);
+            }
+            &:nth-of-type(3){
+              transform: translate(17px, -7px) rotate(45deg);
+            }
           }
         }
       }
     }
-
-  }
-}
-
-.personal-account{
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 0.75rem 1.5625rem 0.75rem 0;
-  transition: 0.3s;
-  position: relative;
-  svg{
-    position: absolute;
-    left: 0;
-    top: 0;
-    transition: 0.3s;
-    z-index: -1;
-    *{
-      transition: 2s;
-    }
-  }
-
-  &:hover{
-    .anim-solid{
-      stroke-dasharray: 982px;
-      stroke-dashoffset: 0;
-    }
-  }
-
-  a{
-    color: #282828;
   }
 }
 
@@ -713,16 +664,16 @@ footer{
           }
         }
 
-        .personal-account{
-          background-image: url("../images/Vector.svg");
-          background-repeat: no-repeat;
-          background-position: center;
-          transition: 0.3s;
-
-        }
-        .personal-account:hover{
-          background-image: url("../images/Vector-bg.svg");
-        }
+        //.personal-account{
+        //  background-image: url("../images/Vector.svg");
+        //  background-repeat: no-repeat;
+        //  background-position: center;
+        //  transition: 0.3s;
+        //
+        //}
+        //.personal-account:hover{
+        //  background-image: url("../images/Vector-bg.svg");
+        //}
 
       }
     }
@@ -744,6 +695,33 @@ footer{
   }
 }
 
+.personal-account{
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0.75rem 1.5625rem 0.75rem 0;
+  transition: 0.3s;
+  position: relative;
+  a{
+    color: #282828;
+  }
+  svg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+    z-index: -1;
+    *{
+      transition: 2s;
+    }
+  }
+
+  &:hover{
+    .anim-solid{
+      stroke-dasharray: 982px;
+      stroke-dashoffset: 0;
+    }
+  }
+}
 
 
 
@@ -906,6 +884,28 @@ footer{
 
 @media (max-width: 1024px) {
 
+  nav{
+    .nav-right-info{
+      max-width: 115px;
+      .nav-right-info-text{
+        display: none;
+      }
+      .personal-account{
+        margin-left: 20px;
+        svg {
+          left: -15px;
+          top: -7px;
+        }
+      }
+      svg {
+        background: url('../images/person-icon-mobile.svg') !important;
+      }
+    }
+    .nav-left-info{
+      max-width: 115px;
+    }
+  }
+
   .how-working{
     .how-working-body{
       flex-wrap: wrap;
@@ -975,6 +975,18 @@ footer{
 
 @media (max-width: 768px) {
 
+  nav{
+    .nav-right-info{
+      max-width: 90px;
+      .language{
+        display: none;
+      }
+    }
+    .nav-left-info{
+      max-width: 90px;
+    }
+  }
+
   .how-working{
     .how-working-body{
       .how-working-title{
@@ -1008,6 +1020,9 @@ footer{
       .right-container{
         .top-bg {
           display: none;
+        }
+        .bottom-bg{
+          left: 15px;
         }
       }
     }
