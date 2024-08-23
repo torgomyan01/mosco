@@ -191,6 +191,8 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 1.6rem 0;
+  position: relative;
+  z-index: 10;
 }
 nav .nav-right-info {
   max-width: 24.25rem;

@@ -195,6 +195,8 @@ nav{
   align-items: center;
   justify-content: space-between;
   padding: 1.6rem 0;
+  position: relative;
+  z-index: 10;
   .nav-right-info{
     max-width: 24.25rem;
     width: 100%;
@@ -663,18 +665,6 @@ footer{
             color: #282828;
           }
         }
-
-        //.personal-account{
-        //  background-image: url("../images/Vector.svg");
-        //  background-repeat: no-repeat;
-        //  background-position: center;
-        //  transition: 0.3s;
-        //
-        //}
-        //.personal-account:hover{
-        //  background-image: url("../images/Vector-bg.svg");
-        //}
-
       }
     }
 
