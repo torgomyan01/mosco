@@ -799,6 +799,97 @@ footer .container .footer-bottom p {
   transition: 0.3s;
 }
 
+.company-title {
+  margin-top: 15px;
+}
+.company-title h2 {
+  color: #282828;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.company-title div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+.company-title div .icon-arrow-right2 {
+  font-size: 14px;
+  margin: 0 15px;
+}
+.company-title div a {
+  color: #282828;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.company-past .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+.company-past .container .left-image-block {
+  width: 50%;
+  margin: 50px 0 0 0;
+  display: flex;
+}
+.company-past .container .left-image-block h3 {
+  transform: rotate(-90deg);
+  color: #282828;
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 160px 0 0 0;
+}
+.company-past .container .right-text-block {
+  width: 50%;
+  margin-top: 50px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.company-past .container .right-text-block h3 {
+  max-width: 600px;
+  width: 100%;
+  color: #282828;
+  font-size: 26px;
+  font-weight: 700;
+}
+.company-past .container .right-text-block p {
+  max-width: 252px;
+  width: 100%;
+  color: #282828;
+  font-size: 14px;
+  font-weight: 400;
+}
+.company-past .container .bottom-text-block {
+  max-width: 1020px;
+  width: 100%;
+  margin-top: 60px;
+}
+.company-past .container .bottom-text-block p {
+  color: #282828;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 25px;
+}
+.company-past .container .bottom-text-block .background-color-changed {
+  background: linear-gradient(to left, white 50%, black 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: background-position 1s ease-out;
+}
+.company-past .container .bottom-text-block .changed {
+  background-position: left bottom;
+  display: inline-block;
+  color: #fff;
+  padding: 0 10px;
+}
+
 @media (max-width: 1440px) {
   .our-clients .container .right-container .top-bg {
     right: 0;
