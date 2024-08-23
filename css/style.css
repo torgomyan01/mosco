@@ -890,6 +890,63 @@ footer .container .footer-bottom p {
   padding: 0 10px;
 }
 
+.company-present {
+  margin: 150px auto 100px;
+}
+.company-present .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.company-present .container .left-text-block {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding-right: 15px;
+}
+.company-present .container .left-text-block h3 {
+  color: #282828;
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 10px;
+  max-width: 600px;
+  width: 100%;
+}
+.company-present .container .right-image-block {
+  width: 50%;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+.company-present .container .right-image-block p {
+  transform: rotate(-90deg);
+  color: #282828;
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 125px -125px;
+}
+.company-present .container .bottom-text-block {
+  width: 100%;
+  margin-top: 70px;
+  padding: 5px 0 15px 0;
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  border-top: 1px solid #E8E8E8;
+  border-bottom: 1px solid #E8E8E8;
+}
+.company-present .container .bottom-text-block p {
+  max-width: 525px;
+  width: 100%;
+  color: #282828;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
 @media (max-width: 1440px) {
   .our-clients .container .right-container .top-bg {
     right: 0;

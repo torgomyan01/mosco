@@ -944,6 +944,65 @@ footer{
     }
   }
 }
+.company-present{
+  margin: 150px auto 100px;
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+
+    .left-text-block{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      padding-right: 15px;
+      h3{
+        color: #282828;
+        font-size: 26px;
+        font-weight: 700;
+        margin-top: 10px;
+        max-width: 600px;
+        width: 100%;
+      }
+    }
+
+    .right-image-block{
+      width: 50%;
+      display: flex;
+      align-items: end;
+      justify-content: end;
+      p{
+        transform: rotate(-90deg);
+        color: #282828;
+        font-size: 48px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 125px -125px;
+      }
+    }
+
+    .bottom-text-block{
+      width: 100%;
+      margin-top: 70px;
+      padding: 5px 0 15px 0;
+      display: flex;
+      align-items: end;
+      flex-direction: column;
+      border-top: 1px solid #E8E8E8;;
+      border-bottom: 1px solid #E8E8E8;;
+      p{
+        max-width: 525px;
+        width: 100%;
+        color: #282828;
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 10px;
+      }
+    }
+  }
+}
 
 
 @media (max-width: 1440px) {
