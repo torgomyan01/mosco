@@ -52,7 +52,6 @@ titleAnimation.forEach((item) => {
 
 function PrintItemsAnim(array, elem, count = 7) {
 
-  console.log(array)
   if(count === 7){
 
     const reversArray = [];

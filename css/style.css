@@ -199,15 +199,26 @@ nav .nav-right-info {
   align-items: center;
   justify-content: space-between;
 }
-nav .nav-right-info .personal-account a {
-  background-image: url("../images/Vector.svg");
+nav .nav-right-info .personal-account {
   background-repeat: no-repeat;
   background-position: center;
   padding: 0.75rem 1.5625rem 0.75rem 0;
   transition: 0.3s;
+  position: relative;
 }
-nav .nav-right-info .personal-account a:hover {
-  background-image: url("../images/Vector-bg.svg");
+nav .nav-right-info .personal-account svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 0.3s;
+  z-index: -1;
+}
+nav .nav-right-info .personal-account svg * {
+  transition: 2s;
+}
+nav .nav-right-info .personal-account:hover .anim-solid {
+  stroke-dasharray: 982px;
+  stroke-dashoffset: 0;
 }
 nav .nav-right-info a {
   color: #282828;
@@ -639,7 +650,6 @@ footer .container .footer-top .footer-top-right .personal-account {
   background-image: url("../images/Vector.svg");
   background-repeat: no-repeat;
   background-position: center;
-  padding: 0.75rem 1.5625rem 0.75rem 0;
   transition: 0.3s;
 }
 footer .container .footer-top .footer-top-right .personal-account:hover {

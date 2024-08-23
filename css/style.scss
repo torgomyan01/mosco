@@ -201,16 +201,34 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    .personal-account a{
-      background-image: url("../images/Vector.svg");
+    .personal-account{
+      //background-image: url("../images/Vector.svg");
       background-repeat: no-repeat;
       background-position: center;
       padding: 0.75rem 1.5625rem 0.75rem 0;
       transition: 0.3s;
+      position: relative;
+      svg{
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: 0.3s;
+        z-index: -1;
+        *{
+          transition: 2s;
+        }
+      }
+
+      &:hover{
+        .anim-solid{
+          stroke-dasharray: 982px;
+          stroke-dashoffset: 0;
+        }
+      }
     }
-    .personal-account a:hover{
-      background-image: url("../images/Vector-bg.svg");
-    }
+    //.personal-account a:hover{
+    //  background-image: url("../images/Vector-bg.svg");
+    //}
     a{
       color: #282828;
       font-size: 14px;
@@ -668,8 +686,8 @@ footer{
           background-image: url("../images/Vector.svg");
           background-repeat: no-repeat;
           background-position: center;
-          padding: 0.75rem 1.5625rem 0.75rem 0;
           transition: 0.3s;
+
         }
         .personal-account:hover{
           background-image: url("../images/Vector-bg.svg");
