@@ -196,40 +196,13 @@ nav{
   justify-content: space-between;
   padding: 1.6rem 0;
   position: relative;
+  z-index: 100;
   .nav-right-info{
     max-width: 24.25rem;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    .personal-account{
-      //background-image: url("../images/Vector.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      padding: 0.75rem 1.5625rem 0.75rem 0;
-      transition: 0.3s;
-      position: relative;
-      svg{
-        position: absolute;
-        left: 0;
-        top: 0;
-        transition: 0.3s;
-        z-index: -1;
-        *{
-          transition: 2s;
-        }
-      }
-
-      &:hover{
-        .anim-solid{
-          stroke-dasharray: 982px;
-          stroke-dashoffset: 0;
-        }
-      }
-    }
-    //.personal-account a:hover{
-    //  background-image: url("../images/Vector-bg.svg");
-    //}
     a{
       color: #282828;
       font-size: 14px;
@@ -252,6 +225,9 @@ nav{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    img{
+      transition: 0.3s;
+    }
   }
   .nav-left-info{
     width: 40px;
@@ -282,6 +258,35 @@ nav{
       }
     }
 
+  }
+}
+
+.personal-account{
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0.75rem 1.5625rem 0.75rem 0;
+  transition: 0.3s;
+  position: relative;
+  svg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+    z-index: -1;
+    *{
+      transition: 2s;
+    }
+  }
+
+  &:hover{
+    .anim-solid{
+      stroke-dasharray: 982px;
+      stroke-dashoffset: 0;
+    }
+  }
+
+  a{
+    color: #282828;
   }
 }
 
@@ -689,17 +694,6 @@ footer{
           }
         }
 
-        .personal-account{
-          background-image: url("../images/Vector.svg");
-          background-repeat: no-repeat;
-          background-position: center;
-          transition: 0.3s;
-
-        }
-        .personal-account:hover{
-          background-image: url("../images/Vector-bg.svg");
-        }
-
       }
     }
 
@@ -755,15 +749,25 @@ footer{
   }
 
   &-title{
-    margin-bottom: 0.625rem;
+    color: #282828;
+    font-family: "RF Dewi";
+    font-size: 34px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.25rem;
   }
 
   &-column{
     opacity: 0;
     transform: translateX(-50px);
-    margin: 0 70px;
-    a {
-      color: black;
+
+    @include col(4, 0px);
+    margin-right: 4.375rem;
+    &:nth-of-type(2){
+      @include col(2, 0px);
+    }
+    &:last-child{
+      margin-right: 0;
     }
     &:not(.show) {
       transition: opacity 0.15s ease, transform 0.15s ease;
@@ -777,6 +781,69 @@ footer{
       list-style: none;
       li{
         margin-bottom: 3px;
+        padding: 10px 12px;
+        position: relative;
+        &:after{
+          content: '';
+          width: 0;
+          height: 1px;
+          background: #666;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          transition: 0.3s;
+        }
+
+        &:hover{
+          &:after{
+            width: 100%;
+          }
+          a{
+            &:before{
+              width: 5px;
+              min-width: 5px;
+              margin-right: 6px;
+              opacity: 1;
+            }
+            &:after{
+              opacity: 1;
+            }
+          }
+        }
+        a{
+          color: #282828;
+          font-size: 13px;
+          font-weight: 400;
+          display: flex;
+          justify-content: start;
+          align-items: center;
+          position: relative;
+          width: 100%;
+          &:before{
+            content: '';
+            display: block;
+            width: 0;
+            min-width: 0;
+            height: 5px;
+            border-radius: 50%;
+            background: #282828;
+            margin-right: 0;
+            transition: 0.3s;
+            opacity: 0;
+          }
+          &:after{
+            content: "";
+            width: 40px;
+            height: 40px;
+            background: url(../images/icons/icon-open-link.svg) no-repeat center;
+            background-size: 13px;
+            position: absolute;
+            right: 0;
+            top: -11px;
+            opacity: 0;
+            transition: 0.3s;
+          }
+        }
       }
     }
   }

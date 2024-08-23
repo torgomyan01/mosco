@@ -15,12 +15,12 @@ const {
 AOS.init();
 
 
-function BodyOverflow(status){
-    if(status){
-        document.body.style.overflow = 'hidden';
-    } else {
-        document.body.style.overflow = 'auto';
-    }
+function BodyOverflow(status) {
+  if (status) {
+    document.body.style.overflow = 'hidden';
+  } else {
+    document.body.style.overflow = 'auto';
+  }
 }
 
 function $(className) {
@@ -52,12 +52,12 @@ titleAnimation.forEach((item) => {
 
 function PrintItemsAnim(array, elem, count = 7) {
 
-  if(count === 7){
+  if (count === 7) {
 
     const reversArray = [];
 
-    const newArr = Array.from({length: 7}).map((letter, i) =>  {
-      if(array[i]){
+    const newArr = Array.from({length: 7}).map((letter, i) => {
+      if (array[i]) {
         return array[i];
       } else {
         reversArray.push('')
@@ -71,8 +71,8 @@ function PrintItemsAnim(array, elem, count = 7) {
 
     elem.innerHTML = '';
     reversArray.forEach((i) => {
-        const span = `<span style="--letter: '${i}'"></span>`
-        elem.insertAdjacentHTML('beforeend', span)
+      const span = `<span style="--letter: '${i}'"></span>`
+      elem.insertAdjacentHTML('beforeend', span)
     })
   } else {
     array.forEach((letter) => {
@@ -105,6 +105,7 @@ icons.forEach((icon, index) => {
 paper.install(window);
 
 const canvasMenu = $elem('#CanvasMenu');
+const siteNavLogo = $elem('#site-nav-logo');
 
 window.onload = function () {
   paper.setup('CanvasMenu');
@@ -116,8 +117,8 @@ window.onload = function () {
   let animatedButton;
 
   let bg_points = 8;
-  let bg_color = '#dbdee9';
-  let strokeColor = '#354787';
+  let bg_color = '#E8E8E8';
+  let strokeColor = '#8f8d8d';
   let strokeWidth = 1;
   let burgerHoverColor = '#354787';
 
@@ -148,7 +149,6 @@ window.onload = function () {
     // замедление среднее ^3
     easeOutCubic(t) {
       return 1 - Math.pow(1 - t, 3);
-      ;
     }
 
     // замедление быстрое ^5
@@ -448,9 +448,11 @@ window.onload = function () {
     clearTimeout(menuTimeout);
     menu.classList.add(show);
 
-      canvasMenu.style.zIndex = '2';
-      burgerIcon.classList.add(show);
-      BodyOverflow(true);
+    canvasMenu.style.zIndex = '2';
+    burgerIcon.classList.add(show);
+    BodyOverflow(true);
+    siteNavLogo.setAttribute('src', `images/mosco-black.svg`);
+
     Array.from(menuColumns).forEach((column, index) => {
       setTimeout(() => {
         column.classList.add(show);
@@ -459,9 +461,10 @@ window.onload = function () {
   }
 
   function resetMenuColumns() {
-      canvasMenu.style.zIndex = '-1';
-      burgerIcon.classList.remove(show);
-      BodyOverflow(false);
+    canvasMenu.style.zIndex = '-1';
+    burgerIcon.classList.remove(show);
+    BodyOverflow(false);
+    siteNavLogo.setAttribute('src', `images/mosco.svg`);
     Array.from(menuColumns).forEach(column => {
       column.classList.remove('show');
 
