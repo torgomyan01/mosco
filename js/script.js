@@ -546,9 +546,48 @@ window.onload = function () {
   }
 }
 
-// ************** chjnjel sa petqa mez **************
+function isElementInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
 
-// window.addEventListener('load', function() {
-//   const element = document.querySelector('.background-color-changed');
-//   element.classList.add('changed');
-// });
+function myFunction(targetElement) {
+  targetElement.classList.add('changed');
+}
+
+window.addEventListener('scroll', function() {
+  const targetElement = document.querySelector('.background-color-changed-bottom');
+
+  if (isElementInViewport(targetElement)) {
+    myFunction(targetElement);
+    window.removeEventListener('scroll', arguments.callee);
+  }
+});
+
+function checkElement(el) {
+  const rect = el.getBoundingClientRect();
+  return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+function myFunctionTop(targetElement) {
+  targetElement.classList.add('changed');
+}
+
+window.addEventListener('scroll', function() {
+  const targetElement = document.querySelector('.background-color-changed');
+
+  if (checkElement(targetElement)) {
+    myFunctionTop(targetElement);
+    window.removeEventListener('scroll', arguments.callee);
+  }
+});

@@ -571,6 +571,7 @@ nav{
         font-size: 3rem;
         font-weight: 700;
         text-transform: uppercase;
+        font-family: 'RF Dewi', sans-serif;
       }
     }
   }
@@ -652,6 +653,7 @@ footer{
 
 
         .footer-top-right-bgText{
+          font-family: 'RF Dewi', sans-serif;
           color: #282828;
           font-size: 24px;
           font-weight: 700;
@@ -761,7 +763,7 @@ footer{
 
   &-title{
     color: #282828;
-    font-family: "RF Dewi";
+    font-family: "RF Dewi", sans-serif;;
     font-size: 34px;
     font-weight: 700;
     text-transform: uppercase;
@@ -863,9 +865,10 @@ footer{
 }
 
 .company-title{
-  margin-top: 15px;
+  margin-top: 25px;
   h2{
     color: #282828;
+    font-family: 'RF Dewi', sans-serif;
     text-align: center;
     font-size: 48px;
     font-weight: 700;
@@ -875,7 +878,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 15px;
+    margin-top: 10px;
     .icon-arrow-right2{
       font-size: 14px;
       margin: 0 15px;
@@ -885,6 +888,22 @@ footer{
       font-size: 14px;
       font-weight: 400;
     }
+  }
+}
+
+.company-past-top{
+  position: relative;
+  .left-svg-icon{
+    position: absolute;
+    bottom: 100px;
+  }
+}
+
+.company-past-bottom{
+  position: relative;
+  .bottom-left-routing-icon{
+    position: absolute;
+    bottom: 95px;
   }
 }
 
@@ -906,6 +925,10 @@ footer{
         font-weight: 700;
         text-transform: uppercase;
         margin: 160px 0 0 0;
+        font-family: 'RF Dewi', sans-serif;
+      }
+      .company-past-top-left-simple-Img{
+        width: 100%;
       }
     }
 
@@ -922,6 +945,24 @@ footer{
         color: #282828;
         font-size: 26px;
         font-weight: 700;
+        line-height: 35px;
+        font-family: 'RF Dewi', sans-serif;
+        .years-svg{
+          position: relative;
+          svg{
+            position: absolute;
+            top: -30px;
+            left: -15px;
+          }
+        }
+        .service{
+          position: relative;
+          svg{
+            position: absolute;
+            left: -13px;
+            top: -30px;
+          }
+        }
       }
       p{
         max-width: 252px;
@@ -955,8 +996,26 @@ footer{
         padding: 0 10px;
       }
     }
+
+    .bottom-block{
+      width: 100%;
+      margin-top: 60px;
+      h3{
+        font-family: 'RF Dewi', sans-serif;
+        max-width: 510px;
+        width: 100%;
+        margin: auto;
+        padding: 6px 16px;
+        background: #282828;
+        color: #FFF;
+        font-weight: 700;
+        font-size: 44px;
+        text-transform: uppercase;
+      }
+    }
   }
 }
+
 .company-present{
   margin: 150px auto 100px;
   .container{
@@ -971,6 +1030,7 @@ footer{
       flex-direction: column;
       justify-content: end;
       padding-right: 15px;
+      position: relative;
       h3{
         color: #282828;
         font-size: 26px;
@@ -978,6 +1038,14 @@ footer{
         margin-top: 10px;
         max-width: 600px;
         width: 100%;
+        font-family: 'RF Dewi', sans-serif;
+      }
+      .left-block-img{
+        position: absolute;
+        opacity: 0.1;
+        z-index: -1;
+        left: -135px;
+        bottom: 78px;
       }
     }
 
@@ -986,6 +1054,7 @@ footer{
       display: flex;
       align-items: end;
       justify-content: end;
+      position: relative;
       p{
         transform: rotate(-90deg);
         color: #282828;
@@ -993,6 +1062,18 @@ footer{
         font-weight: 700;
         text-transform: uppercase;
         margin: 125px -125px;
+        font-family: 'RF Dewi', sans-serif;
+      }
+      .right-block-img{
+        position: absolute;
+        top: -240px;
+        right: -50px;
+        z-index: -1;
+      }
+      .right-block-circle-img{
+        position: absolute;
+        right: -135px;
+        bottom: -145px;
       }
     }
 
@@ -1005,6 +1086,7 @@ footer{
       flex-direction: column;
       border-top: 1px solid #E8E8E8;;
       border-bottom: 1px solid #E8E8E8;;
+      position: relative;
       p{
         max-width: 525px;
         width: 100%;
@@ -1013,369 +1095,153 @@ footer{
         font-weight: 500;
         margin-top: 10px;
       }
-    }
-  }
-}
-
-
-@media (max-width: 1440px) {
-  .our-clients{
-    .container{
-      .right-container{
-        .top-bg{
-          right: 0;
-        }
+      .bottom-block-img{
+        position: absolute;
+        z-index: -1;
+        top: -70px;
+        right: 30px;
       }
     }
   }
 }
 
-@media (max-width: 1200px) {
-  .cooperation-section {
-    .container{
-      padding: 40px 20px;
-      .text-section{
-        max-width: 565px;
-        h3 {
-          font-size: 2.5rem;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 1024px) {
-
-  nav{
-    .nav-right-info{
-      max-width: 115px;
-      .nav-right-info-text{
-        display: none;
-      }
-      .personal-account{
-        margin-left: 20px;
-        svg {
-          left: -14px;
-          top: -4px;
-        }
-      }
-      svg {
-        background: url('../images/person-icon-mobile.svg') !important;
-        background-repeat: no-repeat !important;
-        background-size: contain !important;
-      }
-    }
-    .nav-left-info{
-      max-width: 115px;
-    }
-  }
-
-  .how-working{
-    .how-working-body{
-      flex-wrap: wrap;
-      justify-content: center;
-      .how-working-title{
-        font-size: 28px;
-      }
-      .seeMore{
-        margin-bottom: 50px;
-        .airplane-animation{
-          display: none;
-        }
-      }
-    }
-  }
-
-  .our-clients{
-    .container{
-      .right-container {
-        justify-content: start;
-        img{
-        }
-      }
-      .left-container{
-        justify-content: center;
-        .left-content{
-          max-width: fit-content;
-          padding-right: 20px;
-          .content-item{
-            padding: 12px 10px;
-            span{
-              font-size: 18px;
-            }
-          }
-        }
-      }
-    }
-  }
-
-
-  .cooperation-section{
-    .container{
-      .text-section{
-        max-width: 405px;
-        h3 {
-          font-size: 2rem;
-        }
-      }
-    }
-  }
-
-  footer{
-    .container{
-      .footer-top{
-        justify-content: space-around;
-        .footer-top-left{
-          div{
-            a{
-              margin: 0 5px;
-            }
-          }
-        }
-        .footer-top-right{
-          align-items: center;
-          .footer-top-right-top{
-            margin-bottom: 50px;
-            .footer-top-right-text{
-              text-align: center;
-            }
-          }
-          .footer-top-right-bgText{
-            margin: 35px 0;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 768px) {
-
-  .menu{
-    margin-top: 6.5rem;
-    .container{
-      flex-wrap: wrap;
-      .menu-title{
-        font-size: 18px;
-        margin: 15px 0 10px;
-      }
-      .menu-column {
-        width: 47%;
-        margin: 0 10px 0 0;
-        ul{
-          li{
-            padding: 4px 12px;
-          }
-        }
-      }
-    }
-  }
-
-  nav{
-    .nav-right-info{
-      max-width: 90px;
-      .language{
-        display: none;
-      }
-    }
-    .nav-left-info{
-      max-width: 90px;
-    }
-  }
-
-  header{
-    .header-images:first-child{
-      display: block;
-      width: 100%;
-    }
-    .header-images{
-      display: none;
-      img{
-        display: none;
-      }
-    }
-    .header-animation{
-      display: none;
-    }
-  }
-
-  .how-working{
-    .how-working-body{
-      .how-working-title{
-        width: 100%;
-      }
-      .seeMore{
-        margin: 40px 0 50px;
-        .btn-see-more{
-          margin: auto;
-        }
-      }
-      .how-working-data{
-        font-size: 14px;
-        span{
-          font-size: 30px;
-        }
-      }
-      .how-working-day{
-        font-size: 13px;
-      }
-    }
-  }
-
-  .our-clients {
-    .container {
-      flex-direction: column;
-      .left-container {
-        .left-content {
-          h3{
-            margin: 70px 0 30px;
-            img{
-              display: none;
-            }
-          }
-          .content-item {
-            .icon-Frame-394{
-              font-size: 32px;
-            }
-            .icon-Frame-393{
-              font-size: 32px;
-            }
-            span {
-              font-size: 13px;
-              font-weight: 400;
-            }
-          }
-        }
-      }
-      .right-container{
-        justify-content: center;
-        img{
-          margin: 0 0 50px;
-        }
-        .top-bg {
-          display: none;
-        }
-        .bottom-bg{
-          left: 15px;
-          bottom: 0;
-          top: -165px;
-          z-index: -1;
-        }
-      }
-    }
-  }
-
-  .logos-section {
-    margin-top: 65px;
-    background-image: url("../images/logos-section-bg-mobil.webp");
-  }
-  .logos-section .container {
-    flex-direction: column;
-  }
-  .logos-section .container .line {
-    width: 220px;
-    height: 1px;
-  }
-  .logos-section .container img{
-    max-width: 110px;
-    width: 100%;
-    margin: 10px 0;
-  }
-
-  .cooperation-section{
-    margin: 75px 0;
-    .container {
+.company-recommendation{
+  background-image: url("../images/company/recommendation-bg.webp");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 60px 0;
+  margin-top: 120px;
+  .container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .container-item{
+      width: 25%;
+      height: 250px;
       padding: 20px;
-      flex-direction: column-reverse;
-      background-image: url("../images/cooperation-mobile.webp");
-      .text-section{
-        h3 {
-          font-size: 20px;
+      border: 1px solid rgba(232, 232, 232, 0.2);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      h3{
+        color: #FFF;
+        font-weight: 700;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-family: 'RF Dewi', sans-serif;
+      }
+      p{
+        color: #FFF;
+        font-size: 14px;
+        line-height: 16px;
+      }
+      a{
+        width: 24px;
+        height: 24px;
+        transform: rotate(-45deg);
+        color: #214788;
+        i{
+          font-size: 24px;
         }
       }
     }
-  }
-
-
-  .cooperation-section {
-    .container {
-      .from-section {
-        justify-content: center;
-      }
+    .container-item:nth-child(1){
+      border: none;
+      background-image: url("../images/company/company-recommendation-top.webp");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .container-item:nth-child(2){
+      border: none;
+    }
+    .container-item:nth-child(5){
+      border-left: 1px solid rgba(232, 232, 232, 0.2);
+      border-top: none;
+      border-bottom: none;
+      border-right: none;
+    }
+    .container-item:nth-child(8){
+      border: none;
+    }
+    .container-item:nth-child(9){
+      border-left: 1px solid rgba(232, 232, 232, 0.2);
+      border-top: none;
+      border-bottom: none;
+      border-right: none;
+    }
+    .container-item:nth-child(10){
+      border: none;
+    }
+    .container-item:nth-child(11){
+      border: none;
+      background-image: url("../images/company/company-recommendation-bottom.webp");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
     }
   }
+}
 
-  footer{
-    .container{
-      .footer-top{
-        .footer-top-left{
-          div{
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            a{
-              margin: 5px;
-            }
-          }
+.find-more{
+  margin-top: 60px;
+  .container{
+    .top-section{
+      margin-bottom: 60px;
+      p{
+        max-width: 920px;
+        color: #282828;
+        font-size: 14px;
+        line-height: 20px;
+      }
+      .background-color-changed-bottom{
+        background: linear-gradient(to left, white 50%, black 50%);
+        background-size: 200% 100%;
+        background-position: right bottom;
+        transition: background-position 1s ease-out;
+      }
+      .changed{
+        background-position: left bottom;
+        display: inline-block;
+        color: #fff;
+        padding: 3px 10px;
+      }
+      .btn-see-more{
+        margin-top: 40px;
+      }
+    }
+    .bottom-section{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      p{
+        color: #6C6C6C;
+        font-size: 13px;
+        margin-bottom: 5px;
+      }
+      a{
+        margin-top: 10px;
+        color: #282828;
+        display: flex;
+        align-items: center;
+        i{
+          color: #282828;
+          margin-left: 10px;
+          margin-top: 5px;
         }
       }
     }
   }
 }
 
-@media (max-width: 767px){
-  .we-care{
-    .container{
-      flex-wrap: wrap;
-      .we-care-item {
-        max-width: 100%;
-        margin: 40px 0 0 0;
-        h3{
-          max-width: 100%;
-        }
-      }
-    }
-  }
-}
 
-@media (max-width: 425px) {
 
-  .menu{
-    .container{
-      .menu-column {
-        width: 100%;
 
-        ul{
-          li{
-            padding: 3px 12px;
-            margin-bottom: 0;
-          }
-        }
-      }
-    }
-  }
 
-  .we-care .container .we-care-item {
-    max-width: 100%;
-  }
 
-  footer{
-    .container{
-      .footer-top{
-        .footer-top-left{
-          .last-block{
-            button{
-              width: 100%;
-              margin: 10px 5px 0;
-            }
-          }
-        }
-        .footer-top-right{
-          margin: 20px 0;
-          .footer-top-right-bgText{
-            margin: 20px 0;
-          }
-        }
-      }
-    }
-  }
-}
+
+
+
