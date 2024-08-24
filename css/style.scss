@@ -215,6 +215,7 @@ nav{
       .icon-phone{
         font-size: 1rem;
         margin-right: 0.3125rem;
+        color: #214788;
       }
     }
     .language{
@@ -436,7 +437,7 @@ nav{
       img{
         max-width: 470px;
         width: 100%;
-        margin: 2.8125rem 0 0 10px;
+        margin: 45px 0 0;
         z-index: 1;
       }
       .bottom-bg{
@@ -470,6 +471,7 @@ nav{
         color: #282828;
         font-size: 18px;
         font-weight: 600;
+        max-width: 160px;
       }
       p{
         color: #6C6C6C;
@@ -1030,8 +1032,11 @@ footer{
   .cooperation-section {
     .container{
       padding: 40px 20px;
-      .text-section h3 {
-        font-size: 2.5rem;
+      .text-section{
+        max-width: 565px;
+        h3 {
+          font-size: 2.5rem;
+        }
       }
     }
   }
@@ -1048,12 +1053,14 @@ footer{
       .personal-account{
         margin-left: 20px;
         svg {
-          left: -15px;
-          top: -7px;
+          left: -14px;
+          top: -4px;
         }
       }
       svg {
         background: url('../images/person-icon-mobile.svg') !important;
+        background-repeat: no-repeat !important;
+        background-size: contain !important;
       }
     }
     .nav-left-info{
@@ -1079,17 +1086,22 @@ footer{
 
   .our-clients{
     .container{
-      flex-direction: column;
       .right-container {
-        justify-content: center;
+        justify-content: start;
         img{
-          margin: 0 0 50px;
         }
       }
       .left-container{
         justify-content: center;
         .left-content{
           max-width: fit-content;
+          padding-right: 20px;
+          .content-item{
+            padding: 12px 10px;
+            span{
+              font-size: 18px;
+            }
+          }
         }
       }
     }
@@ -1099,6 +1111,7 @@ footer{
   .cooperation-section{
     .container{
       .text-section{
+        max-width: 405px;
         h3 {
           font-size: 2rem;
         }
@@ -1142,14 +1155,14 @@ footer{
       flex-wrap: wrap;
       .menu-title{
         font-size: 18px;
-        margin: 10px 0;
+        margin: 15px 0 10px;
       }
       .menu-column {
         width: 47%;
         margin: 0 10px 0 0;
         ul{
           li{
-            padding: 5px 12px;
+            padding: 4px 12px;
           }
         }
       }
@@ -1190,14 +1203,18 @@ footer{
         width: 100%;
       }
       .seeMore{
+        margin: 40px 0 50px;
         .btn-see-more{
           margin: auto;
         }
       }
       .how-working-data{
         font-size: 14px;
+        span{
+          font-size: 30px;
+        }
       }
-      .how-working-data{
+      .how-working-day{
         font-size: 13px;
       }
     }
@@ -1205,36 +1222,45 @@ footer{
 
   .our-clients {
     .container {
+      flex-direction: column;
       .left-container {
         .left-content {
           h3{
+            margin: 70px 0 30px;
             img{
               display: none;
             }
           }
           .content-item {
+            .icon-Frame-394{
+              font-size: 32px;
+            }
+            .icon-Frame-393{
+              font-size: 32px;
+            }
             span {
-              font-size: 18px;
+              font-size: 13px;
               font-weight: 400;
             }
           }
         }
       }
       .right-container{
+        justify-content: center;
+        img{
+          margin: 0 0 50px;
+        }
         .top-bg {
           display: none;
         }
         .bottom-bg{
           left: 15px;
+          bottom: 0;
+          top: -165px;
+          z-index: -1;
         }
       }
     }
-  }
-  .we-care .container{
-    flex-wrap: wrap;
-  }
-  .we-care .container .we-care-item {
-    margin: 40px 0 0 0;
   }
 
   .logos-section {
@@ -1257,6 +1283,7 @@ footer{
   .cooperation-section{
     margin: 75px 0;
     .container {
+      padding: 20px;
       flex-direction: column-reverse;
       background-image: url("../images/cooperation-mobile.webp");
       .text-section{
@@ -1266,6 +1293,7 @@ footer{
       }
     }
   }
+
 
   .cooperation-section {
     .container {
@@ -1281,6 +1309,7 @@ footer{
         .footer-top-left{
           div{
             flex-wrap: wrap;
+            justify-content: flex-start;
             a{
               margin: 5px;
             }
@@ -1290,6 +1319,22 @@ footer{
     }
   }
 }
+
+@media (max-width: 767px){
+  .we-care{
+    .container{
+      flex-wrap: wrap;
+      .we-care-item {
+        max-width: 100%;
+        margin: 40px 0 0 0;
+        h3{
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 425px) {
 
   .menu{

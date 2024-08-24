@@ -213,6 +213,7 @@ nav .nav-right-info a .icon-person {
 nav .nav-right-info a .icon-phone {
   font-size: 1rem;
   margin-right: 0.3125rem;
+  color: #214788;
 }
 nav .nav-right-info .language {
   text-decoration: underline;
@@ -421,7 +422,7 @@ nav .nav-left-info .nav-menu-button-icon.show svg path:nth-of-type(3) {
 .our-clients .container .right-container img {
   max-width: 470px;
   width: 100%;
-  margin: 2.8125rem 0 0 10px;
+  margin: 45px 0 0;
   z-index: 1;
 }
 .our-clients .container .right-container .bottom-bg {
@@ -453,6 +454,7 @@ nav .nav-left-info .nav-menu-button-icon.show svg path:nth-of-type(3) {
   color: #282828;
   font-size: 18px;
   font-weight: 600;
+  max-width: 160px;
 }
 .we-care .container .we-care-item p {
   color: #6C6C6C;
@@ -966,6 +968,9 @@ footer .container .footer-bottom p {
   .cooperation-section .container {
     padding: 40px 20px;
   }
+  .cooperation-section .container .text-section {
+    max-width: 565px;
+  }
   .cooperation-section .container .text-section h3 {
     font-size: 2.5rem;
   }
@@ -981,11 +986,13 @@ footer .container .footer-bottom p {
     margin-left: 20px;
   }
   nav .nav-right-info .personal-account svg {
-    left: -15px;
-    top: -7px;
+    left: -14px;
+    top: -4px;
   }
   nav .nav-right-info svg {
     background: url("../images/person-icon-mobile.svg") !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
   }
   nav .nav-left-info {
     max-width: 115px;
@@ -1003,20 +1010,24 @@ footer .container .footer-bottom p {
   .how-working .how-working-body .seeMore .airplane-animation {
     display: none;
   }
-  .our-clients .container {
-    flex-direction: column;
-  }
   .our-clients .container .right-container {
-    justify-content: center;
-  }
-  .our-clients .container .right-container img {
-    margin: 0 0 50px;
+    justify-content: start;
   }
   .our-clients .container .left-container {
     justify-content: center;
   }
   .our-clients .container .left-container .left-content {
     max-width: fit-content;
+    padding-right: 20px;
+  }
+  .our-clients .container .left-container .left-content .content-item {
+    padding: 12px 10px;
+  }
+  .our-clients .container .left-container .left-content .content-item span {
+    font-size: 18px;
+  }
+  .cooperation-section .container .text-section {
+    max-width: 405px;
   }
   .cooperation-section .container .text-section h3 {
     font-size: 2rem;
@@ -1049,14 +1060,14 @@ footer .container .footer-bottom p {
   }
   .menu .container .menu-title {
     font-size: 18px;
-    margin: 10px 0;
+    margin: 15px 0 10px;
   }
   .menu .container .menu-column {
     width: 47%;
     margin: 0 10px 0 0;
   }
   .menu .container .menu-column ul li {
-    padding: 5px 12px;
+    padding: 4px 12px;
   }
   nav .nav-right-info {
     max-width: 90px;
@@ -1083,33 +1094,54 @@ footer .container .footer-bottom p {
   .how-working .how-working-body .how-working-title {
     width: 100%;
   }
+  .how-working .how-working-body .seeMore {
+    margin: 40px 0 50px;
+  }
   .how-working .how-working-body .seeMore .btn-see-more {
     margin: auto;
   }
   .how-working .how-working-body .how-working-data {
     font-size: 14px;
   }
-  .how-working .how-working-body .how-working-data {
+  .how-working .how-working-body .how-working-data span {
+    font-size: 30px;
+  }
+  .how-working .how-working-body .how-working-day {
     font-size: 13px;
+  }
+  .our-clients .container {
+    flex-direction: column;
+  }
+  .our-clients .container .left-container .left-content h3 {
+    margin: 70px 0 30px;
   }
   .our-clients .container .left-container .left-content h3 img {
     display: none;
   }
+  .our-clients .container .left-container .left-content .content-item .icon-Frame-394 {
+    font-size: 32px;
+  }
+  .our-clients .container .left-container .left-content .content-item .icon-Frame-393 {
+    font-size: 32px;
+  }
   .our-clients .container .left-container .left-content .content-item span {
-    font-size: 18px;
+    font-size: 13px;
     font-weight: 400;
+  }
+  .our-clients .container .right-container {
+    justify-content: center;
+  }
+  .our-clients .container .right-container img {
+    margin: 0 0 50px;
   }
   .our-clients .container .right-container .top-bg {
     display: none;
   }
   .our-clients .container .right-container .bottom-bg {
     left: 15px;
-  }
-  .we-care .container {
-    flex-wrap: wrap;
-  }
-  .we-care .container .we-care-item {
-    margin: 40px 0 0 0;
+    bottom: 0;
+    top: -165px;
+    z-index: -1;
   }
   .logos-section {
     margin-top: 65px;
@@ -1131,6 +1163,7 @@ footer .container .footer-bottom p {
     margin: 75px 0;
   }
   .cooperation-section .container {
+    padding: 20px;
     flex-direction: column-reverse;
     background-image: url("../images/cooperation-mobile.webp");
   }
@@ -1142,9 +1175,22 @@ footer .container .footer-bottom p {
   }
   footer .container .footer-top .footer-top-left div {
     flex-wrap: wrap;
+    justify-content: flex-start;
   }
   footer .container .footer-top .footer-top-left div a {
     margin: 5px;
+  }
+}
+@media (max-width: 767px) {
+  .we-care .container {
+    flex-wrap: wrap;
+  }
+  .we-care .container .we-care-item {
+    max-width: 100%;
+    margin: 40px 0 0 0;
+  }
+  .we-care .container .we-care-item h3 {
+    max-width: 100%;
   }
 }
 @media (max-width: 425px) {
