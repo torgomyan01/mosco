@@ -69,7 +69,7 @@ titleAnimation.forEach((item) => {
     PrintItemsAnim(strArray, item);
 
     if (index === arr.length - 1) {
-      index = 0
+      index = -1;
     }
   }, 6000)
 })
