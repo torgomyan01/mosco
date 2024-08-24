@@ -110,6 +110,7 @@ button {
   background-position: center center;
   background-size: cover;
   width: calc(8.3333333333% * 5 - 0px);
+  filter: contrast(1.2) saturate(0.5) grayscale(0);
 }
 .header-images:after {
   content: "";
@@ -124,11 +125,14 @@ button {
   background-position: -40% 0;
 }
 .header-images img {
-  opacity: 0.3;
+  opacity: 0.2;
   position: absolute;
   left: 0;
   transform: translateY(-50%);
   transition: opacity 0.7s;
+}
+.header-images:hover {
+  filter: unset;
 }
 .header-images:hover img {
   opacity: 0;

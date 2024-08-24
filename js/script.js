@@ -12,7 +12,9 @@ const {
   show: 'show'
 }
 
-AOS.init();
+AOS.init({
+  once: true
+});
 
 function updateSVGImages() {
   const svgElement = document.querySelector('.personal-account-background');

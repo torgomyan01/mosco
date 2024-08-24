@@ -113,6 +113,7 @@ button{
     position: relative;
     @include bg;
     @include col(5, 0px);
+    filter: contrast(1.2) saturate(0.5) grayscale(0);
     &:after{
       content: "";
       position: absolute;
@@ -126,7 +127,7 @@ button{
       background-position: -40% 0;
     }
     img{
-      opacity: 0.3;
+      opacity: 0.2;
       position: absolute;
       left: 0;
       transform: translateY(-50%);
@@ -134,6 +135,7 @@ button{
     }
 
     &:hover{
+      filter: unset;
       img{
         opacity: 0;
       }
