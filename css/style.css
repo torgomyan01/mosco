@@ -298,6 +298,11 @@ nav .nav-left-info .nav-menu-button-icon.show svg path:nth-of-type(3) {
   bottom: -9px;
   margin-right: 5px;
 }
+@media (max-width: 768px) {
+  .how-working-data span {
+    bottom: -6px;
+  }
+}
 .how-working-day {
   color: #282828;
   text-align: right;
@@ -350,6 +355,9 @@ nav .nav-left-info .nav-menu-button-icon.show svg path:nth-of-type(3) {
 }
 .our-clients {
   margin-top: 10px;
+}
+.our-clients-content {
+  box-shadow: 4px 4px 67.7px 25px rgba(146, 146, 146, 0.25);
 }
 .our-clients .container {
   display: flex;
@@ -570,6 +578,11 @@ footer .container .footer-top .footer-top-left {
   width: 100%;
   margin-right: 15px;
 }
+@media (max-width: 767px) {
+  footer .container .footer-top .footer-top-left {
+    margin-right: 0;
+  }
+}
 footer .container .footer-top .footer-top-left div {
   display: flex;
   align-items: center;
@@ -673,7 +686,7 @@ footer .container .footer-bottom p {
   position: relative;
 }
 .personal-account a {
-  color: #282828;
+  color: #282828 !important;
   font-size: 14px;
 }
 .personal-account svg {
@@ -1024,6 +1037,13 @@ footer .container .footer-bottom p {
     max-width: fit-content;
     padding-right: 20px;
   }
+}
+@media (max-width: 1024px) and (max-width: 767px) {
+  .our-clients .container .left-container .left-content {
+    padding-right: 0;
+  }
+}
+@media (max-width: 1024px) {
   .our-clients .container .left-container .left-content .content-item {
     padding: 12px 10px;
   }

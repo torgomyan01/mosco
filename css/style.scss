@@ -305,6 +305,10 @@ nav{
       position: relative;
       bottom: -9px;
       margin-right: 5px;
+
+      @media (max-width: 768px){
+        bottom: -6px;
+      }
     }
   }
   &-day{
@@ -366,6 +370,9 @@ nav{
 
 .our-clients{
   margin-top: 10px;
+  &-content{
+    box-shadow: 4px 4px 67.7px 25px rgba(146, 146, 146, 0.25);
+  }
   .container{
     display: flex;
     align-items: flex-start;
@@ -590,6 +597,9 @@ footer{
         max-width: 720px;
         width: 100%;
         margin-right: 15px;
+        @media (max-width: 767px){
+          margin-right: 0;
+        }
         div{
           display: flex;
           align-items: center;
@@ -704,7 +714,7 @@ footer{
   transition: 0.3s;
   position: relative;
   a{
-    color: #282828;
+    color: #282828 !important;
     font-size: 14px;
   }
   svg{
@@ -1098,6 +1108,10 @@ footer{
         .left-content{
           max-width: fit-content;
           padding-right: 20px;
+
+          @media (max-width: 767px){
+            padding-right: 0;
+          }
           .content-item{
             padding: 12px 10px;
             span{
