@@ -711,16 +711,16 @@ footer{
     position: absolute;
     left: 0;
     top: 0;
-    transition: 0.3s;
+    transition: 0.8s;
     z-index: -1;
     *{
-      transition: 2s;
+      transition: 0.8s;
     }
   }
 
   &:hover{
     .anim-solid{
-      stroke-dasharray: 982px;
+      stroke-dasharray: 282px;
       stroke-dashoffset: 0;
     }
   }

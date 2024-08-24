@@ -680,14 +680,14 @@ footer .container .footer-bottom p {
   position: absolute;
   left: 0;
   top: 0;
-  transition: 0.3s;
+  transition: 0.8s;
   z-index: -1;
 }
 .personal-account svg * {
-  transition: 2s;
+  transition: 0.8s;
 }
 .personal-account:hover .anim-solid {
-  stroke-dasharray: 982px;
+  stroke-dasharray: 282px;
   stroke-dashoffset: 0;
 }
 
