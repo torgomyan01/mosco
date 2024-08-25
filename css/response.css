@@ -39,7 +39,6 @@
   }
   .company-past .bottom-left-routing-icon {
     position: absolute;
-    bottom: 95px;
     max-width: 375px;
   }
   .company-present .container .left-text-block h3 {
@@ -405,7 +404,7 @@
     position: absolute;
     bottom: 0;
     max-width: 300px;
-    top: 150px;
+    top: 75px;
     left: -65px;
     transform: rotate(-45deg);
   }

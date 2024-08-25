@@ -895,7 +895,7 @@ footer{
     }
     a{
       color: #282828;
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 400;
     }
   }
@@ -903,9 +903,13 @@ footer{
 
 .company-past-top{
   position: relative;
-  .left-svg-icon{
-    position: absolute;
-    bottom: 100px;
+  .left-image-block{
+    position: relative;
+    .left-svg-icon{
+      position: absolute;
+      bottom: -30px;
+      left: -85px;
+    }
   }
 }
 
@@ -913,7 +917,8 @@ footer{
   position: relative;
   .bottom-left-routing-icon{
     position: absolute;
-    bottom: 95px;
+    bottom: -25px;
+    left: -85px;
   }
 }
 
@@ -926,8 +931,9 @@ footer{
 
     .left-image-block{
       width: 50%;
-      margin: 50px 0 0 0;
+      margin: 40px 0 0 0;
       display: flex;
+      position: relative;
       h3{
         transform: rotate(-90deg);
         color: #282828;
@@ -944,7 +950,7 @@ footer{
 
     .right-text-block{
       width: 50%;
-      margin-top: 50px;
+      margin-top: 40px;
       display: flex;
       align-items: flex-end;
       justify-content: space-between;
@@ -1028,7 +1034,7 @@ footer{
 
 .company-present{
   overflow-x: hidden;
-  padding: 240px 0 100px 0;
+  padding: 230px 0 100px 0;
   margin-top: -90px;
   overflow-y: hidden;
 

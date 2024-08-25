@@ -853,16 +853,20 @@ footer .container .footer-bottom p {
 }
 .company-title div a {
   color: #282828;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
 }
 
 .company-past-top {
   position: relative;
 }
-.company-past-top .left-svg-icon {
+.company-past-top .left-image-block {
+  position: relative;
+}
+.company-past-top .left-image-block .left-svg-icon {
   position: absolute;
-  bottom: 100px;
+  bottom: -30px;
+  left: -85px;
 }
 
 .company-past-bottom {
@@ -870,7 +874,8 @@ footer .container .footer-bottom p {
 }
 .company-past-bottom .bottom-left-routing-icon {
   position: absolute;
-  bottom: 95px;
+  bottom: -25px;
+  left: -85px;
 }
 
 .company-past .container {
@@ -881,8 +886,9 @@ footer .container .footer-bottom p {
 }
 .company-past .container .left-image-block {
   width: 50%;
-  margin: 50px 0 0 0;
+  margin: 40px 0 0 0;
   display: flex;
+  position: relative;
 }
 .company-past .container .left-image-block h3 {
   transform: rotate(-90deg);
@@ -898,7 +904,7 @@ footer .container .footer-bottom p {
 }
 .company-past .container .right-text-block {
   width: 50%;
-  margin-top: 50px;
+  margin-top: 40px;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -978,7 +984,7 @@ footer .container .footer-bottom p {
 
 .company-present {
   overflow-x: hidden;
-  padding: 240px 0 100px 0;
+  padding: 230px 0 100px 0;
   margin-top: -90px;
   overflow-y: hidden;
 }
