@@ -1257,6 +1257,57 @@ footer{
 }
 
 
+//********** news page ***********
+.news-section-cody{
+  margin: 50px 0 100px;
+  .container{
+    display: flex;
+    justify-content: space-between;
+    gap: 0 40px;
+
+    .news-body{
+      width: 75%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 40px 0;
+      .news-body-item{
+        @include col(6, 20px);
+        min-height: 335px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .news-body-item-one{
+        background-image: url("../images/news/news-item-1.webp");
+      }
+      .news-body-item-tew{
+        background-image: url("../images/news/news-item-6.webp");
+      }
+      .news-body-item-three{
+        background-image: url("../images/news/news-item-2.webp");
+      }
+      .news-body-item-four{
+        background-image: url("../images/news/news-item-3.webp");
+      }
+      .news-body-item-five{
+        background-image: url("../images/news/news-item-4.webp");
+      }
+      .news-body-item-six{
+        background-image: url("../images/news/news-item-5.webp");
+      }
+    }
+
+    .news-sidebar{
+      width: 25%;
+      border: 1px solid red;
+    }
+
+
+  }
+}
+
 
 
 
