@@ -22,6 +22,14 @@
     margin-left: 15px;
     line-height: 30px;
   }
+  .company-past .container .left-image-block .top-slider-animation {
+    display: flex;
+    align-items: end;
+  }
+  .company-past .container .left-image-block .top-slider-animation video {
+    height: 300px;
+    width: 400px;
+  }
   .company-past .container .left-image-block .company-past-top-left-simple-Img {
     max-width: 400px;
   }
@@ -167,6 +175,10 @@
     max-width: 385px;
     line-height: 28px;
     padding-left: 5px;
+  }
+  .company-past .container .left-image-block .top-slider-animation video {
+    height: 310px;
+    width: 360px;
   }
   .company-past .container .left-image-block .company-past-top-left-simple-Img {
     max-width: 400px;

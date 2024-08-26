@@ -44,6 +44,14 @@
         }
       }
       .left-image-block{
+        .top-slider-animation{
+          display: flex;
+          align-items: end;
+          video{
+            height: 300px;
+            width: 400px;
+          }
+        }
         .company-past-top-left-simple-Img{
           max-width: 400px;
         }
@@ -254,6 +262,12 @@
         }
       }
       .left-image-block{
+        .top-slider-animation{
+          video{
+            height: 310px;
+            width: 360px;
+          }
+        }
         .company-past-top-left-simple-Img{
           max-width: 400px;
         }
