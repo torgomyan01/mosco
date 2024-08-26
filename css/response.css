@@ -383,6 +383,7 @@
   .company-past .container .right-text-block h3 {
     padding-left: 0;
     margin: 0 0 20px 0;
+    line-height: normal;
   }
   .company-past .container .right-text-block h3 .service svg {
     left: -10px;
@@ -396,6 +397,10 @@
   .company-past .container .left-image-block {
     width: 100%;
     flex-direction: column;
+  }
+  .company-past .container .left-image-block .top-slider-animation video {
+    height: 250px;
+    width: 310px;
   }
   .company-past .container .left-image-block h3 {
     transform: rotate(0);
@@ -411,6 +416,9 @@
   }
   .company-past .container .bottom-text-block {
     margin-top: 40px;
+  }
+  .company-past .container .bottom-text-block p {
+    line-height: normal;
   }
   .company-past .bottom-left-routing-icon {
     position: absolute;
@@ -459,6 +467,9 @@
     left: 0;
     font-size: 36px;
   }
+  .company-present .container .left-text-block h3 {
+    line-height: normal;
+  }
   .company-present .container .bottom-text-block {
     order: 3;
   }
@@ -491,6 +502,9 @@
   }
   .company-recommendation .container .container-item:nth-child(10) {
     display: none;
+  }
+  .find-more .container .top-section p {
+    line-height: normal;
   }
   .find-more .container .top-section .btn-see-more {
     margin: 40px auto 0;

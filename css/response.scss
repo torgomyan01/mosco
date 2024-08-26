@@ -61,6 +61,7 @@
         }
       }
       .bottom-block{
+
         h3{
           max-width: 330px;
           font-size: 28px;
@@ -550,6 +551,7 @@
         h3{
           padding-left: 0;
           margin: 0 0 20px 0;
+          line-height: normal;
           .service {
             svg{
               left: -10px;
@@ -567,6 +569,12 @@
       .left-image-block{
         width: 100%;
         flex-direction: column;
+        .top-slider-animation{
+          video {
+            height: 250px;
+            width: 310px;
+          }
+        }
         h3{
           transform: rotate(0);
           margin: 0;
@@ -584,6 +592,9 @@
 
       .bottom-text-block{
         margin-top: 40px;
+        p{
+          line-height: normal;
+        }
       }
     }
     .bottom-left-routing-icon {
@@ -636,6 +647,11 @@
           font-size: 36px;
         }
       }
+      .left-text-block{
+        h3{
+          line-height: normal;
+        }
+      }
       .bottom-text-block{
         order: 3;
         p{
@@ -678,6 +694,9 @@
   .find-more{
     .container{
       .top-section{
+        p{
+          line-height: normal;
+        }
         .btn-see-more{
           margin: 40px auto 0;
         }

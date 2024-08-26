@@ -886,7 +886,7 @@ footer .container .footer-bottom p {
 }
 .company-past .container .left-image-block {
   width: 50%;
-  margin: 40px 0 0 0;
+  margin: 30px 0 0 0;
   display: flex;
   position: relative;
 }
@@ -964,6 +964,8 @@ footer .container .footer-bottom p {
   display: inline-block;
   color: #fff;
   padding: 0 10px;
+  font-size: 13px;
+  margin-left: -10px;
 }
 .company-past .container .bottom-block {
   width: 100%;
@@ -1203,6 +1205,10 @@ footer .container .footer-bottom p {
   color: #282828;
   margin-left: 10px;
   margin-top: 5px;
+  text-decoration: none;
+}
+.find-more .container .bottom-section a span {
+  text-decoration: underline;
 }
 
 .news-section-cody {
