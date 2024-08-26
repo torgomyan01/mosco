@@ -346,8 +346,6 @@ nav{
 
 }
 
-
-
 @keyframes airplane {
   0%{
     transform: translate(0, 0) rotate(0);
@@ -366,7 +364,6 @@ nav{
     opacity: 0;
   }
 }
-
 
 .our-clients{
   margin-top: 10px;
@@ -1273,7 +1270,6 @@ footer{
   }
 }
 
-
 //********** news page ***********
 .news-section-cody{
   margin: 50px 0 100px;
@@ -1527,10 +1523,117 @@ footer{
   }
 }
 
+// ******** Service **************
+.header-block{
+  margin-top: 40px;
+  .header{
+    background-image: url("../images/service/service-hero.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
 
+.reliable{
+  padding: 90px 0;
+  background-image: url("../images/service/Reliable-Comfortable.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  .container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0 20px;
+    .right-text-block{
+      h3{
+        color: #282828;
+        font-family: "RF Dewi";
+        font-size: 48px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+      }
+      .links-block{
+        display: flex;
+        flex-direction: column;
+        max-width: 590px;
+        width: 100%;
 
+        a{
+          padding: 20px 14px;
+          border-bottom: 1px solid #E8E8E8;
+          color: #282828;
+          font-size: 16px;
+          font-weight: 400;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          i{
+            margin-left: 15px;
+            transform: rotate(-45deg);
+          }
+        }
+      }
+    }
+    .reliable-left-img{
+      max-width: 470px;
+      width: 100%;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
 
+.fast{
+  background-image: url("../images/service/Fast-bg.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 0;
+  .container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0 20px;
+    .right-text-block{
+      h3{
+        color: #FFF;
+        font-family: "RF Dewi";
+        font-size: 48px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+      }
+      .links-block{
+        display: flex;
+        flex-direction: column;
+        max-width: 590px;
+        width: 100%;
 
-
-
-
+        a{
+          padding: 20px 14px;
+          border-bottom: 1px solid #E8E8E8;
+          color: #FFF;
+          font-size: 16px;
+          font-weight: 400;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          i{
+            margin-left: 15px;
+            transform: rotate(-45deg);
+          }
+        }
+      }
+    }
+    .fast-left-img{
+      max-width: 470px;
+      width: 100%;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
