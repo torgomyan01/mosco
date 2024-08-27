@@ -1496,7 +1496,7 @@ footer .container .footer-bottom p {
   width: 100%;
 }
 .reliable .container .right-text-block .links-block a {
-  padding: 20px 14px;
+  padding: 17px 14px;
   border-bottom: 1px solid #E8E8E8;
   color: #282828;
   font-size: 16px;
@@ -1508,6 +1508,7 @@ footer .container .footer-bottom p {
 .reliable .container .right-text-block .links-block a i {
   margin-left: 15px;
   transform: rotate(-45deg);
+  color: #214788;
 }
 .reliable .container .reliable-left-img {
   max-width: 470px;
@@ -1545,7 +1546,7 @@ footer .container .footer-bottom p {
   width: 100%;
 }
 .fast .container .right-text-block .links-block a {
-  padding: 20px 14px;
+  padding: 17px 14px;
   border-bottom: 1px solid #E8E8E8;
   color: #FFF;
   font-size: 16px;
@@ -1564,6 +1565,85 @@ footer .container .footer-bottom p {
 }
 .fast .container .fast-left-img img {
   width: 100%;
+}
+
+.organizations {
+  margin: 80px auto;
+}
+.organizations .container {
+  display: flex;
+  flex-direction: column;
+}
+.organizations .container .organizations-title h3 {
+  padding: 6px 16px;
+  background: #214788;
+  color: #FFF;
+  font-family: "RF Dewi";
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: fit-content;
+  margin: 0 auto 50px;
+}
+.organizations .container .text-item {
+  padding: 20px 14px;
+  border-bottom: 1px solid #E8E8E8;
+  color: #282828;
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: 600;
+}
+.organizations .container .second {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: end;
+}
+.organizations .container .second p {
+  max-width: 990px;
+  width: 100%;
+}
+
+.advantages {
+  background-image: url("../images/service/bottom-section-bg.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 90px 0;
+}
+.advantages .container {
+  display: flex;
+  flex-direction: column;
+}
+.advantages .container .advantages-title h3 {
+  color: #FFF;
+  font-family: "RF Dewi";
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.advantages .container .advantages-tabele {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.advantages .container .advantages-tabele div {
+  width: 258px;
+  height: 272px;
+  padding: 20px;
+  border: 1px solid rgba(232, 232, 232, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.advantages .container .advantages-tabele div p {
+  color: #FFF;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */
