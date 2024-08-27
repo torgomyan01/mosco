@@ -949,10 +949,20 @@ footer .container .footer-bottom p {
 .company-past .container .right-text-block h3 .years-svg {
   position: relative;
 }
+.company-past .container .right-text-block h3 .years-svg.changed .path-years-svg {
+  stroke-dashoffset: 634;
+}
 .company-past .container .right-text-block h3 .years-svg svg {
   position: absolute;
-  top: -30px;
-  left: -15px;
+  top: -5px;
+  left: -10px;
+}
+.company-past .container .right-text-block h3 .years-svg .path-years-svg {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 904;
+  transition: 1.5s;
+  transition-delay: 1.5s;
+  stroke-width: 20px;
 }
 .company-past .container .right-text-block h3 .service {
   position: relative;
@@ -960,7 +970,7 @@ footer .container .footer-bottom p {
 .company-past .container .right-text-block h3 .service svg {
   position: absolute;
   left: -13px;
-  top: -30px;
+  top: -10px;
 }
 .company-past .container .right-text-block p {
   max-width: 252px;
@@ -1072,8 +1082,18 @@ footer .container .footer-bottom p {
 .company-present .container .right-image-block .right-block-circle-img {
   position: absolute;
   right: -135px;
-  bottom: -145px;
+  bottom: -95px;
   display: block;
+}
+.company-present .container .right-image-block .right-block-circle-img.changed .path-company-svg-desktop {
+  stroke-dashoffset: 300;
+}
+.company-present .container .right-image-block .right-block-circle-img .path-company-svg-desktop {
+  stroke-dasharray: 1100;
+  stroke-dashoffset: 1070;
+  transition: 1.5s;
+  transition-delay: 1.5s;
+  stroke-width: 60px;
 }
 .company-present .container .right-image-block .right-block-circle-img-mobile {
   display: none;

@@ -1001,10 +1001,24 @@ footer{
         font-family: 'RF Dewi', sans-serif;
         .years-svg{
           position: relative;
+
+          &.changed{
+            .path-years-svg{
+              stroke-dashoffset: 634;
+            }
+          }
           svg{
             position: absolute;
-            top: -30px;
-            left: -15px;
+            top: -5px;
+            left: -10px;
+          }
+
+          .path-years-svg {
+            stroke-dasharray: 300;
+            stroke-dashoffset: 904;
+            transition: 1.5s;
+            transition-delay: 1.5s;
+            stroke-width: 20px;
           }
         }
         .service{
@@ -1012,7 +1026,7 @@ footer{
           svg{
             position: absolute;
             left: -13px;
-            top: -30px;
+            top: -10px;
           }
         }
       }
@@ -1131,8 +1145,21 @@ footer{
       .right-block-circle-img{
         position: absolute;
         right: -135px;
-        bottom: -145px;
+        bottom: -95px;
         display: block;
+
+        &.changed{
+          .path-company-svg-desktop{
+            stroke-dashoffset: 300;
+          }
+        }
+        .path-company-svg-desktop{
+          stroke-dasharray: 1100;
+          stroke-dashoffset: 1070;
+          transition: 1.5s;
+          transition-delay: 1.5s;
+          stroke-width: 60px;
+        }
       }
       .right-block-circle-img-mobile{
         display: none;

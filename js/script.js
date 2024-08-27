@@ -551,16 +551,19 @@ function myFunctionTop(targetElement) {
 const scrollCheck = document.querySelectorAll('.scroll-check');
 
 scrollCheck.forEach((elem) => {
+  const elementAutoLoad = elem.dataset.autoload || false;
   function onScroll() {
     if (checkElement(elem)) {
       myFunctionTop(elem);
-      window.removeEventListener('scroll', onScroll);
     }
   }
 
   window.addEventListener('scroll', onScroll);
 
-  // onScroll();
+
+  if(elementAutoLoad){
+    onScroll();
+  }
 });
 
 
