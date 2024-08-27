@@ -556,13 +556,13 @@ function myFunctionTop(targetElement) {
 }
 
 
-const scrollCheck = document.querySelectorAll('.scroll-check');
+const scrollCheck = $('.scroll-check');
 
 scrollCheck.forEach((elem) => {
-  window.addEventListener('scroll', function onScroll() {
+  window.addEventListener('scroll', function() {
     if (checkElement(elem)) {
       myFunctionTop(elem);
-      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('scroll', arguments.callee);
     }
   });
-});
+})
