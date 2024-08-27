@@ -940,7 +940,7 @@ footer{
 
 .company-past-bottom{
   position: relative;
-  .bottom-left-routing-icon
+
   .right-text-block{
     .company-past-top-mobile-bg{
       display: none;
@@ -969,6 +969,15 @@ footer{
         margin: 160px 0 0 0;
         font-family: 'RF Dewi', sans-serif;
       }
+      .top-slider-animation{
+        min-width: calc(100% - 50px);
+        height: 412px;
+        background-position: 0% 0%;
+        background-size: 150%;
+        background-repeat: no-repeat;
+        transition: 1.5s;
+
+      }
 
       .company-past-top-left-simple-Img{
         width: 100%;
@@ -992,10 +1001,24 @@ footer{
         font-family: 'RF Dewi', sans-serif;
         .years-svg{
           position: relative;
+
+          &.changed{
+            .path-years-svg{
+              stroke-dashoffset: 634;
+            }
+          }
           svg{
             position: absolute;
-            top: -30px;
-            left: -15px;
+            top: -5px;
+            left: -10px;
+          }
+
+          .path-years-svg {
+            stroke-dasharray: 300;
+            stroke-dashoffset: 904;
+            transition: 1.5s;
+            transition-delay: 1.5s;
+            stroke-width: 20px;
           }
         }
         .service{
@@ -1122,8 +1145,21 @@ footer{
       .right-block-circle-img{
         position: absolute;
         right: -135px;
-        bottom: -145px;
+        bottom: -95px;
         display: block;
+
+        &.changed{
+          .path-company-svg-desktop{
+            stroke-dashoffset: 300;
+          }
+        }
+        .path-company-svg-desktop{
+          stroke-dasharray: 1100;
+          stroke-dashoffset: 1070;
+          transition: 1.5s;
+          transition-delay: 1.5s;
+          stroke-width: 60px;
+        }
       }
       .right-block-circle-img-mobile{
         display: none;
@@ -1256,6 +1292,7 @@ footer{
         padding: 40px 20px;
         position: relative;
         z-index: 1;
+        overflow: hidden;
 
         h3{
           color: #282828;
@@ -1277,58 +1314,82 @@ footer{
           color: #FFF;
           text-align: center;
           font-family: "RF Dewi";
-          font-size: 64px;
+          font-size: 58px;
           font-style: normal;
           font-weight: 700;
           text-transform: uppercase;
           position: absolute;
         }
+        video{
+          display: none;
+        }
       }
-      .menu-item-one::before{
+      .menu-item::before{
         content: "";
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: url("../images/company/alla.webp");
         background-size: cover;
         background-position: center;
         opacity: 0.1;
-        transition: opacity 0.2s ease;
+        transition: opacity 0.3s ease;
       }
-      .menu-item-one:hover::before{
-        opacity: 1;
+      .menu-item:hover .menu-item-video{
+        display: block;
+        z-index: 2;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+
+      .menu-item-one::before{
+        content: "";
+        background-image: url("../images/company/alla.webp");
       }
       .menu-item-one{
         span{
           transform: rotate(-90deg);
-          top: 54px;
-          right: -65px;
+          top: 43px;
+          right: -52px;
         }
+      }
+
+      .menu-item-two::before{
+        content: "";
+        background-image: url("../images/company/dmitri.webp");
       }
       .menu-item-two{
-        background-image: url("../images/company/dmitri.webp");
         span{
           transform: rotate(-90deg);
-          top: 125px;
-          right: -130px;
+          top: 111px;
+          right: -123px;
         }
       }
+
       .menu-item-three{
-        background-image: url("../images/company/alla.webp");
         span{
           transform: rotate(-90deg);
-          top: 54px;
-          right: -65px;
+          top: 99px;
+          right: -107px;
         }
+      }
+      .menu-item-three::before{
+        content: "";
+        background-image: url("../images/company/alla.webp");
+      }
+
+
+      .menu-item-four::before{
+        content: "";
+        background-image: url("../images/company/dmitri.webp");
       }
       .menu-item-four{
-        background-image: url("../images/company/dmitri.webp");
         span{
           transform: rotate(-90deg);
-          top: 125px;
-          right: -130px;
+          top: 142px;
+          right: -152px;
         }
       }
     }

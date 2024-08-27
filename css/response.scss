@@ -48,20 +48,9 @@
         }
       }
       .left-image-block{
-        .top-slider-animation{
-          display: flex;
-          align-items: end;
-          video{
-            height: 300px;
-            width: 400px;
-          }
-        }
+
         .company-past-top-left-simple-Img{
           max-width: 400px;
-        }
-        h3 {
-          font-size: 36px;
-          margin: 120px 0 0 0;
         }
       }
       .bottom-block{
@@ -267,18 +256,8 @@
         }
       }
       .left-image-block{
-        .top-slider-animation{
-          video{
-            height: 310px;
-            width: 360px;
-          }
-        }
         .company-past-top-left-simple-Img{
           max-width: 400px;
-        }
-        h3 {
-          font-size: 28px;
-          margin: 160px 0 0 0;
         }
       }
 
@@ -363,18 +342,35 @@
 
   .bottom-slider{
     .container{
-      padding: 0 0 60px 0;
+      padding: 0 20px 50px 20px;
       position: relative;
       .multiple-items{
         .slick-prev{
           position: absolute;
-          bottom: -20px;
-          left: 45%;
+          bottom: -40px;
+          left: 47%;
+          transform: rotate(180deg);
+          background: transparent;
+          i{
+            i{
+              font-size: 18px;
+              color: #214788;
+              cursor: pointer;
+            }
+          }
         }
         .slick-next{
           position: absolute;
-          bottom: -20px;
-          left: 54%;
+          bottom: -40px;
+          left: 53%;
+          background: transparent;
+          i{
+            i{
+              font-size: 18px;
+              color: #214788;
+              cursor: pointer;
+            }
+          }
         }
       }
     }
@@ -592,12 +588,6 @@
       .left-image-block{
         width: 100%;
         flex-direction: column;
-        .top-slider-animation{
-          video {
-            height: 250px;
-            width: 310px;
-          }
-        }
         h3{
           transform: rotate(0);
           margin: 0;
@@ -684,6 +674,7 @@
           position: absolute;
           top: -100px;
           right: -55px;
+
         }
         p{
           transform: rotate(0);
@@ -761,6 +752,21 @@
       }
     }
   }
+
+  .bottom-slider{
+    .container{
+
+      .multiple-items{
+        .slick-prev{
+          left: 42%;
+        }
+        .slick-next{
+          left: 58%;
+        }
+      }
+    }
+  }
+
 
 }
 

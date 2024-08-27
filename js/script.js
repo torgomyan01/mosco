@@ -551,16 +551,19 @@ function myFunctionTop(targetElement) {
 const scrollCheck = document.querySelectorAll('.scroll-check');
 
 scrollCheck.forEach((elem) => {
+  const elementAutoLoad = elem.dataset.autoload || false;
   function onScroll() {
     if (checkElement(elem)) {
       myFunctionTop(elem);
-      window.removeEventListener('scroll', onScroll);
     }
   }
 
   window.addEventListener('scroll', onScroll);
 
-  // onScroll();
+
+  if(elementAutoLoad){
+    onScroll();
+  }
 });
 
 
@@ -604,7 +607,7 @@ function StartBgAnimation(getImages, activeIndex, item, bgDataIndex){
               bgData[bgDataIndex].activeImage = getImages[bgData[bgDataIndex].activeIndex];
               item.style.backgroundImage = `url(${getImages[bgData[bgDataIndex].activeIndex]})`;
               item.style.backgroundPositionY = '0%';
-              item.style.backgroundSize = '100%';
+              item.style.backgroundSize =  window.innerWidth > 768 ? '150%' : '100%';
             } else {
               StartBgAnimation(getImages, bgData[bgDataIndex].activeIndex, item, bgDataIndex)
             }
@@ -622,6 +625,8 @@ $('.multiple-items').slick({
   speed: 300,
   slidesToShow: 4,
   slidesToScroll: 1,
+  prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-arrow-left"><i class="icon icon-arrow-right2"></i></i></button>',
+  nextArrow: '<button type="button" class="slick-next"><i class="fa fa-arrow-right"><i class="icon icon-arrow-right2"></i></i></button>',
   responsive: [
     {
       breakpoint: 1025,
@@ -633,7 +638,7 @@ $('.multiple-items').slick({
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 769,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2
@@ -647,4 +652,14 @@ $('.multiple-items').slick({
       }
     }
   ]
+});
+
+document.querySelectorAll('.hover-video').forEach(video => {
+  video.addEventListener('mouseenter', function() {
+    video.play();
+  });
+
+  video.addEventListener('mouseleave', function() {
+    video.pause();
+  });
 });

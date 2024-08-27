@@ -24,20 +24,8 @@
     margin-left: 15px;
     line-height: 30px;
   }
-  .company-past .container .left-image-block .top-slider-animation {
-    display: flex;
-    align-items: end;
-  }
-  .company-past .container .left-image-block .top-slider-animation video {
-    height: 300px;
-    width: 400px;
-  }
   .company-past .container .left-image-block .company-past-top-left-simple-Img {
     max-width: 400px;
-  }
-  .company-past .container .left-image-block h3 {
-    font-size: 36px;
-    margin: 120px 0 0 0;
   }
   .company-past .container .bottom-block h3 {
     max-width: 330px;
@@ -178,16 +166,8 @@
     line-height: 28px;
     padding-left: 5px;
   }
-  .company-past .container .left-image-block .top-slider-animation video {
-    height: 310px;
-    width: 360px;
-  }
   .company-past .container .left-image-block .company-past-top-left-simple-Img {
     max-width: 400px;
-  }
-  .company-past .container .left-image-block h3 {
-    font-size: 28px;
-    margin: 160px 0 0 0;
   }
   .company-past-top .left-svg-icon {
     bottom: 125px;
@@ -242,18 +222,31 @@
     margin-top: 35px;
   }
   .bottom-slider .container {
-    padding: 0 0 60px 0;
+    padding: 0 20px 50px 20px;
     position: relative;
   }
   .bottom-slider .container .multiple-items .slick-prev {
     position: absolute;
-    bottom: -20px;
-    left: 45%;
+    bottom: -40px;
+    left: 47%;
+    transform: rotate(180deg);
+    background: transparent;
+  }
+  .bottom-slider .container .multiple-items .slick-prev i i {
+    font-size: 18px;
+    color: #214788;
+    cursor: pointer;
   }
   .bottom-slider .container .multiple-items .slick-next {
     position: absolute;
-    bottom: -20px;
-    left: 54%;
+    bottom: -40px;
+    left: 53%;
+    background: transparent;
+  }
+  .bottom-slider .container .multiple-items .slick-next i i {
+    font-size: 18px;
+    color: #214788;
+    cursor: pointer;
   }
 }
 @media (max-width: 768px) {
@@ -414,10 +407,6 @@
     width: 100%;
     flex-direction: column;
   }
-  .company-past .container .left-image-block .top-slider-animation video {
-    height: 250px;
-    width: 310px;
-  }
   .company-past .container .left-image-block h3 {
     transform: rotate(0);
     margin: 0;
@@ -543,6 +532,12 @@
   }
   .news-section-cody .container .news-body .news-body-item {
     width: calc(8.3333333333% * 12 - 0px);
+  }
+  .bottom-slider .container .multiple-items .slick-prev {
+    left: 42%;
+  }
+  .bottom-slider .container .multiple-items .slick-next {
+    left: 58%;
   }
 }
 @media (max-width: 767px) {
