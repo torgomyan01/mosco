@@ -893,7 +893,7 @@ footer .container .footer-bottom p {
 .company-past-bottom {
   position: relative;
 }
-.company-past-bottom .bottom-left-routing-icon .right-text-block .company-past-top-mobile-bg {
+.company-past-bottom .right-text-block .company-past-top-mobile-bg {
   display: none;
 }
 
@@ -919,7 +919,7 @@ footer .container .footer-bottom p {
   font-family: "RF Dewi", sans-serif;
 }
 .company-past .container .left-image-block .top-slider-animation {
-  min-width: 526px;
+  min-width: calc(100% - 50px);
   height: 412px;
   background-position: 0% 0%;
   background-size: 150%;

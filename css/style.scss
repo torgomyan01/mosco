@@ -940,7 +940,7 @@ footer{
 
 .company-past-bottom{
   position: relative;
-  .bottom-left-routing-icon
+  //.bottom-left-routing-icon
   .right-text-block{
     .company-past-top-mobile-bg{
       display: none;
@@ -970,12 +970,13 @@ footer{
         font-family: 'RF Dewi', sans-serif;
       }
       .top-slider-animation{
-        min-width: 526px;
+        min-width: calc(100% - 50px);
         height: 412px;
         background-position: 0% 0%;
         background-size: 150%;
         background-repeat: no-repeat;
         transition: 1.5s;
+
       }
 
       .company-past-top-left-simple-Img{

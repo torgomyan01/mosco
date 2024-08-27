@@ -604,7 +604,7 @@ function StartBgAnimation(getImages, activeIndex, item, bgDataIndex){
               bgData[bgDataIndex].activeImage = getImages[bgData[bgDataIndex].activeIndex];
               item.style.backgroundImage = `url(${getImages[bgData[bgDataIndex].activeIndex]})`;
               item.style.backgroundPositionY = '0%';
-              item.style.backgroundSize = '100%';
+              item.style.backgroundSize =  window.innerWidth > 768 ? '150%' : '100%';
             } else {
               StartBgAnimation(getImages, bgData[bgDataIndex].activeIndex, item, bgDataIndex)
             }
