@@ -868,12 +868,15 @@ footer .container .footer-bottom p {
   bottom: -20px;
   left: -240px;
 }
-.company-past-top .left-image-block .changed .path {
+.company-past-top .left-image-block .left-svg-icon .path {
   stroke-dasharray: 1672;
-  stroke-dashoffset: 670;
-  animation: dash 1.5s ease-in;
+  stroke-dashoffset: 1672;
   stroke-width: 16px;
-  animation-iteration-count: 1;
+  transition: 1.3s;
+  transition-delay: 1.5s;
+}
+.company-past-top .left-image-block .changed .path {
+  stroke-dashoffset: 670 !important;
 }
 @keyframes dash {
   0% {
@@ -913,6 +916,14 @@ footer .container .footer-bottom p {
   text-transform: uppercase;
   margin: 160px 0 0 0;
   font-family: "RF Dewi", sans-serif;
+}
+.company-past .container .left-image-block .top-slider-animation {
+  min-width: 526px;
+  height: 412px;
+  background-position: 0% 0%;
+  background-size: 150%;
+  background-repeat: no-repeat;
+  transition: 1.5s;
 }
 .company-past .container .left-image-block .company-past-top-left-simple-Img {
   width: 100%;

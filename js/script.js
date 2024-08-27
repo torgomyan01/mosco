@@ -542,13 +542,12 @@ window.onload = function () {
 
 function checkElement(el) {
   const rect = el.getBoundingClientRect();
-  const isVisible = (
-      rect.bottom >= 0 &&
-      rect.right >= 0 &&
-      rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.left <= (window.innerWidth || document.documentElement.clientWidth)
+  return (
+    rect.bottom >= 0 &&
+    rect.right >= 0 &&
+    rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.left <= (window.innerWidth || document.documentElement.clientWidth)
   );
-  return isVisible;
 }
 
 function myFunctionTop(targetElement) {
@@ -556,13 +555,69 @@ function myFunctionTop(targetElement) {
 }
 
 
-const scrollCheck = document.querySelectorAll('.scroll-check');
+const scrollCheck = $('.scroll-check');
 
 scrollCheck.forEach((elem) => {
-  window.addEventListener('scroll', function onScroll() {
+  function onScroll() {
     if (checkElement(elem)) {
       myFunctionTop(elem);
       window.removeEventListener('scroll', onScroll);
     }
-  });
+  }
+
+  window.addEventListener('scroll', onScroll);
+
+  // onScroll();
 });
+
+
+// IMAGE BACKGROUND ANIMATION
+
+
+const imageBgAnimation = $('.image-bg-animation');
+const bgData = [];
+
+imageBgAnimation.forEach((item,i) => {
+  const getImages = item.dataset.images.split(',');
+  let activeIndex = 0;
+
+  bgData.push({
+    activeIndex,
+    images: getImages,
+    activeImage: getImages[activeIndex]
+  })
+
+  item.style.backgroundImage = `url(${getImages[activeIndex]})`;
+
+  setTimeout(() => {
+    StartBgAnimation(getImages, activeIndex, item, i);
+  }, 1000)
+})
+
+
+
+function StartBgAnimation(getImages, activeIndex, item, bgDataIndex){
+    item.style.backgroundSize = '300%';
+    setTimeout(() => {
+      item.style.backgroundPositionX = '65%';
+      setTimeout(() => {
+        item.style.backgroundPositionX = '0%';
+        item.style.backgroundPositionY = '65%';
+        setTimeout(() => {
+          item.style.backgroundSize = '150%';
+          setTimeout(() => {
+            bgData[bgDataIndex].activeIndex = bgData[bgDataIndex].activeIndex + 1;
+            if(bgData[bgDataIndex].activeIndex === getImages.length - 1){
+              bgData[bgDataIndex].activeImage = getImages[bgData[bgDataIndex].activeIndex];
+              item.style.backgroundImage = `url(${getImages[bgData[bgDataIndex].activeIndex]})`;
+              item.style.backgroundPositionY = '0%';
+              item.style.backgroundSize = '100%';
+            } else {
+              StartBgAnimation(getImages, bgData[bgDataIndex].activeIndex, item, bgDataIndex)
+            }
+          }, 2500)
+        }, 2500)
+      }, 2500)
+    }, 2500)
+}
+
