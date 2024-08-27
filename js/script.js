@@ -60,13 +60,14 @@ const titleAnimation = $('.title-animation');
 titleAnimation.forEach((item) => {
   const arr = item.dataset.titles.split(',');
   let index = 0;
-  PrintItemsAnim(arr[index].split(''), item);
+  const length = +item.dataset.length;
+  PrintItemsAnim(arr[index].split(''), item, length);
 
   setInterval(() => {
     index += 1;
     const strArray = arr[index].split('');
 
-    PrintItemsAnim(strArray, item);
+    PrintItemsAnim(strArray, item, length);
 
     if (index === arr.length - 1) {
       index = -1;
@@ -76,11 +77,10 @@ titleAnimation.forEach((item) => {
 
 function PrintItemsAnim(array, elem, count = 7) {
 
-  if (count === 7) {
 
     const reversArray = [];
 
-    const newArr = Array.from({length: 7}).map((letter, i) => {
+    const newArr = Array.from({length: count}).map((letter, i) => {
       if (array[i]) {
         return array[i];
       } else {
@@ -98,12 +98,6 @@ function PrintItemsAnim(array, elem, count = 7) {
       const span = `<span style="--letter: '${i}'"></span>`
       elem.insertAdjacentHTML('beforeend', span)
     })
-  } else {
-    array.forEach((letter) => {
-      const span = `<span style="--letter: '${letter}'"></span>`
-      elem.insertAdjacentHTML('beforeend', span)
-    })
-  }
 
 }
 
@@ -546,29 +540,6 @@ window.onload = function () {
   }
 }
 
-function isElementInViewport(el) {
-  const rect = el.getBoundingClientRect();
-  return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-  );
-}
-
-function myFunction(targetElement) {
-  targetElement.classList.add('changed');
-}
-
-window.addEventListener('scroll', function() {
-  const targetElement = document.querySelector('.background-color-changed-bottom');
-
-  if (isElementInViewport(targetElement)) {
-    myFunction(targetElement);
-    window.removeEventListener('scroll', arguments.callee);
-  }
-});
-
 function checkElement(el) {
   const rect = el.getBoundingClientRect();
   return (
@@ -583,11 +554,14 @@ function myFunctionTop(targetElement) {
   targetElement.classList.add('changed');
 }
 
-window.addEventListener('scroll', function() {
-  const targetElement = document.querySelector('.background-color-changed');
 
-  if (checkElement(targetElement)) {
-    myFunctionTop(targetElement);
-    window.removeEventListener('scroll', arguments.callee);
-  }
-});
+const scrollCheck = $('.scroll-check');
+
+scrollCheck.forEach((elem) => {
+  window.addEventListener('scroll', function() {
+    if (checkElement(elem)) {
+      myFunctionTop(elem);
+      window.removeEventListener('scroll', arguments.callee);
+    }
+  });
+})
