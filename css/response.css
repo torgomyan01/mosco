@@ -13,8 +13,10 @@
   .cooperation-section .container .text-section h3 {
     font-size: 2.5rem;
   }
-  .company-past-top .left-svg-icon {
+  .company-past-top .left-image-block .left-svg-icon {
     max-width: 300px;
+    bottom: -30px;
+    left: -135px;
   }
   .company-past .container .right-text-block h3 {
     max-width: 450px;

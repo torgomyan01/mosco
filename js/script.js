@@ -542,12 +542,13 @@ window.onload = function () {
 
 function checkElement(el) {
   const rect = el.getBoundingClientRect();
-  return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  const isVisible = (
+      rect.bottom >= 0 &&
+      rect.right >= 0 &&
+      rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.left <= (window.innerWidth || document.documentElement.clientWidth)
   );
+  return isVisible;
 }
 
 function myFunctionTop(targetElement) {
@@ -555,13 +556,13 @@ function myFunctionTop(targetElement) {
 }
 
 
-const scrollCheck = $('.scroll-check');
+const scrollCheck = document.querySelectorAll('.scroll-check');
 
 scrollCheck.forEach((elem) => {
-  window.addEventListener('scroll', function() {
+  window.addEventListener('scroll', function onScroll() {
     if (checkElement(elem)) {
       myFunctionTop(elem);
-      window.removeEventListener('scroll', arguments.callee);
+      window.removeEventListener('scroll', onScroll);
     }
   });
-})
+});

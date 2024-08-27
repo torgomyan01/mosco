@@ -28,8 +28,12 @@
 
 
   .company-past-top{
-    .left-svg-icon {
-      max-width: 300px;
+    .left-image-block{
+      .left-svg-icon {
+        max-width: 300px;
+        bottom: -30px;
+        left: -135px;
+      }
     }
   }
 

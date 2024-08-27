@@ -865,8 +865,23 @@ footer .container .footer-bottom p {
 }
 .company-past-top .left-image-block .left-svg-icon {
   position: absolute;
-  bottom: -30px;
-  left: -85px;
+  bottom: -20px;
+  left: -240px;
+}
+.company-past-top .left-image-block .changed .path {
+  stroke-dasharray: 1672;
+  stroke-dashoffset: 670;
+  animation: dash 1.5s ease-in;
+  stroke-width: 16px;
+  animation-iteration-count: 1;
+}
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 1672;
+  }
+  100% {
+    stroke-dashoffset: 670;
+  }
 }
 
 .company-past-bottom {
