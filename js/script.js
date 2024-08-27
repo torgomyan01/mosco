@@ -16,6 +16,7 @@ AOS.init({
   once: true
 });
 
+
 function updateSVGImages() {
   const svgElement = document.querySelector('.personal-account-background');
   const imageElement = document.querySelector('#texture-image');
@@ -47,15 +48,7 @@ function BodyOverflow(status) {
   }
 }
 
-function $(className) {
-  return document.querySelectorAll(className)
-}
-
-function $elem(className) {
-  return document.querySelector(className)
-}
-
-const titleAnimation = $('.title-animation');
+const titleAnimation = document.querySelectorAll('.title-animation');
 
 titleAnimation.forEach((item) => {
   const arr = item.dataset.titles.split(',');
@@ -122,8 +115,8 @@ icons.forEach((icon, index) => {
 
 paper.install(window);
 
-const canvasMenu = $elem('#CanvasMenu');
-const siteNavLogo = $elem('#site-nav-logo');
+const canvasMenu = document.querySelector('#CanvasMenu');
+const siteNavLogo = document.querySelector('#site-nav-logo');
 
 window.onload = function () {
   paper.setup('CanvasMenu');
@@ -555,7 +548,7 @@ function myFunctionTop(targetElement) {
 }
 
 
-const scrollCheck = $('.scroll-check');
+const scrollCheck = document.querySelectorAll('.scroll-check');
 
 scrollCheck.forEach((elem) => {
   function onScroll() {
@@ -574,7 +567,7 @@ scrollCheck.forEach((elem) => {
 // IMAGE BACKGROUND ANIMATION
 
 
-const imageBgAnimation = $('.image-bg-animation');
+const imageBgAnimation = document.querySelectorAll('.image-bg-animation');
 const bgData = [];
 
 imageBgAnimation.forEach((item,i) => {
@@ -621,3 +614,37 @@ function StartBgAnimation(getImages, activeIndex, item, bgDataIndex){
     }, 2500)
 }
 
+
+
+$('.multiple-items').slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1025,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
