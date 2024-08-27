@@ -969,14 +969,6 @@ footer{
         margin: 160px 0 0 0;
         font-family: 'RF Dewi', sans-serif;
       }
-      .top-slider-animation{
-        min-width: 526px;
-        height: 412px;
-        background-position: 0% 0%;
-        background-size: 150%;
-        background-repeat: no-repeat;
-        transition: 1.5s;
-      }
 
       .company-past-top-left-simple-Img{
         width: 100%;
@@ -1257,16 +1249,16 @@ footer{
         background-position: center;
         background-repeat: no-repeat;
         cursor: pointer;
-        opacity: 0.1;
         transition: 0.3s;
         display: flex;
         flex-direction: column;
         justify-content: end;
         padding: 40px 20px;
         position: relative;
+        z-index: 1;
 
         h3{
-          color: #FFF;
+          color: #282828;
           text-align: center;
           font-family: "RF Dewi";
           font-size: 32px;
@@ -1274,7 +1266,7 @@ footer{
           text-transform: uppercase;
         }
         p{
-          color: #FFF;
+          color: #282828;
           text-align: center;
           font-size: 14px;
           font-weight: 400;
@@ -1289,15 +1281,26 @@ footer{
           font-style: normal;
           font-weight: 700;
           text-transform: uppercase;
-          opacity: 0.2;
           position: absolute;
         }
       }
-      .menu-item:hover{
+      .menu-item-one::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../images/company/alla.webp");
+        background-size: cover;
+        background-position: center;
+        opacity: 0.1;
+        transition: opacity 0.2s ease;
+      }
+      .menu-item-one:hover::before{
         opacity: 1;
       }
       .menu-item-one{
-        background-image: url("../images/company/alla.webp");
         span{
           transform: rotate(-90deg);
           top: 54px;
