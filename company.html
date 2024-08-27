@@ -23,11 +23,13 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/response.css">
 
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
     <title>Mosco</title>
 </head>
 <body>
 
-<canvas id="CanvasMenu"></canvas>
+<!--<canvas id="CanvasMenu"></canvas>-->
 
 <div class="container">
     <nav>
@@ -502,6 +504,7 @@
                 своей работы!
             </h3>
             <p>С 1989 компания работала как «Московская компания обменов», а в 1997 году перерегистрировалась как «Компания МОСКО», создав свое новое имя из первых букв прежнего названия.</p>
+            <img class="company-past-top-mobile-bg" src="./images/BG-icon3.webp" alt="icon3">
         </div>
         <div class="bottom-text-block">
             <p class="background-color-changed scroll-check">За прошедшие три с половиной десятилетия мы ни разу не отклонились от выбранного нами пути и помогаем нашим клиентам – </p>
@@ -2976,6 +2979,7 @@
                 Мы любим и ценим своих клиентов, переживаем за них, стараемся сделать для них всё, чтобы успех всегда
                 сопутствовал им.
             </p>
+            <img class="company-past-top-mobile-bg" src="./images/BG-icon3.webp" alt="icon3">
         </div>
         <div class="bottom-block">
             <h3>Присоединяйтесь!</h3>
@@ -3046,7 +3050,32 @@
 </section>
 
 <section class="bottom-slider">
-    <div class="container"></div>
+    <div class="container">
+
+        <div class="multiple-items ">
+            <div class="menu-item menu-item-one">
+                <span>АЛЛА</span>
+                <h3>АЛЛА АСОНОВА</h3>
+                <p>Начальник отдела организации деловых поездок и командировок</p>
+            </div>
+            <div class="menu-item menu-item-two">
+                <span>Дмитрий</span>
+                <h3>Дмитрий маковский</h3>
+                <p>Начальник отдела организации деловых поездок и командировок</p>
+            </div>
+            <div class="menu-item menu-item-three">
+                <span>АЛЛА</span>
+                <h3>АЛЛА АСОНОВА</h3>
+                <p>Начальник отдела организации деловых поездок и командировок</p>
+            </div>
+            <div class="menu-item menu-item-four">
+                <span>Дмитрий</span>
+                <h3>Дмитрий маковский</h3>
+                <p>Начальник отдела организации деловых поездок и командировок</p>
+            </div>
+        </div>
+
+    </div>
 </section>
 
 <section class="find-more">
@@ -3181,49 +3210,89 @@
     </div>
 </footer>
 
-<div class="menu" id="menu">
-    <div class="container">
-        <div class="menu-column">
-            <h2 class="menu-title">УСЛУГИ И СЕРВИСЫ</h2>
-            <ul>
-                <li><a href="#">Авиабилеты</a></li>
-                <li><a href="#">Железнодорожные билеты</a></li>
-                <li><a href="#">Гостиницы</a></li>
-                <li><a href="#">Визовые услуги</a></li>
-                <li><a href="#">Транспортные услуги</a></li>
-                <li><a href="#">Страхование</a></li>
-                <li><a href="#">Мероприятия</a></li>
-                <li><a href="#">Имплант-офисы</a></li>
-                <li><a href="#">Консалтинг</a></li>
-                <li><a href="#">Индивидуальный туризм</a></li>
-            </ul>
-        </div>
-        <div class="menu-column">
-            <h2 class="menu-title">ОНЛАЙН</h2>
-            <ul>
-                <li><a href="#">MOSCO ONLINE</a></li>
-                <li><a href="#">Технологии</a></li>
-                <li><a href="#">Возможности</a></li>
-                <li><a href="#">Пользователю</a></li>
-            </ul>
-        </div>
-        <div class="menu-column">
-            <h2 class="menu-title">ИНФОРМАЦИЯ</h2>
-            <ul>
-                <li><a href="#">О компании</a></li>
-                <li><a href="#">Онлайн или Оффлайн?</a></li>
-                <li><a href="#">Формы оплаты</a></li>
-                <li><a href="#">Новости</a></li>
-                <li><a href="#">Карьера в МОСКО/Вакансии</a></li>
-                <li><a href="#">Вопрос-ответ</a></li>
-                <li><a href="#">Блог</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
-        </div>
-    </div>
-</div>
+<!--<div class="menu" id="menu">-->
+<!--    <div class="container">-->
+<!--        <div class="menu-column">-->
+<!--            <h2 class="menu-title">УСЛУГИ И СЕРВИСЫ</h2>-->
+<!--            <ul>-->
+<!--                <li><a href="#">Авиабилеты</a></li>-->
+<!--                <li><a href="#">Железнодорожные билеты</a></li>-->
+<!--                <li><a href="#">Гостиницы</a></li>-->
+<!--                <li><a href="#">Визовые услуги</a></li>-->
+<!--                <li><a href="#">Транспортные услуги</a></li>-->
+<!--                <li><a href="#">Страхование</a></li>-->
+<!--                <li><a href="#">Мероприятия</a></li>-->
+<!--                <li><a href="#">Имплант-офисы</a></li>-->
+<!--                <li><a href="#">Консалтинг</a></li>-->
+<!--                <li><a href="#">Индивидуальный туризм</a></li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--        <div class="menu-column">-->
+<!--            <h2 class="menu-title">ОНЛАЙН</h2>-->
+<!--            <ul>-->
+<!--                <li><a href="#">MOSCO ONLINE</a></li>-->
+<!--                <li><a href="#">Технологии</a></li>-->
+<!--                <li><a href="#">Возможности</a></li>-->
+<!--                <li><a href="#">Пользователю</a></li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--        <div class="menu-column">-->
+<!--            <h2 class="menu-title">ИНФОРМАЦИЯ</h2>-->
+<!--            <ul>-->
+<!--                <li><a href="#">О компании</a></li>-->
+<!--                <li><a href="#">Онлайн или Оффлайн?</a></li>-->
+<!--                <li><a href="#">Формы оплаты</a></li>-->
+<!--                <li><a href="#">Новости</a></li>-->
+<!--                <li><a href="#">Карьера в МОСКО/Вакансии</a></li>-->
+<!--                <li><a href="#">Вопрос-ответ</a></li>-->
+<!--                <li><a href="#">Блог</a></li>-->
+<!--                <li><a href="#">Контакты</a></li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
 
 <script src="js/script.js"></script>
 
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script type="text/javascript">
+
+    $('.multiple-items').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1025,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: false
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
+</script>
 </body>
 </html>

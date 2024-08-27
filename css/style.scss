@@ -931,14 +931,20 @@ footer{
       }
     }
   }
+  .right-text-block{
+    .company-past-top-mobile-bg{
+      display: none;
+    }
+  }
 }
 
 .company-past-bottom{
   position: relative;
-  .bottom-left-routing-icon{
-    position: absolute;
-    bottom: -25px;
-    left: -85px;
+  .bottom-left-routing-icon
+  .right-text-block{
+    .company-past-top-mobile-bg{
+      display: none;
+    }
   }
 }
 
@@ -1029,7 +1035,7 @@ footer{
         line-height: 25px;
       }
       .background-color-changed{
-        background: linear-gradient(to left, white 50%, black 50%);
+        background: linear-gradient(to left, white 50%, #282828 50%);
         background-size: 200% 100%;
         background-position: right bottom;
         transition: background-position 1s ease-out;
@@ -1241,6 +1247,91 @@ footer{
   }
 }
 
+.bottom-slider{
+  .container{
+    margin-top: 70px;
+    .multiple-items {
+      .menu-item{
+        height: 525px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        opacity: 0.1;
+        transition: 0.3s;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        padding: 40px 20px;
+        position: relative;
+
+        h3{
+          color: #FFF;
+          text-align: center;
+          font-family: "RF Dewi";
+          font-size: 32px;
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+        p{
+          color: #FFF;
+          text-align: center;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 16px;
+          margin-top: 25px;
+        }
+        span{
+          color: #FFF;
+          text-align: center;
+          font-family: "RF Dewi";
+          font-size: 64px;
+          font-style: normal;
+          font-weight: 700;
+          text-transform: uppercase;
+          opacity: 0.2;
+          position: absolute;
+        }
+      }
+      .menu-item:hover{
+        opacity: 1;
+      }
+      .menu-item-one{
+        background-image: url("../images/company/alla.webp");
+        span{
+          transform: rotate(-90deg);
+          top: 54px;
+          right: -65px;
+        }
+      }
+      .menu-item-two{
+        background-image: url("../images/company/dmitri.webp");
+        span{
+          transform: rotate(-90deg);
+          top: 125px;
+          right: -130px;
+        }
+      }
+      .menu-item-three{
+        background-image: url("../images/company/alla.webp");
+        span{
+          transform: rotate(-90deg);
+          top: 54px;
+          right: -65px;
+        }
+      }
+      .menu-item-four{
+        background-image: url("../images/company/dmitri.webp");
+        span{
+          transform: rotate(-90deg);
+          top: 125px;
+          right: -130px;
+        }
+      }
+    }
+  }
+}
+
 .find-more{
   margin-top: 60px;
   .container{
@@ -1292,6 +1383,7 @@ footer{
         }
         span{
           text-decoration: underline;
+          font-size: 13px;
         }
       }
     }

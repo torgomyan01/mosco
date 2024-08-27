@@ -361,6 +361,25 @@
     }
   }
 
+  .bottom-slider{
+    .container{
+      padding: 0 0 60px 0;
+      position: relative;
+      .multiple-items{
+        .slick-prev{
+          position: absolute;
+          bottom: -20px;
+          left: 45%;
+        }
+        .slick-next{
+          position: absolute;
+          bottom: -20px;
+          left: 54%;
+        }
+      }
+    }
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -554,7 +573,7 @@
         margin-top: 40px;
         h3{
           padding-left: 0;
-          margin: 0 0 20px 0;
+          margin: 0 0 65px 0;
           line-height: normal;
           .service {
             svg{
@@ -611,8 +630,31 @@
     }
   }
 
-  .company-past-top .left-svg-icon {
-    display: none;
+  .company-past-top{
+    .left-svg-icon {
+      display: none;
+    }
+    .right-text-block{
+      .company-past-top-mobile-bg{
+        display: block;
+        position: absolute;
+        width: 100%;
+        max-width: 350px;
+        bottom: 150px;
+      }
+    }
+  }
+
+  .company-past-bottom{
+    .right-text-block{
+      .company-past-top-mobile-bg{
+        display: block;
+        position: absolute;
+        width: 100%;
+        max-width: 350px;
+        bottom: 150px;
+      }
+    }
   }
 
   .company-present{
@@ -622,6 +664,7 @@
       .left-text-block{
         width: 100%;
         order: 2;
+        padding: 0;
       }
       .right-image-block{
         width: 100%;
@@ -654,6 +697,7 @@
       .left-text-block{
         h3{
           line-height: normal;
+          padding: 0;
         }
       }
       .bottom-text-block{
@@ -663,8 +707,8 @@
         }
         .bottom-block-img{
           top: -250px;
-          right: -92px;
-          width: 550px;
+          right: -12px;
+          width: 360px;
         }
       }
     }
@@ -675,7 +719,7 @@
     .container{
       .container-item{
         width: 100%;
-        height: 250px;
+        height: 210px;
       }
       .container-item:nth-child(2){
         display: none;
