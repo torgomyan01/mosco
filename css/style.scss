@@ -105,6 +105,7 @@ button{
   position: relative;
   box-shadow: 4px 4px 67.7px 1px rgba(146, 146, 146, 0.25);
   @include flex('sb', 'c');
+  margin-top: 10px;
   &-images{
     object-fit: cover;
     transition: 0.7s;
@@ -199,16 +200,21 @@ nav{
   padding: 1.6rem 0;
   position: relative;
   z-index: 10;
+  padding-top: 14px;
   .nav-right-info{
-    max-width: 24.25rem;
+    max-width: 24.1875rem;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
+    .nav-right-info-tel{
+      margin-right: 10px;
+    }
+
     a{
       color: #282828;
-      font-size: 13px;
+      font-size: 14px;
       font-weight: 600;
       .icon-person{
         font-size: 1rem;
@@ -222,6 +228,7 @@ nav{
     }
     .language{
       text-decoration: underline;
+      padding: 0 1px 1px 0;
     }
   }
   .logo-block{
@@ -266,7 +273,7 @@ nav{
 }
 
 .how-working{
-  margin-top: 2.5rem;
+  margin-top: 43px;
   &-body{
     @include flex('sb', 's');
   }
@@ -715,11 +722,12 @@ footer{
   a{
     color: #282828 !important;
     font-size: 14px;
+    padding-left: 10px;
   }
   svg{
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 15px;
+    top: 3px;
     transition: 0.8s;
     z-index: -1;
     *{

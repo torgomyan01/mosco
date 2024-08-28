@@ -99,6 +99,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 10px;
 }
 .header-images {
   object-fit: cover;
@@ -197,17 +198,21 @@ nav {
   padding: 1.6rem 0;
   position: relative;
   z-index: 10;
+  padding-top: 14px;
 }
 nav .nav-right-info {
-  max-width: 24.25rem;
+  max-width: 24.1875rem;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+nav .nav-right-info .nav-right-info-tel {
+  margin-right: 10px;
+}
 nav .nav-right-info a {
   color: #282828;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
 }
 nav .nav-right-info a .icon-person {
@@ -221,6 +226,7 @@ nav .nav-right-info a .icon-phone {
 }
 nav .nav-right-info .language {
   text-decoration: underline;
+  padding: 0 1px 1px 0;
 }
 nav .logo-block img {
   transition: 0.3s;
@@ -253,7 +259,7 @@ nav .nav-left-info .nav-menu-button-icon.show svg path:nth-of-type(3) {
 }
 
 .how-working {
-  margin-top: 2.5rem;
+  margin-top: 43px;
 }
 .how-working-body {
   display: flex;
@@ -690,11 +696,12 @@ footer .container .footer-bottom p {
 .personal-account a {
   color: #282828 !important;
   font-size: 14px;
+  padding-left: 10px;
 }
 .personal-account svg {
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 15px;
+  top: 3px;
   transition: 0.8s;
   z-index: -1;
 }
