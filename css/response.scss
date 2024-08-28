@@ -151,8 +151,8 @@
       .personal-account{
         margin-left: 20px;
         svg {
-          left: -14px;
-          top: -4px;
+          left: -9px;
+          top: -7px;
         }
       }
       svg {
@@ -195,7 +195,8 @@
           max-width: fit-content;
           padding-right: 20px;
           .content-item{
-            padding: 12px 10px;
+            padding: 12px 0 12px 10px;
+
             span{
               font-size: 18px;
             }
@@ -503,6 +504,7 @@
   }
 
   header{
+    margin-top: -3px !important;
     .header-images:first-child{
       display: block;
       width: 100%;
@@ -519,12 +521,18 @@
   }
 
   .how-working{
+    margin-top: 28px;
+    .how-working-counts{
+      padding-right: 0;
+      width: 100%;
+      margin-top: 24px;
+    }
     .how-working-body{
       .how-working-title{
         width: 100%;
       }
       .seeMore{
-        margin: 40px 0 50px;
+        margin: 16px 0 50px;
         .btn-see-more{
           margin: auto;
         }
@@ -547,7 +555,7 @@
       .left-container {
         .left-content {
           h3{
-            margin: 70px 0 30px;
+            margin: 94px 0 38px;
             img{
               display: none;
             }
@@ -562,12 +570,14 @@
             span {
               font-size: 13px;
               font-weight: 400;
+              margin-left: 15px;
             }
           }
         }
       }
       .right-container{
         justify-content: center;
+        margin-top: -43px;
         img{
           margin: 0 0 50px;
         }
@@ -584,16 +594,28 @@
     }
   }
 
+  .we-care{
+    margin-top: 13px;
+  }
+
   .logos-section {
-    margin-top: 65px;
+    margin-top: 71px;
     background-image: url("../images/logos-section-bg-mobil.webp");
   }
   .logos-section .container {
     flex-direction: column;
+    padding-top: 12px;
   }
   .logos-section .container .line {
     width: 220px;
     height: 1px;
+
+    &:first-child{
+      display: none;
+    }
+    &:last-child{
+      display: none;
+    }
   }
   .logos-section .container img{
     max-width: 110px;
@@ -603,8 +625,12 @@
 
   .cooperation-section{
     margin: 75px 0;
+
+    &.home{
+      margin-top: 111px;
+    }
     .container {
-      padding: 20px;
+      padding: 16px 20px 20px 14px;
       flex-direction: column-reverse;
       background-image: url("../images/cooperation-mobile.webp");
       .text-section{
@@ -623,7 +649,25 @@
     }
   }
 
+  nav {
+    .nav-right-info{
+      .personal-account{
+        margin-left: 37px;
+        margin-bottom: 4px;
+      }
+      a {
+        .icon-person{
+          font-size: 18px;
+        }
+
+      }
+    }
+  }
+
+
+
   footer{
+    padding: 7px 0 15px;
     .container{
       .footer-top{
         .footer-top-left{
@@ -1020,7 +1064,9 @@
 }
 
 .we-care .container .we-care-item {
-max-width: 100%;
+  max-width: 100%;
+  min-height: 135px;
+
 }
 
 footer {
