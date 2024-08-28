@@ -75,12 +75,13 @@ button{
   width: 11.25rem;
   height: 2.5rem;
   cursor: pointer;
+  padding-top: 8px;
   svg{
     position: absolute;
-    left: -31px;
-    top: -7px;
+    left: -26px;
+    top: 0;
     z-index: -1;
-    zoom: 1.1;
+    zoom: 1;
     path{
       fill: #11366F;
       transition: 0.3s;
@@ -159,7 +160,7 @@ button{
     overflow: hidden;
     display: block;
     border-right: 1px solid rgba(232, 232, 232, 0.40);
-    width: 97px;
+    width: 96px;
     height: 102px;
     @include flex('c', 'c');
     &:before{
@@ -246,7 +247,8 @@ nav{
       @include flex('c', 'c');
       z-index: 100;
       cursor: pointer;
-
+      position: relative;
+      left: -8px;
       svg{
         path{
           transition: 0.3s;
@@ -277,12 +279,16 @@ nav{
   &-body{
     @include flex('sb', 's');
   }
+  &-counts{
+    padding-right: 32px;
+  }
   &-title{
     width: 515.15px;
     color: #282828;
     font-size: 48px;
     font-weight: 700;
     text-transform: uppercase;
+    font-family: "RF Dewi";
   }
   &-description{
     color: #6C6C6C;
@@ -298,7 +304,7 @@ nav{
     text-align: right;
     font-size: 14px;
     font-weight: 500;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
   &-data{
     display: flex;
@@ -308,10 +314,10 @@ nav{
     font-weight: 700;
     line-height: normal;
     span{
-      font-size: 2.8125rem;
+      font-size: 3rem;
       position: relative;
       bottom: -9px;
-      margin-right: 5px;
+      margin-right: 6px;
 
       @media (max-width: 768px){
         bottom: -6px;
@@ -373,7 +379,7 @@ nav{
 }
 
 .our-clients{
-  margin-top: 10px;
+  margin-top: 20px;
   &-content{
     box-shadow: 4px 4px 67.7px 25px rgba(146, 146, 146, 0.25);
   }
@@ -386,11 +392,11 @@ nav{
       justify-content: flex-end;
       width: 100%;
       padding-bottom: 75px;
+      padding-top: 5px;
       .left-content{
         max-width: 44.375rem;
         width: 100%;
         h3{
-          margin: 2.5rem 0 1.875rem;
           color: #282828;
           font-size: 1.5rem;
           font-style: normal;
@@ -398,6 +404,9 @@ nav{
           line-height: normal;
           text-transform: uppercase;
           position: relative;
+          font-family: "RF Dewi";
+          margin: 2.5rem 0 2.8125rem;
+
           img{
             position: absolute;
             opacity: 0.05;
@@ -418,13 +427,19 @@ nav{
             font-size: 48px;
           }
           .icon-Frame-394:before {
-            transition: 0.3s;
+            //transition: 0.3s;
+            margin-left: 5px;
+            position: relative;
+            top: -6px;
           }
           .icon-Frame-393{
             font-size: 48px;
+            margin-left: 5px;
+            position: relative;
+            top: -6px;
           }
           .icon-Frame-393:before {
-            transition: 0.3s;
+            //transition: 0.3s;
           }
           span{
             color: #282828;
@@ -432,7 +447,7 @@ nav{
             font-style: normal;
             font-weight: 400;
             line-height: normal;
-            margin-left: 20px;
+            margin-left: 30px;
           }
         }
       }
@@ -469,18 +484,19 @@ nav{
     align-items: center;
     justify-content: space-between;
     .we-care-item{
-      max-width: 280px;
+      max-width: 265px;
+      min-height: 187px;
       width: 100%;
-      margin: 40px 10px 40px 0;
+      margin: 36px 10px 40px 0;
       span{
-        padding: 5px 10px;
+        padding: 4px 10px;
         background: #214788;
         color: #fff;
         font-size: 18px;
         font-weight: 600;
       }
       h3{
-        margin: 10px 0 10px;
+        margin: 8px 0 10px;
         color: #282828;
         font-size: 18px;
         font-weight: 600;
@@ -500,8 +516,8 @@ nav{
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 30px 0;
-  margin-top: 10px;
+  padding: 26px 0;
+  margin-top: 3px;
   .container{
     display: flex;
     align-items: center;
