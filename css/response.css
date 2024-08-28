@@ -94,8 +94,8 @@
     margin-left: 20px;
   }
   nav .nav-right-info .personal-account svg {
-    left: -14px;
-    top: -4px;
+    left: -9px;
+    top: -7px;
   }
   nav .nav-right-info svg {
     background: url("../images/person-icon-mobile.svg") !important;
@@ -129,7 +129,7 @@
     padding-right: 20px;
   }
   .our-clients .container .left-container .left-content .content-item {
-    padding: 12px 10px;
+    padding: 12px 0 12px 10px;
   }
   .our-clients .container .left-container .left-content .content-item span {
     font-size: 18px;
@@ -317,6 +317,9 @@
   nav .nav-left-info {
     max-width: 90px;
   }
+  header {
+    margin-top: -3px !important;
+  }
   header .header-images:first-child {
     display: block;
     width: 100%;
@@ -330,11 +333,19 @@
   header .header-animation {
     display: none;
   }
+  .how-working {
+    margin-top: 28px;
+  }
+  .how-working .how-working-counts {
+    padding-right: 0;
+    width: 100%;
+    margin-top: 24px;
+  }
   .how-working .how-working-body .how-working-title {
     width: 100%;
   }
   .how-working .how-working-body .seeMore {
-    margin: 40px 0 50px;
+    margin: 16px 0 50px;
   }
   .how-working .how-working-body .seeMore .btn-see-more {
     margin: auto;
@@ -352,7 +363,7 @@
     flex-direction: column;
   }
   .our-clients .container .left-container .left-content h3 {
-    margin: 70px 0 30px;
+    margin: 94px 0 38px;
   }
   .our-clients .container .left-container .left-content h3 img {
     display: none;
@@ -366,9 +377,11 @@
   .our-clients .container .left-container .left-content .content-item span {
     font-size: 13px;
     font-weight: 400;
+    margin-left: 15px;
   }
   .our-clients .container .right-container {
     justify-content: center;
+    margin-top: -43px;
   }
   .our-clients .container .right-container img {
     margin: 0 0 50px;
@@ -382,16 +395,26 @@
     top: -165px;
     z-index: -1;
   }
+  .we-care {
+    margin-top: 13px;
+  }
   .logos-section {
-    margin-top: 65px;
+    margin-top: 71px;
     background-image: url("../images/logos-section-bg-mobil.webp");
   }
   .logos-section .container {
     flex-direction: column;
+    padding-top: 12px;
   }
   .logos-section .container .line {
     width: 220px;
     height: 1px;
+  }
+  .logos-section .container .line:first-child {
+    display: none;
+  }
+  .logos-section .container .line:last-child {
+    display: none;
   }
   .logos-section .container img {
     max-width: 110px;
@@ -401,8 +424,11 @@
   .cooperation-section {
     margin: 75px 0;
   }
+  .cooperation-section.home {
+    margin-top: 111px;
+  }
   .cooperation-section .container {
-    padding: 20px;
+    padding: 16px 20px 20px 14px;
     flex-direction: column-reverse;
     background-image: url("../images/cooperation-mobile.webp");
   }
@@ -411,6 +437,16 @@
   }
   .cooperation-section .container .from-section {
     justify-content: center;
+  }
+  nav .nav-right-info .personal-account {
+    margin-left: 37px;
+    margin-bottom: 4px;
+  }
+  nav .nav-right-info a .icon-person {
+    font-size: 18px;
+  }
+  footer {
+    padding: 7px 0 15px;
   }
   footer .container .footer-top .footer-top-left div {
     flex-wrap: wrap;
@@ -662,6 +698,7 @@
   }
   .we-care .container .we-care-item {
     max-width: 100%;
+    min-height: 135px;
   }
   footer .container .footer-top .footer-top-left .last-block button {
     width: 100%;
