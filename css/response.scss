@@ -25,8 +25,6 @@
     }
   }
 
-
-
   .company-past-top{
     .left-image-block{
       .left-svg-icon {
@@ -49,8 +47,13 @@
       }
       .left-image-block{
 
-        .company-past-top-left-simple-Img{
-          max-width: 400px;
+        .top-slider-animation {
+          min-width: calc(100% - 173px);
+          height: 310px;
+        }
+        h3{
+          font-size: 36px;
+          margin: 130px 0 0 0;
         }
       }
       .bottom-block{
@@ -67,7 +70,7 @@
     }
     .bottom-left-routing-icon {
       position: absolute;
-      max-width: 375px;
+      max-width: 345px;
     }
   }
 
@@ -253,14 +256,21 @@
           max-width: 385px;
           line-height: 28px;
           padding-left: 5px;
+          font-size: 28px;
         }
       }
       .left-image-block{
-        .company-past-top-left-simple-Img{
-          max-width: 400px;
+        .top-slider-animation {
+          min-width: calc(100% - 127px);
+          height: 280px;
+        }
+        h3{
+          font-size: 28px;
         }
       }
-
+      .company-past-bottom-left-img{
+        max-width: 355px;
+      }
     }
   }
 
@@ -476,15 +486,19 @@
     }
   }
 
+  .company-title {
+    margin-top: 10px;
+  }
+
   nav{
     .nav-right-info{
-      max-width: 90px;
+      max-width: 57px;
       .language{
         display: none;
       }
     }
     .nav-left-info{
-      max-width: 90px;
+      max-width: 60px;
     }
   }
 
@@ -617,13 +631,17 @@
             flex-wrap: wrap;
             justify-content: flex-start;
             a{
-              margin: 5px;
+              margin: 5px 0 15px 0;
             }
+          }
+          .last-block {
+            margin-top: -15px;
           }
         }
       }
     }
   }
+
 
   .company-title {
     h2 {
@@ -645,8 +663,9 @@
         margin-top: 40px;
         h3{
           padding-left: 0;
-          margin: 0 0 65px 0;
+          margin: 20px 0 49px 0;
           line-height: normal;
+          font-size: 20px;
           .service {
             svg{
               left: -10px;
@@ -663,10 +682,11 @@
 
       .left-image-block{
         width: 100%;
+        margin: 70px 0 0 0;
         flex-direction: column;
         h3{
           transform: rotate(0);
-          margin: 0;
+          margin: -15px 0px 0 -5px;
           font-size: 36px;
         }
         .company-past-top-left-simple-Img{
@@ -724,7 +744,7 @@
   }
 
   .company-present{
-    padding: 100px 0 100px 0;
+    padding: 109px 0 100px 0;
     margin-top: 0;
     .container{
       .left-text-block{
@@ -765,10 +785,12 @@
         h3{
           line-height: normal;
           padding: 0;
+          margin-top: 20px;
         }
       }
       .bottom-text-block{
         order: 3;
+        margin-top: 40px;
         p{
           font-size: 13px;
         }
@@ -781,12 +803,35 @@
     }
   }
 
+  .company-past-bottom {
+    .container{
+      .left-image-block{
+        margin-top: 0px;
+        h3{
+          margin: 4px 0px 0 -5px;
+        }
+      }
+      .right-text-block{
+        p{
+          margin-top: 6px;
+        }
+      }
+      .bottom-block {
+        margin-top: 90px;
+      }
+    }
+  }
+
   .company-recommendation{
-    margin-top: 100px;
+    margin-top: 80px;
+    padding: 82px 0;
     .container{
       .container-item{
         width: 100%;
         height: 210px;
+        p{
+          margin-top: 30px;
+        }
       }
       .container-item:nth-child(2){
         display: none;
@@ -803,6 +848,9 @@
       .container-item:nth-child(10){
         display: none;
       }
+      .container-item:nth-child(11){
+        margin-top: 37px;
+      }
     }
   }
 
@@ -813,7 +861,7 @@
           line-height: normal;
         }
         .btn-see-more{
-          margin: 40px auto 0;
+          margin: 45px auto 0;
         }
       }
     }
@@ -833,6 +881,15 @@
     .container{
 
       .multiple-items{
+        .menu-item{
+          height: 430px;
+          h3{
+            font-size: 24px;
+          }
+          p{
+            margin-top: 11px;
+          }
+        }
         .slick-prev{
           left: 42%;
         }
@@ -979,7 +1036,7 @@ footer {
     }
 
     .footer-top-right {
-      margin: 20px 0;
+      margin: 9px 0;
 
       .footer-top-right-bgText {
         margin: 20px 0;

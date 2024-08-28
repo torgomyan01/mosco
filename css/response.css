@@ -24,8 +24,13 @@
     margin-left: 15px;
     line-height: 30px;
   }
-  .company-past .container .left-image-block .company-past-top-left-simple-Img {
-    max-width: 400px;
+  .company-past .container .left-image-block .top-slider-animation {
+    min-width: calc(100% - 173px);
+    height: 310px;
+  }
+  .company-past .container .left-image-block h3 {
+    font-size: 36px;
+    margin: 130px 0 0 0;
   }
   .company-past .container .bottom-block h3 {
     max-width: 330px;
@@ -37,7 +42,7 @@
   }
   .company-past .bottom-left-routing-icon {
     position: absolute;
-    max-width: 375px;
+    max-width: 345px;
   }
   .company-present .container .left-text-block h3 {
     font-size: 20px;
@@ -165,9 +170,17 @@
     max-width: 385px;
     line-height: 28px;
     padding-left: 5px;
+    font-size: 28px;
   }
-  .company-past .container .left-image-block .company-past-top-left-simple-Img {
-    max-width: 400px;
+  .company-past .container .left-image-block .top-slider-animation {
+    min-width: calc(100% - 127px);
+    height: 280px;
+  }
+  .company-past .container .left-image-block h3 {
+    font-size: 28px;
+  }
+  .company-past .container .company-past-bottom-left-img {
+    max-width: 355px;
   }
   .company-past-top .left-svg-icon {
     bottom: 125px;
@@ -308,14 +321,17 @@
   .menu .container .menu-column ul li {
     padding: 4px 12px;
   }
+  .company-title {
+    margin-top: 10px;
+  }
   nav .nav-right-info {
-    max-width: 90px;
+    max-width: 57px;
   }
   nav .nav-right-info .language {
     display: none;
   }
   nav .nav-left-info {
-    max-width: 90px;
+    max-width: 60px;
   }
   header .header-images:first-child {
     display: block;
@@ -417,7 +433,10 @@
     justify-content: flex-start;
   }
   footer .container .footer-top .footer-top-left div a {
-    margin: 5px;
+    margin: 5px 0 15px 0;
+  }
+  footer .container .footer-top .footer-top-left .last-block {
+    margin-top: -15px;
   }
   .company-title h2 {
     font-size: 24px;
@@ -432,8 +451,9 @@
   }
   .company-past .container .right-text-block h3 {
     padding-left: 0;
-    margin: 0 0 65px 0;
+    margin: 20px 0 49px 0;
     line-height: normal;
+    font-size: 20px;
   }
   .company-past .container .right-text-block h3 .service svg {
     left: -10px;
@@ -446,11 +466,12 @@
   }
   .company-past .container .left-image-block {
     width: 100%;
+    margin: 70px 0 0 0;
     flex-direction: column;
   }
   .company-past .container .left-image-block h3 {
     transform: rotate(0);
-    margin: 0;
+    margin: -15px 0px 0 -5px;
     font-size: 36px;
   }
   .company-past .container .left-image-block .company-past-top-left-simple-Img {
@@ -492,7 +513,7 @@
     bottom: 150px;
   }
   .company-present {
-    padding: 100px 0 100px 0;
+    padding: 109px 0 100px 0;
     margin-top: 0;
   }
   .company-present .container .left-text-block {
@@ -531,9 +552,11 @@
   .company-present .container .left-text-block h3 {
     line-height: normal;
     padding: 0;
+    margin-top: 20px;
   }
   .company-present .container .bottom-text-block {
     order: 3;
+    margin-top: 40px;
   }
   .company-present .container .bottom-text-block p {
     font-size: 13px;
@@ -543,12 +566,28 @@
     right: -12px;
     width: 360px;
   }
+  .company-past-bottom .container .left-image-block {
+    margin-top: 0px;
+  }
+  .company-past-bottom .container .left-image-block h3 {
+    margin: 4px 0px 0 -5px;
+  }
+  .company-past-bottom .container .right-text-block p {
+    margin-top: 6px;
+  }
+  .company-past-bottom .container .bottom-block {
+    margin-top: 90px;
+  }
   .company-recommendation {
-    margin-top: 100px;
+    margin-top: 80px;
+    padding: 82px 0;
   }
   .company-recommendation .container .container-item {
     width: 100%;
     height: 210px;
+  }
+  .company-recommendation .container .container-item p {
+    margin-top: 30px;
   }
   .company-recommendation .container .container-item:nth-child(2) {
     display: none;
@@ -565,14 +604,26 @@
   .company-recommendation .container .container-item:nth-child(10) {
     display: none;
   }
+  .company-recommendation .container .container-item:nth-child(11) {
+    margin-top: 37px;
+  }
   .find-more .container .top-section p {
     line-height: normal;
   }
   .find-more .container .top-section .btn-see-more {
-    margin: 40px auto 0;
+    margin: 45px auto 0;
   }
   .news-section-cody .container .news-body .news-body-item {
     width: calc(8.3333333333% * 12 - 0px);
+  }
+  .bottom-slider .container .multiple-items .menu-item {
+    height: 430px;
+  }
+  .bottom-slider .container .multiple-items .menu-item h3 {
+    font-size: 24px;
+  }
+  .bottom-slider .container .multiple-items .menu-item p {
+    margin-top: 11px;
   }
   .bottom-slider .container .multiple-items .slick-prev {
     left: 42%;
@@ -668,7 +719,7 @@
     margin: 10px 5px 0;
   }
   footer .container .footer-top .footer-top-right {
-    margin: 20px 0;
+    margin: 9px 0;
   }
   footer .container .footer-top .footer-top-right .footer-top-right-bgText {
     margin: 20px 0;
