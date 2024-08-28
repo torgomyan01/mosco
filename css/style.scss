@@ -978,6 +978,11 @@ footer{
   position: relative;
   .container{
     margin-top: 10px;
+    .left-image-block {
+      h3{
+        margin: 170px 0 0 0;
+      }
+    }
   }
 
   .right-text-block{
@@ -1126,7 +1131,7 @@ footer{
 .company-present{
   overflow-x: hidden;
   padding: 230px 0 100px 0;
-  margin-top: -90px;
+  margin-top: -85px;
   overflow-y: hidden;
 
   .container{
@@ -1183,8 +1188,8 @@ footer{
       }
       .right-block-circle-img{
         position: absolute;
-        right: -135px;
-        bottom: -95px;
+        right: -142px;
+        bottom: -73px;
         display: block;
 
         &.changed{
