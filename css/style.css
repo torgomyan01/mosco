@@ -500,7 +500,7 @@ nav .nav-left-info .nav-menu-button-icon.show svg path:nth-of-type(3) {
 }
 
 .cooperation-section {
-  margin: 100px 0;
+  margin: 60px 0;
   padding: 0 20px;
 }
 .cooperation-section .container {
@@ -509,7 +509,7 @@ nav .nav-left-info .nav-menu-button-icon.show svg path:nth-of-type(3) {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 30px 20px;
+  padding: 21px 4px 38px 36px;
   display: flex;
   justify-content: space-between;
   max-width: 1290px;
@@ -608,6 +608,10 @@ footer .container .footer-top .footer-top-left div :hover {
   color: #214788;
   opacity: 1;
 }
+footer .container .footer-top .footer-top-left .last-block {
+  max-width: 664px;
+  margin-top: -8px;
+}
 footer .container .footer-top .footer-top-left .black-text-block a {
   color: #282828;
   opacity: 1;
@@ -684,6 +688,9 @@ footer .container .footer-bottom p {
   font-size: 12px;
   font-weight: 500;
   opacity: 0.4;
+}
+footer .container .personal-account {
+  margin: 0px -14px 7px 0px;
 }
 
 .personal-account {
@@ -838,7 +845,7 @@ footer .container .footer-bottom p {
 }
 
 .company-title {
-  margin-top: 25px;
+  margin-top: 19px;
 }
 .company-title h2 {
   color: #282828;
@@ -852,7 +859,7 @@ footer .container .footer-bottom p {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 4px;
 }
 .company-title div .icon-arrow-right2 {
   font-size: 14px;
@@ -900,6 +907,9 @@ footer .container .footer-bottom p {
 .company-past-bottom {
   position: relative;
 }
+.company-past-bottom .container {
+  margin-top: 10px;
+}
 .company-past-bottom .right-text-block .company-past-top-mobile-bg {
   display: none;
 }
@@ -912,7 +922,7 @@ footer .container .footer-bottom p {
 }
 .company-past .container .left-image-block {
   width: 50%;
-  margin: 30px 0 0 0;
+  margin: 38px 0 0 0;
   display: flex;
   position: relative;
 }
@@ -926,7 +936,7 @@ footer .container .footer-bottom p {
   font-family: "RF Dewi", sans-serif;
 }
 .company-past .container .left-image-block .top-slider-animation {
-  min-width: calc(100% - 50px);
+  min-width: calc(100% - 120px);
   height: 412px;
   background-position: 0% 0%;
   background-size: 150%;
@@ -950,7 +960,7 @@ footer .container .footer-bottom p {
   color: #282828;
   font-size: 26px;
   font-weight: 700;
-  line-height: 35px;
+  line-height: 31px;
   font-family: "RF Dewi", sans-serif;
 }
 .company-past .container .right-text-block h3 .years-svg {
@@ -1339,7 +1349,8 @@ footer .container .footer-bottom p {
   padding: 3px 10px;
 }
 .find-more .container .top-section .btn-see-more {
-  margin-top: 40px;
+  margin-top: 33px;
+  margin-left: 50px;
 }
 .find-more .container .bottom-section {
   display: flex;
