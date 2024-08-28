@@ -455,7 +455,7 @@
     justify-content: center;
   }
   nav .nav-right-info .personal-account {
-    margin-left: 37px;
+    margin-left: 0px;
     margin-bottom: 4px;
   }
   nav .nav-right-info a .icon-person {
@@ -518,7 +518,7 @@
     width: 100%;
   }
   .company-past .container .bottom-text-block {
-    margin-top: 40px;
+    margin-top: 70px;
   }
   .company-past .container .bottom-text-block p {
     line-height: normal;
@@ -613,6 +613,9 @@
   }
   .company-past-bottom .container .bottom-block {
     margin-top: 90px;
+  }
+  .company-past-bottom .container .bottom-block h3 {
+    margin-top: 30px;
   }
   .company-recommendation {
     margin-top: 80px;
@@ -725,6 +728,9 @@
     width: 100%;
     height: 145px;
     padding: 20px 5px;
+  }
+  .company-past-top .container .left-image-block #output {
+    transform: translate(0%, 100%) rotate(0);
   }
 }
 @media (max-width: 767px) {

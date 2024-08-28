@@ -663,3 +663,21 @@ document.querySelectorAll('.hover-video').forEach(video => {
     video.pause();
   });
 });
+
+
+const text = "Прошлое".split("");
+let index = 0;
+
+function printWord(words, selector, intervalId) {
+  if (index < words.length) {
+    const outputDiv = document.getElementById(`${selector}`);
+    outputDiv.innerHTML += words[index] + '';
+    index++;
+  } else {
+    clearInterval(intervalId);
+  }
+}
+const firstIntervalId = setInterval(()=>{
+  printWord(text,"output", firstIntervalId)
+}, 500);
+

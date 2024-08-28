@@ -895,6 +895,12 @@ footer .container .personal-account {
 .company-past-top {
   position: relative;
 }
+.company-past-top .container .left-image-block #output {
+  transform-origin: 0 0;
+  transform: translate(0%, 100%) rotate(-90deg);
+  bottom: 0;
+  position: absolute;
+}
 .company-past-top .left-image-block {
   position: relative;
 }
@@ -1178,15 +1184,19 @@ footer .container .personal-account {
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
+  /* Top border */
+  /* Bottom border */
+  /* Left border */
+  /* Right border */
 }
 .company-recommendation .container .container-item {
   width: 25%;
   height: 250px;
   padding: 20px;
-  border: 1px solid rgba(232, 232, 232, 0.2);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
 }
 .company-recommendation .container .container-item h3 {
   color: #FFF;
@@ -1209,12 +1219,86 @@ footer .container .personal-account {
 .company-recommendation .container .container-item a i {
   font-size: 24px;
 }
-.company-recommendation .container .container-item:nth-child(1) {
+.company-recommendation .container .changed::before,
+.company-recommendation .container .changed::after,
+.company-recommendation .container .changed .second-border::before,
+.company-recommendation .container .changed .second-border::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(232, 232, 232, 0.2);
+}
+.company-recommendation .container .changed::before {
+  top: 0;
+  left: 0;
+  height: 1px;
+  width: 0;
+  animation: top-border 1s forwards;
+}
+.company-recommendation .container .changed::after {
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  width: 0;
+  animation: bottom-border 1s forwards;
+}
+.company-recommendation .container .changed .second-border::before {
+  bottom: 0;
+  left: 0;
+  width: 1px;
+  height: 0;
+  animation: left-border 1s forwards;
+}
+.company-recommendation .container .changed .second-border::after {
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 0;
+  animation: right-border 1s forwards;
+}
+@keyframes top-border {
+  to {
+    width: 100%;
+  }
+}
+@keyframes bottom-border {
+  to {
+    width: 100%;
+  }
+}
+@keyframes left-border {
+  to {
+    height: 100%;
+  }
+}
+@keyframes right-border {
+  to {
+    height: 100%;
+  }
+}
+.company-recommendation .container .changed:nth-child(1)::before {
+  content: "";
   border: none;
   background-image: url("../images/company/company-recommendation-top.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  animation: move-up 1s linear;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  padding: 0;
+  top: 0;
+}
+@keyframes move-up {
+  0% {
+    top: 100%;
+    height: 0;
+  }
+  100% {
+    top: 0;
+    height: 100%;
+  }
 }
 .company-recommendation .container .container-item:nth-child(2) {
   border: none;
@@ -1237,12 +1321,30 @@ footer .container .personal-account {
 .company-recommendation .container .container-item:nth-child(10) {
   border: none;
 }
-.company-recommendation .container .container-item:nth-child(11) {
+.company-recommendation .container .changed:nth-child(11)::before {
+  content: "";
   border: none;
   background-image: url("../images/company/company-recommendation-bottom.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  animation: move-up 1s linear;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  padding: 0;
+  top: 0;
+}
+@keyframes move-up {
+  0% {
+    top: 100%;
+    height: 0;
+  }
+  100% {
+    top: 0;
+    height: 100%;
+  }
 }
 
 .bottom-slider .container {
@@ -1356,15 +1458,11 @@ footer .container .personal-account {
 }
 .find-more .container .top-section p {
   max-width: 920px;
-  color: #282828;
+  color: #fff;
   font-size: 14px;
   line-height: 20px;
-}
-.find-more .container .top-section .background-color-changed-bottom {
-  background: linear-gradient(to left, white 50%, black 50%);
-  background-size: 200% 100%;
-  background-position: right bottom;
-  transition: background-position 1s ease-out;
+  background: #282828;
+  padding: 3px 10px;
 }
 .find-more .container .top-section .changed {
   background-position: left bottom;
