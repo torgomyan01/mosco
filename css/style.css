@@ -897,16 +897,27 @@ footer .container .personal-account {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 4px;
+  width: fit-content;
+  margin: 4px auto 0;
 }
 .company-title div .icon-arrow-right2 {
   font-size: 14px;
-  margin: 0 15px;
+  margin: 3px 10px 0 10px;
+  width: 20px;
+  transition: 0.3s;
 }
 .company-title div a {
   color: #282828;
   font-size: 13px;
   font-weight: 400;
+}
+.company-title div span {
+  color: #282828;
+  font-size: 13px;
+  font-weight: 400;
+}
+.company-title div:hover .icon-arrow-right2 {
+  text-align: right;
 }
 
 .company-past-bottom .container .left-image-block h3 {
@@ -1246,13 +1257,19 @@ footer .container .personal-account {
   line-height: 16px;
 }
 .company-recommendation .container .container-item a {
-  width: 24px;
+  width: 35px;
   height: 24px;
   transform: rotate(-45deg);
   color: #214788;
+  transition: 0.9s;
 }
 .company-recommendation .container .container-item a i {
   font-size: 24px;
+  transition: 0.9s;
+}
+.company-recommendation .container :hover a {
+  width: 35px;
+  text-align: end;
 }
 .company-recommendation .container .changed::before,
 .company-recommendation .container .changed::after,
