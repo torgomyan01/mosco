@@ -124,7 +124,7 @@ window.onload = function () {
 
   const burgerIcon = document.getElementById('burgerIcon');
   const menu = document.querySelector('.menu');
-  const menuColumns = document.querySelector('.menu-column');
+  const menuColumns = document.querySelectorAll('.menu-column');
   let menuTimeout = 0;
   let animatedButton;
 
