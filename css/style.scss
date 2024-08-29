@@ -976,6 +976,17 @@ footer{
         position: absolute;
         bottom: -30px;
         left: -85px;
+        .bottom-left-routing-icon-path{
+          stroke-dasharray: 1100;
+          stroke-dashoffset: 1100;
+          stroke-width: 25px;
+          transition: 1.5s ease-in;
+        }
+        &.changed{
+          .bottom-left-routing-icon-path{
+            stroke-dashoffset: 340;
+          }
+        }
       }
     }
   }
