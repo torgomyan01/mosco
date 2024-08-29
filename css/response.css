@@ -49,12 +49,14 @@
     padding-right: 5px;
     line-height: 30px;
   }
+  .company-present .container .right-image-block {
+    max-width: 450px;
+  }
   .company-present .container .right-image-block .company-present-right-block-img {
     max-width: 400px;
   }
   .company-present .container .right-image-block p {
     font-size: 36px;
-    margin: 93px -90px;
   }
   .company-recommendation {
     margin-top: 100px;
@@ -191,15 +193,17 @@
   .company-present .container .left-text-block h3 {
     line-height: 28px;
   }
+  .company-present .container .right-image-block {
+    max-width: 390px;
+  }
   .company-present .container .right-image-block .right-block-img {
     display: none;
   }
   .company-present .container .right-image-block .company-present-right-block-img {
-    max-width: 360px;
+    max-width: 355px;
   }
   .company-present .container .right-image-block p {
     font-size: 28px;
-    margin: 72px -72px;
   }
   .company-recommendation {
     margin-top: 100px;
@@ -558,6 +562,7 @@
     padding: 0;
   }
   .company-present .container .right-image-block {
+    max-width: 100%;
     width: 100%;
     order: 1;
     flex-direction: column;

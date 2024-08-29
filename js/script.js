@@ -665,19 +665,24 @@ document.querySelectorAll('.hover-video').forEach(video => {
 });
 
 
-const text = "Прошлое".split("");
-let index = 0;
+function printWordsInDiv(targetDivId, sentence, interval) {
+  const words = sentence.split("");
+  let wordIndex = 0;
 
-function printWord(words, selector, intervalId) {
-  if (index < words.length) {
-    const outputDiv = document.getElementById(`${selector}`);
-    outputDiv.innerHTML += words[index] + '';
-    index++;
-  } else {
-    clearInterval(intervalId);
+  function printWord() {
+    if (wordIndex < words.length) {
+      const outputDiv = document.getElementById(targetDivId);
+      outputDiv.innerHTML += words[wordIndex];
+
+      wordIndex++;
+    } else {
+      clearInterval(intervalId);
+    }
   }
-}
-const firstIntervalId = setInterval(()=>{
-  printWord(text,"output", firstIntervalId)
-}, 500);
 
+  const intervalId = setInterval(printWord, interval);
+}
+
+printWordsInDiv('output', "Прошлое", 1000);
+printWordsInDiv('secondText', "Настоящее", 1000);
+printWordsInDiv('third-text', "Будущее", 1000);

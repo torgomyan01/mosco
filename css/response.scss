@@ -84,12 +84,12 @@
         }
       }
       .right-image-block{
+          max-width: 450px;
         .company-present-right-block-img{
           max-width: 400px;
         }
         p {
           font-size: 36px;
-          margin: 93px -90px;
         }
       }
     }
@@ -292,15 +292,15 @@
         }
       }
       .right-image-block {
+        max-width: 390px;
         .right-block-img{
           display: none;
         }
         .company-present-right-block-img {
-          max-width: 360px;
+          max-width: 355px;
         }
         p {
           font-size: 28px;
-          margin: 72px -72px;
         }
       }
     }
@@ -797,6 +797,7 @@
         padding: 0;
       }
       .right-image-block{
+        max-width: 100%;
         width: 100%;
         order: 1;
         flex-direction: column;

@@ -892,6 +892,16 @@ footer .container .personal-account {
   font-weight: 400;
 }
 
+.company-past-bottom .container .left-image-block h3 {
+  transform-origin: 0 0;
+  transform: translate(0%, 100%) rotate(-90deg);
+}
+.company-past-bottom .container .left-image-block .bottom-left-routing-icon {
+  position: absolute;
+  bottom: -30px;
+  left: -85px;
+}
+
 .company-past-top {
   position: relative;
 }
@@ -937,9 +947,6 @@ footer .container .personal-account {
 .company-past-bottom .container {
   margin-top: 10px;
 }
-.company-past-bottom .container .left-image-block h3 {
-  margin: 170px 0 0 0;
-}
 .company-past-bottom .right-text-block .company-past-top-mobile-bg {
   display: none;
 }
@@ -957,12 +964,10 @@ footer .container .personal-account {
   position: relative;
 }
 .company-past .container .left-image-block h3 {
-  transform: rotate(-90deg);
   color: #282828;
   font-size: 48px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 160px 0 0 0;
   font-family: "RF Dewi", sans-serif;
 }
 .company-past .container .left-image-block .top-slider-animation {
@@ -1106,19 +1111,23 @@ footer .container .personal-account {
 }
 .company-present .container .right-image-block {
   width: 50%;
+  max-width: 590px;
   display: flex;
   align-items: end;
   justify-content: end;
   position: relative;
 }
 .company-present .container .right-image-block p {
-  transform: rotate(-90deg);
   color: #282828;
   font-size: 48px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 125px -125px;
   font-family: "RF Dewi", sans-serif;
+  transform-origin: 0 0;
+  transform: translate(0%, 100%) rotate(-90deg);
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 .company-present .container .right-image-block .right-block-img {
   position: absolute;
