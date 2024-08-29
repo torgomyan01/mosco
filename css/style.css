@@ -498,9 +498,11 @@ nav .nav-left-info .nav-menu-button-icon.show svg path:nth-of-type(3) {
   color: #fff;
   font-size: 18px;
   font-weight: 600;
+  display: inline-block;
+  height: 29px;
 }
 .we-care .container .we-care-item h3 {
-  margin: 8px 0 10px;
+  margin: 5px 0 10px;
   color: #282828;
   font-size: 18px;
   font-weight: 600;
