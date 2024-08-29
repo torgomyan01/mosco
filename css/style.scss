@@ -119,7 +119,7 @@ button{
     position: relative;
     @include bg;
     @include col(5, 0px);
-    filter: contrast(1.2) saturate(0.5) grayscale(0);
+    filter: contrast(1.2) saturate(0.8);
     &:after{
       content: "";
       position: absolute;
@@ -343,21 +343,22 @@ nav{
   justify-content: start;
 
   .btn-see-more:hover ~ .airplane-animation{
-    opacity: 1;
-    .airplane{
-      animation: airplane 6s infinite ease;
-      animation-iteration-count: 1;
-    }
+    //opacity: 1;
+  }
+
+  #pols-air, #airplane-lines{
+    transition: 1s;
   }
   .airplane-animation{
     margin-left: 30px;
     transition: 0.3s;
-    opacity: 0;
+    //opacity: 0;
     svg{
       margin-top: -92px;
     }
     .airplane{
       transform: translate(0, 0);
+      opacity: 0;
     }
   }
 
@@ -422,11 +423,33 @@ nav{
         .content-item{
           max-width: 36.875rem;
           width: 100%;
-          border-bottom: 1px solid #E8E8E8;
+          position: relative;
           display: flex;
           align-items: center;
           padding: 15px 10px;
           cursor: pointer;
+
+          &-body{
+            @include flex('s', 'c');
+          }
+
+          &:after{
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 1px;
+            background: #E8E8E8;
+            left: 0;
+            bottom: 0;
+            transition: 1s;
+            transition-delay: var(--delay);
+          }
+
+          &.aos-animate{
+            &:after{
+              width: 100%;
+            }
+          }
           .icon-Frame-394{
             font-size: 48px;
           }
@@ -440,7 +463,7 @@ nav{
             font-size: 48px;
             margin-left: 5px;
             position: relative;
-            top: -6px;
+            top: 0;
           }
           .icon-Frame-393:before {
             //transition: 0.3s;
@@ -2083,5 +2106,16 @@ footer{
         }
       }
     }
+  }
+}
+
+[data-aos="openRight"]{
+  display: block;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: 2s !important;
+  &.aos-animate{
+    width: 100%;
   }
 }

@@ -117,7 +117,7 @@ button {
   background-position: center center;
   background-size: cover;
   width: calc(8.3333333333% * 5 - 0px);
-  filter: contrast(1.2) saturate(0.5) grayscale(0);
+  filter: contrast(1.2) saturate(0.8);
 }
 .header-images:after {
   content: "";
@@ -334,23 +334,19 @@ nav .nav-left-info .nav-menu-button-icon.show svg path:nth-of-type(3) {
   display: flex;
   justify-content: start;
 }
-.seeMore .btn-see-more:hover ~ .airplane-animation {
-  opacity: 1;
-}
-.seeMore .btn-see-more:hover ~ .airplane-animation .airplane {
-  animation: airplane 6s infinite ease;
-  animation-iteration-count: 1;
+.seeMore #pols-air, .seeMore #airplane-lines {
+  transition: 1s;
 }
 .seeMore .airplane-animation {
   margin-left: 30px;
   transition: 0.3s;
-  opacity: 0;
 }
 .seeMore .airplane-animation svg {
   margin-top: -92px;
 }
 .seeMore .airplane-animation .airplane {
   transform: translate(0, 0);
+  opacity: 0;
 }
 
 @keyframes airplane {
@@ -414,11 +410,30 @@ nav .nav-left-info .nav-menu-button-icon.show svg path:nth-of-type(3) {
 .our-clients .container .left-container .left-content .content-item {
   max-width: 36.875rem;
   width: 100%;
-  border-bottom: 1px solid #E8E8E8;
+  position: relative;
   display: flex;
   align-items: center;
   padding: 15px 10px;
   cursor: pointer;
+}
+.our-clients .container .left-container .left-content .content-item-body {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.our-clients .container .left-container .left-content .content-item:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background: #E8E8E8;
+  left: 0;
+  bottom: 0;
+  transition: 1s;
+  transition-delay: var(--delay);
+}
+.our-clients .container .left-container .left-content .content-item.aos-animate:after {
+  width: 100%;
 }
 .our-clients .container .left-container .left-content .content-item .icon-Frame-394 {
   font-size: 48px;
@@ -432,7 +447,7 @@ nav .nav-left-info .nav-menu-button-icon.show svg path:nth-of-type(3) {
   font-size: 48px;
   margin-left: 5px;
   position: relative;
-  top: -6px;
+  top: 0;
 }
 .our-clients .container .left-container .left-content .content-item span {
   color: #282828;
@@ -1944,6 +1959,17 @@ footer .container .personal-account {
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
+}
+
+[data-aos=openRight] {
+  display: block;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: 2s !important;
+}
+[data-aos=openRight].aos-animate {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

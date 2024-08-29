@@ -13,7 +13,8 @@ const {
 }
 
 AOS.init({
-  once: true
+  once: true,
+  duration: 1000
 });
 
 
@@ -123,7 +124,7 @@ window.onload = function () {
 
   const burgerIcon = document.getElementById('burgerIcon');
   const menu = document.querySelector('.menu');
-  const menuColumns = $('.menu-column');
+  const menuColumns = document.querySelectorAll('.menu-column');
   let menuTimeout = 0;
   let animatedButton;
 
@@ -683,6 +684,73 @@ function printWordsInDiv(targetDivId, sentence, interval) {
   const intervalId = setInterval(printWord, interval);
 }
 
-printWordsInDiv('output', "Прошлое", 1000);
-printWordsInDiv('secondText', "Настоящее", 1000);
-printWordsInDiv('third-text', "Будущее", 1000);
+printWordsInDiv('output', "Прошлое", 200);
+printWordsInDiv('secondText', "Настоящее", 200);
+printWordsInDiv('third-text', "Будущее", 200);
+
+
+
+const BtnAirplane = $('.btn-see-more.airplane-btn');
+const airplane = $('.airplane');
+const airplaneAnimation = $('.airplane-animation');
+const polsAir = $('#pols-air');
+const airplaneLines = $('#airplane-lines');
+
+
+BtnAirplane.on('mouseenter', function (){
+
+  airplaneAnimation.css({
+    opacity: 1
+  })
+
+
+  setTimeout(() => {
+    polsAir.css({
+      strokeDashoffset: '0'
+    })
+    airplaneLines.css({
+      strokeDashoffset: '0'
+    })
+
+    setTimeout(() => {
+      airplane.css({
+        opacity: '1',
+        transition: '1s',
+      })
+
+      setTimeout(() => {
+        airplane.css({
+          transition: '1s',
+          transform: 'translate(80px, -5px) rotate(-5deg)',
+        })
+      }, 1000)
+    }, 1000)
+  }, 1000)
+})
+
+BtnAirplane.on('mouseleave', function (){
+
+  airplane.css({
+    transition: '1s',
+    transform: 'translate(0, 0) rotate(0)',
+  })
+
+  setTimeout(() => {
+    airplaneAnimation.css({
+      opacity: 0
+    })
+  }, 1000)
+})
+
+BtnAirplane.on('click', function (){
+
+  airplane.css({
+    transition: '1s',
+    transform: 'translate(300px, -40px) rotate(-20deg)',
+  })
+
+  setTimeout(() => {
+    alert('event to open page see more')
+  }, 1500)
+})
+
