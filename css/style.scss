@@ -560,7 +560,7 @@ nav{
 }
 
 .cooperation-section{
-  margin: 60px 0;
+  margin: 55px 0 60px;
   padding: 0 20px;
 
   &.home{
@@ -959,8 +959,6 @@ footer{
     .icon-arrow-right2{
       font-size: 14px;
       margin: 3px 10px 0 10px;
-      width: 20px;
-      transition: 0.3s;
     }
     a{
       color: #282828;
@@ -972,9 +970,6 @@ footer{
       font-size: 13px;
       font-weight: 400;
     }
-  }
-  div:hover .icon-arrow-right2{
-    text-align: right;
   }
 }
 
@@ -1037,8 +1032,6 @@ footer{
     .changed{
       .path {
         stroke-dashoffset: 670 !important;
-        //animation: dash 1.5s ease-in ;
-        //animation-iteration-count: 1;
       }
 
       @keyframes dash {
@@ -1061,7 +1054,6 @@ footer{
 .company-past-bottom{
   position: relative;
   .container{
-    margin-top: 10px;
     .left-image-block {
       h3{
       }
@@ -1117,12 +1109,12 @@ footer{
       justify-content: space-between;
       flex-direction: column;
       h3{
-        max-width: 600px;
+        max-width: 610px;
         width: 100%;
         color: #282828;
         font-size: 26px;
         font-weight: 700;
-        line-height: 31px;
+        line-height: 30px;
         font-family: 'RF Dewi', sans-serif;
         .years-svg{
           position: relative;
@@ -1156,7 +1148,7 @@ footer{
         }
       }
       p{
-        max-width: 252px;
+        max-width: 251px;
         width: 100%;
         color: #282828;
         font-size: 14px;
@@ -1197,7 +1189,7 @@ footer{
         font-family: 'RF Dewi', sans-serif;
         max-width: 510px;
         width: 100%;
-        margin: auto;
+        margin: 13px auto 0;
         padding: 6px 16px;
         background: #282828;
         color: #FFF;
@@ -1232,7 +1224,7 @@ footer{
         color: #282828;
         font-size: 26px;
         font-weight: 700;
-        margin-top: 10px;
+        margin-top: 18px;
         max-width: 600px;
         width: 100%;
         font-family: 'RF Dewi', sans-serif;
@@ -1263,7 +1255,7 @@ footer{
         transform: translate(0%, 100%) rotate(-90deg);
         position: absolute;
         bottom: 0;
-        left: 0;
+        left: 5px;
       }
       .right-block-img{
         position: absolute;
@@ -1274,7 +1266,7 @@ footer{
       .right-block-circle-img{
         position: absolute;
         right: -142px;
-        bottom: -73px;
+        bottom: -65px;
         display: block;
 
         &.changed{
@@ -1311,7 +1303,7 @@ footer{
         color: #282828;
         font-size: 14px;
         font-weight: 500;
-        margin-top: 10px;
+        margin-bottom: 13px;
       }
       .bottom-block-img{
         position: absolute;
@@ -1328,7 +1320,7 @@ footer{
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 60px 0;
+  padding: 62px 0;
   margin-top: 120px;
   .container{
     display: flex;
@@ -1357,14 +1349,13 @@ footer{
         line-height: 16px;
       }
       a{
-        width: 35px;
+        width: 25px;
         height: 24px;
         transform: rotate(-45deg);
         color: #214788;
-        transition: 0.9s;
+        transition: 0.1s;
         i{
           font-size: 24px;
-          transition: 0.9s;
         }
       }
     }:hover  a{
@@ -1511,7 +1502,7 @@ footer{
 
 .bottom-slider{
   .container{
-    margin-top: 70px;
+    margin-top: 62px;
     .multiple-items {
       .menu-item{
         height: 525px;
@@ -1523,7 +1514,7 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: end;
-        padding: 40px 20px;
+        padding: 50px 20px;
         position: relative;
         z-index: 1;
         overflow: hidden;
@@ -1650,7 +1641,7 @@ footer{
         padding: 3px 10px;
       }
       .btn-see-more{
-        margin-top: 33px;
+        margin-top: 23px;
         margin-left: 50px;
       }
     }
@@ -1658,6 +1649,7 @@ footer{
       display: flex;
       flex-direction: column;
       align-items: flex-end;
+      margin-top: 70px;
       p{
         color: #6C6C6C;
         font-size: 13px;
