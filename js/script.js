@@ -673,9 +673,11 @@ function printWordsInDiv(targetDivId, sentence, interval) {
   function printWord() {
     if (wordIndex < words.length) {
       const outputDiv = document.getElementById(targetDivId);
-      outputDiv.innerHTML += words[wordIndex];
+      if(outputDiv){
+        outputDiv.innerHTML += words[wordIndex];
 
-      wordIndex++;
+        wordIndex++;
+      }
     } else {
       clearInterval(intervalId);
     }
@@ -754,3 +756,10 @@ BtnAirplane.on('click', function (){
   }, 1500)
 })
 
+
+
+const animeHome = document.querySelectorAll('[data-aos="anim-home"] path');
+
+animeHome.forEach((item, index) => {
+  item.style.transitionDelay = `2.${Math.floor(index / 100 * 10.5)}s`
+})

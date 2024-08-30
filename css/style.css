@@ -903,7 +903,7 @@ footer .container .personal-account {
   font-size: 14px;
   margin: 0 15px;
 }
-.company-title div a {
+.company-title div a, .company-title div span {
   color: #282828;
   font-size: 13px;
   font-weight: 400;
@@ -1981,6 +1981,96 @@ footer .container .personal-account {
 }
 [data-aos=openRight].aos-animate {
   width: 100%;
+}
+
+.contact {
+  margin-top: 2.0625rem;
+}
+.contact-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 44px;
+}
+.contact-left {
+  width: 50%;
+}
+.contact-right {
+  width: 50%;
+  padding-top: 26px;
+}
+.contact-address {
+  width: 100%;
+  margin-bottom: 40px;
+}
+.contact-address-title {
+  color: #282828;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  opacity: 0.4;
+  padding-bottom: 10px;
+  position: relative;
+}
+.contact-address-title:after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #E8E8E8;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.contact-address-value {
+  color: #282828;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 10px;
+  text-align: right;
+}
+
+[data-aos=anim-way] {
+  stroke-dasharray: 1200;
+  stroke-dashoffset: 1200;
+  transition: 6s !important;
+  transition-delay: 0.5s;
+}
+[data-aos=anim-way].aos-animate {
+  stroke-dashoffset: 0;
+}
+
+[data-aos=anim-streets] {
+  transform-origin: center;
+  opacity: 0;
+  transition-delay: 2.8s;
+}
+[data-aos=anim-streets].aos-animate {
+  opacity: 1;
+}
+
+[data-aos=anim-home] path {
+  fill: transparent;
+  transform: translateY(-10px);
+  filter: drop-shadow(1px 2px 0px #A9C0DE);
+  transition: 1s;
+}
+[data-aos=anim-home].aos-animate path {
+  fill: #A9C0DE;
+  filter: drop-shadow(1px 2px 0px #9db3d2);
+  transform: translateY(0);
+}
+
+[data-aos=tree] {
+  opacity: 0;
+  transform: translateY(-5px) translateZ(5px);
+  transform-origin: center;
+  transition: 1s !important;
+  transition-delay: 2.8s !important;
+}
+[data-aos=tree].aos-animate {
+  opacity: 1;
+  transform: translateY(0) translateZ(0);
 }
 
 /*# sourceMappingURL=style.css.map */
