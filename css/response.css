@@ -644,8 +644,33 @@
   .find-more .container .bottom-section {
     margin-top: 80px;
   }
-  .news-section-cody .container .news-body .news-body-item {
+  .news-section-cody {
+    margin: 65px 0 100px;
+  }
+  .news-section-cody .container .news-body cd mosco .news-body-item {
     width: calc(8.3333333333% * 12 - 0px);
+    min-height: 270px;
+  }
+  .news-section-cody .container .news-body cd mosco .news-body-item .hover-bg-fon {
+    padding: 5px;
+  }
+  .news-section-cody .container .news-body cd mosco .news-body-item h3 {
+    font-size: 16px;
+  }
+  .news-section-cody .container .news-body cd mosco .news-body-item h4 {
+    font-size: 14px;
+    line-height: normal;
+    margin: 3px 0;
+  }
+  .news-section-cody .container .news-body cd mosco .news-body-item p {
+    font-size: 13px;
+    line-height: normal;
+  }
+  .news-section-cody .container .news-body cd mosco .news-body-item a {
+    font-size: 13px;
+  }
+  .news-section-cody .container .news-body cd mosco .news-body-item span {
+    margin-top: 5px;
   }
   .bottom-slider .container .multiple-items .menu-item {
     height: 445px;

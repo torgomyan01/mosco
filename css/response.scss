@@ -885,10 +885,33 @@
   }
 
   .news-section-cody{
+    margin: 65px 0 100px;
     .container{
-      .news-body{
+      .news-body{cd mosco
         .news-body-item{
           @include col(12, 0px);
+          min-height: 270px;
+          .hover-bg-fon{
+            padding: 5px;
+          }
+          h3{
+            font-size: 16px;
+          }
+          h4{
+            font-size: 14px;
+            line-height: normal;
+            margin: 3px 0;
+          }
+          p{
+            font-size: 13px;
+            line-height: normal;
+          }
+          a{
+            font-size: 13px;
+          }
+          span{
+            margin-top: 5px;
+          }
         }
       }
     }
