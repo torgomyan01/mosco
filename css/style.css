@@ -534,7 +534,7 @@ nav .nav-left-info .nav-menu-button-icon.show svg path:nth-of-type(3) {
 }
 
 .cooperation-section {
-  margin: 60px 0;
+  margin: 55px 0 60px;
   padding: 0 20px;
 }
 .cooperation-section.home {
@@ -897,13 +897,19 @@ footer .container .personal-account {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 4px;
+  width: fit-content;
+  margin: 4px auto 0;
 }
 .company-title div .icon-arrow-right2 {
   font-size: 14px;
-  margin: 0 15px;
+  margin: 3px 10px 0 10px;
 }
 .company-title div a, .company-title div span {
+  color: #282828;
+  font-size: 13px;
+  font-weight: 400;
+}
+.company-title div span {
   color: #282828;
   font-size: 13px;
   font-weight: 400;
@@ -970,9 +976,6 @@ footer .container .personal-account {
 .company-past-bottom {
   position: relative;
 }
-.company-past-bottom .container {
-  margin-top: 10px;
-}
 .company-past-bottom .right-text-block .company-past-top-mobile-bg {
   display: none;
 }
@@ -1016,12 +1019,12 @@ footer .container .personal-account {
   flex-direction: column;
 }
 .company-past .container .right-text-block h3 {
-  max-width: 600px;
+  max-width: 610px;
   width: 100%;
   color: #282828;
   font-size: 26px;
   font-weight: 700;
-  line-height: 31px;
+  line-height: 30px;
   font-family: "RF Dewi", sans-serif;
 }
 .company-past .container .right-text-block h3 .years-svg {
@@ -1051,7 +1054,7 @@ footer .container .personal-account {
   top: -10px;
 }
 .company-past .container .right-text-block p {
-  max-width: 252px;
+  max-width: 251px;
   width: 100%;
   color: #282828;
   font-size: 14px;
@@ -1090,7 +1093,7 @@ footer .container .personal-account {
   font-family: "RF Dewi", sans-serif;
   max-width: 510px;
   width: 100%;
-  margin: auto;
+  margin: 13px auto 0;
   padding: 6px 16px;
   background: #282828;
   color: #FFF;
@@ -1123,7 +1126,7 @@ footer .container .personal-account {
   color: #282828;
   font-size: 26px;
   font-weight: 700;
-  margin-top: 10px;
+  margin-top: 18px;
   max-width: 600px;
   width: 100%;
   font-family: "RF Dewi", sans-serif;
@@ -1153,7 +1156,7 @@ footer .container .personal-account {
   transform: translate(0%, 100%) rotate(-90deg);
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 5px;
 }
 .company-present .container .right-image-block .right-block-img {
   position: absolute;
@@ -1164,7 +1167,7 @@ footer .container .personal-account {
 .company-present .container .right-image-block .right-block-circle-img {
   position: absolute;
   right: -142px;
-  bottom: -73px;
+  bottom: -65px;
   display: block;
 }
 .company-present .container .right-image-block .right-block-circle-img.changed .path-company-svg-desktop {
@@ -1197,7 +1200,7 @@ footer .container .personal-account {
   color: #282828;
   font-size: 14px;
   font-weight: 500;
-  margin-top: 10px;
+  margin-bottom: 13px;
 }
 .company-present .container .bottom-text-block .bottom-block-img {
   position: absolute;
@@ -1211,7 +1214,7 @@ footer .container .personal-account {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 60px 0;
+  padding: 62px 0;
   margin-top: 120px;
 }
 .company-recommendation .container {
@@ -1246,13 +1249,18 @@ footer .container .personal-account {
   line-height: 16px;
 }
 .company-recommendation .container .container-item a {
-  width: 24px;
+  width: 25px;
   height: 24px;
   transform: rotate(-45deg);
   color: #214788;
+  transition: 0.1s;
 }
 .company-recommendation .container .container-item a i {
   font-size: 24px;
+}
+.company-recommendation .container :hover a {
+  width: 35px;
+  text-align: end;
 }
 .company-recommendation .container .changed::before,
 .company-recommendation .container .changed::after,
@@ -1383,7 +1391,7 @@ footer .container .personal-account {
 }
 
 .bottom-slider .container {
-  margin-top: 70px;
+  margin-top: 62px;
 }
 .bottom-slider .container .multiple-items .menu-item {
   height: 525px;
@@ -1395,7 +1403,7 @@ footer .container .personal-account {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  padding: 40px 20px;
+  padding: 50px 20px;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -1506,13 +1514,14 @@ footer .container .personal-account {
   padding: 3px 10px;
 }
 .find-more .container .top-section .btn-see-more {
-  margin-top: 33px;
+  margin-top: 23px;
   margin-left: 50px;
 }
 .find-more .container .bottom-section {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  margin-top: 70px;
 }
 .find-more .container .bottom-section p {
   color: #6C6C6C;
@@ -1538,7 +1547,7 @@ footer .container .personal-account {
 }
 
 .news-section-cody {
-  margin: 50px 0 100px;
+  margin: 40px 0 100px;
 }
 .news-section-cody .container {
   display: flex;
@@ -1546,7 +1555,7 @@ footer .container .personal-account {
   gap: 0 40px;
 }
 .news-section-cody .container .news-body {
-  width: 75%;
+  width: 71%;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -1569,7 +1578,7 @@ footer .container .personal-account {
   font-weight: 600;
   font-size: 18px;
   text-transform: uppercase;
-  padding: 4px 10px;
+  padding: 2px 10px;
   background: #214788;
   width: fit-content;
   z-index: 1;
@@ -1664,10 +1673,10 @@ footer .container .personal-account {
   background-image: url("../images/news/news-item-5.webp");
 }
 .news-section-cody .container .news-sidebar {
-  width: 25%;
+  width: 29%;
 }
 .news-section-cody .container .news-sidebar .news-side-item {
-  padding: 14px 10px;
+  padding: 11px 10px;
   background-color: #fff;
   border: 1px solid #E8E8E8;
   cursor: pointer;

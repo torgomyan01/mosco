@@ -176,7 +176,7 @@
   }
   .company-past .container .left-image-block .top-slider-animation {
     min-width: calc(100% - 127px);
-    height: 280px;
+    height: 268px;
   }
   .company-past .container .left-image-block h3 {
     font-size: 28px;
@@ -491,7 +491,7 @@
   }
   .company-past .container .right-text-block h3 {
     padding-left: 0;
-    margin: 20px 0 49px 0;
+    margin: 65px 0 49px 0;
     line-height: normal;
     font-size: 20px;
   }
@@ -506,12 +506,12 @@
   }
   .company-past .container .left-image-block {
     width: 100%;
-    margin: 70px 0 0 0;
+    margin: 65px 0 0 0;
     flex-direction: column;
   }
   .company-past .container .left-image-block h3 {
     transform: rotate(0);
-    margin: -15px 0px 0 -5px;
+    margin: -15px 0px 0 0;
     font-size: 36px;
   }
   .company-past .container .left-image-block .company-past-top-left-simple-Img {
@@ -522,7 +522,7 @@
     width: 100%;
   }
   .company-past .container .bottom-text-block {
-    margin-top: 70px;
+    margin-top: 62px;
   }
   .company-past .container .bottom-text-block p {
     line-height: normal;
@@ -545,15 +545,8 @@
     max-width: 350px;
     bottom: 150px;
   }
-  .company-past-bottom .right-text-block .company-past-top-mobile-bg {
-    display: block;
-    position: absolute;
-    width: 100%;
-    max-width: 350px;
-    bottom: 150px;
-  }
   .company-present {
-    padding: 109px 0 100px 0;
+    padding: 116px 0 100px 0;
     margin-top: 0;
   }
   .company-present .container .left-text-block {
@@ -579,8 +572,8 @@
   .company-present .container .right-image-block .right-block-circle-img-mobile {
     display: block;
     position: absolute;
-    top: -100px;
-    right: -55px;
+    top: -77px;
+    right: -78px;
   }
   .company-present .container .right-image-block p {
     transform: rotate(0);
@@ -601,26 +594,13 @@
   }
   .company-present .container .bottom-text-block p {
     font-size: 13px;
+    margin-top: 14px;
+    margin-bottom: 0;
   }
   .company-present .container .bottom-text-block .bottom-block-img {
     top: -250px;
     right: -12px;
     width: 360px;
-  }
-  .company-past-bottom .container .left-image-block {
-    margin-top: 0px;
-  }
-  .company-past-bottom .container .left-image-block h3 {
-    margin: 4px 0px 0 -5px;
-  }
-  .company-past-bottom .container .right-text-block p {
-    margin-top: 6px;
-  }
-  .company-past-bottom .container .bottom-block {
-    margin-top: 90px;
-  }
-  .company-past-bottom .container .bottom-block h3 {
-    margin-top: 30px;
   }
   .company-recommendation {
     margin-top: 80px;
@@ -629,6 +609,7 @@
   .company-recommendation .container .container-item {
     width: 100%;
     height: 210px;
+    padding: 29px 20px 20px;
   }
   .company-recommendation .container .container-item p {
     margin-top: 30px;
@@ -651,17 +632,48 @@
   .company-recommendation .container .container-item:nth-child(11) {
     margin-top: 37px;
   }
+  .find-more {
+    margin-top: 50px;
+  }
   .find-more .container .top-section p {
     line-height: normal;
   }
   .find-more .container .top-section .btn-see-more {
-    margin: 45px auto 0;
+    margin: 27px auto 0;
   }
-  .news-section-cody .container .news-body .news-body-item {
+  .find-more .container .bottom-section {
+    margin-top: 80px;
+  }
+  .news-section-cody {
+    margin: 65px 0 100px;
+  }
+  .news-section-cody .container .news-body cd mosco .news-body-item {
     width: calc(8.3333333333% * 12 - 0px);
+    min-height: 270px;
+  }
+  .news-section-cody .container .news-body cd mosco .news-body-item .hover-bg-fon {
+    padding: 5px;
+  }
+  .news-section-cody .container .news-body cd mosco .news-body-item h3 {
+    font-size: 16px;
+  }
+  .news-section-cody .container .news-body cd mosco .news-body-item h4 {
+    font-size: 14px;
+    line-height: normal;
+    margin: 3px 0;
+  }
+  .news-section-cody .container .news-body cd mosco .news-body-item p {
+    font-size: 13px;
+    line-height: normal;
+  }
+  .news-section-cody .container .news-body cd mosco .news-body-item a {
+    font-size: 13px;
+  }
+  .news-section-cody .container .news-body cd mosco .news-body-item span {
+    margin-top: 5px;
   }
   .bottom-slider .container .multiple-items .menu-item {
-    height: 430px;
+    height: 445px;
   }
   .bottom-slider .container .multiple-items .menu-item h3 {
     font-size: 24px;
@@ -736,6 +748,24 @@
   }
   .company-past-top .container .left-image-block #output {
     transform: translate(0%, 100%) rotate(0);
+  }
+  .company-past-bottom .container .left-image-block {
+    margin-top: 0px;
+  }
+  .company-past-bottom .container .left-image-block h3 {
+    margin: 0;
+  }
+  .company-past-bottom .container .right-text-block h3 {
+    margin: 20px 0 85px;
+  }
+  .company-past-bottom .container .right-text-block p {
+    margin-top: 6px;
+  }
+  .company-past-bottom .container .bottom-block {
+    margin-top: 47px;
+  }
+  .company-past-bottom .container .bottom-block h3 {
+    margin-top: 30px;
   }
 }
 @media (max-width: 767px) {
