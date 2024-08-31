@@ -429,8 +429,25 @@ nav{
           padding: 15px 10px;
           cursor: pointer;
 
+          &-info{
+
+            &.aos-animate{
+              .content-item{
+                &:after{
+                  width: 100%;
+                }
+              }
+              .content-item-body{
+                opacity: 1;
+              }
+            }
+          }
+
           &-body{
             @include flex('s', 'c');
+            transition: 0.5s;
+            opacity: 0;
+            transition-delay: 2.2s;
           }
 
           &:after{
@@ -445,11 +462,6 @@ nav{
             transition-delay: var(--delay);
           }
 
-          &.aos-animate{
-            &:after{
-              width: 100%;
-            }
-          }
           .icon-Frame-394{
             font-size: 48px;
           }
@@ -2233,13 +2245,30 @@ footer{
   &-body{
     @include flex('sb','s');
     gap: 44px;
+
+    @media (max-width: 768px){
+      flex-direction: column;
+    }
   }
   &-left{
-    width: 50%;
+    width: 100%;
+    order: 1;
+    @include flex('c', 's');
+    @media (max-width: 768px){
+      order: 2;
+    }
+    svg{
+      width: 100%;
+    }
   }
   &-right{
-    width: 50%;
+    width: 100%;
     padding-top: 26px;
+    order: 2;
+
+    @media (max-width: 768px){
+      order: 1;
+    }
   }
   &-address{
     width: 100%;
