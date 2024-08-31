@@ -1848,10 +1848,11 @@ footer .container .personal-account {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 430px;
 }
 
 .reliable {
-  padding: 90px 0;
+  padding: 90px 0 79px;
   background-image: url("../images/service/Reliable-Comfortable.webp");
   background-size: cover;
   background-position: center;
@@ -1869,7 +1870,7 @@ footer .container .personal-account {
   font-size: 48px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 .reliable .container .right-text-block .links-block {
   display: flex;
@@ -1878,7 +1879,7 @@ footer .container .personal-account {
   width: 100%;
 }
 .reliable .container .right-text-block .links-block a {
-  padding: 17px 14px;
+  padding: 15px 14px;
   border-bottom: 1px solid #E8E8E8;
   color: #282828;
   font-size: 16px;
@@ -1900,6 +1901,44 @@ footer .container .personal-account {
   width: 100%;
 }
 
+.top-section-reliable {
+  overflow: hidden;
+}
+.top-section-reliable .container .reliable-left-img {
+  position: relative;
+}
+.top-section-reliable .container .reliable-left-img .top-section-reliable-icon {
+  position: absolute;
+  bottom: -62px;
+  right: -96px;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .top-section-reliable .container .reliable-left-img .top-section-reliable-icon {
+    bottom: -45px;
+    width: 90%;
+  }
+}
+
+.bottom-section-reliable {
+  overflow: hidden;
+}
+.bottom-section-reliable .container .reliable-left-img {
+  position: relative;
+}
+.bottom-section-reliable .container .reliable-left-img .bottom-section-reliable-icon {
+  position: absolute;
+  bottom: -45px;
+  right: -100px;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .bottom-section-reliable .container .reliable-left-img .bottom-section-reliable-icon {
+    bottom: -25px;
+    width: 90%;
+  }
+}
+
 .fast {
   background-image: url("../images/service/Fast-bg.webp");
   background-size: cover;
@@ -1919,7 +1958,7 @@ footer .container .personal-account {
   font-size: 48px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  margin-bottom: 45x;
 }
 .fast .container .right-text-block .links-block {
   display: flex;
@@ -1928,7 +1967,7 @@ footer .container .personal-account {
   width: 100%;
 }
 .fast .container .right-text-block .links-block a {
-  padding: 17px 14px;
+  padding: 15px 14px;
   border-bottom: 1px solid #E8E8E8;
   color: #FFF;
   font-size: 16px;
@@ -1950,7 +1989,7 @@ footer .container .personal-account {
 }
 
 .organizations {
-  margin: 80px auto;
+  margin: 80px auto 88px;
 }
 .organizations .container {
   display: flex;

@@ -1986,11 +1986,12 @@ footer{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    height: 430px;
   }
 }
 
 .reliable{
-  padding: 90px 0;
+  padding: 90px 0 79px;
   background-image: url("../images/service/Reliable-Comfortable.webp");
   background-size: cover;
   background-position: center;
@@ -2007,7 +2008,7 @@ footer{
         font-size: 48px;
         font-weight: 700;
         text-transform: uppercase;
-        margin-bottom: 40px;
+        margin-bottom: 50px;
       }
       .links-block{
         display: flex;
@@ -2016,7 +2017,7 @@ footer{
         width: 100%;
 
         a{
-          padding: 17px 14px;
+          padding: 15px 14px;
           border-bottom: 1px solid #E8E8E8;
           color: #282828;
           font-size: 16px;
@@ -2042,6 +2043,44 @@ footer{
   }
 }
 
+.top-section-reliable{
+  overflow: hidden;
+  .container{
+    .reliable-left-img{
+      position: relative;
+      .top-section-reliable-icon{
+        position: absolute;
+        bottom: -62px;
+        right: -96px;
+        width: 100%;
+        @media (max-width:768px) {
+          bottom: -45px;
+          width: 90%;
+        }
+      }
+    }
+  }
+}
+
+.bottom-section-reliable{
+  overflow: hidden;
+  .container{
+    .reliable-left-img{
+      position: relative;
+      .bottom-section-reliable-icon{
+        position: absolute;
+        bottom: -45px;
+        right: -100px;
+        width: 100%;
+        @media (max-width:768px) {
+          bottom: -25px;
+          width: 90%;
+        }
+      }
+    }
+  }
+}
+
 .fast{
   background-image: url("../images/service/Fast-bg.webp");
   background-size: cover;
@@ -2060,7 +2099,7 @@ footer{
         font-size: 48px;
         font-weight: 700;
         text-transform: uppercase;
-        margin-bottom: 40px;
+        margin-bottom: 45x;
       }
       .links-block{
         display: flex;
@@ -2069,7 +2108,7 @@ footer{
         width: 100%;
 
         a{
-          padding: 17px 14px;
+          padding: 15px 14px;
           border-bottom: 1px solid #E8E8E8;
           color: #FFF;
           font-size: 16px;
@@ -2095,7 +2134,7 @@ footer{
 }
 
 .organizations{
-  margin: 80px auto;
+  margin: 80px auto 88px;
   .container{
     display: flex;
     flex-direction: column;
