@@ -153,6 +153,47 @@ button {
   top: 0;
 }
 
+.global-images {
+  object-fit: cover;
+  transition: 0.7s;
+  overflow: hidden;
+  height: 33.125rem;
+  width: 29.375rem;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  filter: contrast(1.2) saturate(0.8);
+}
+.global-images:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(210deg, rgba(0, 0, 0, 0.2509803922), transparent, transparent);
+  background-size: 490%;
+  transition: 0.7s;
+  background-position: -40% 0;
+}
+.global-images img {
+  opacity: 0.2;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: opacity 0.7s;
+}
+.global-images:hover {
+  filter: unset;
+}
+.global-images:hover img {
+  opacity: 0;
+}
+.global-images:hover:after {
+  background-position: -90% 0;
+}
+
 .title-animation {
   display: flex;
   justify-content: space-between;
@@ -370,9 +411,6 @@ nav .nav-left-info .nav-menu-button-icon.show svg path:nth-of-type(3) {
 .our-clients {
   margin-top: 20px;
 }
-.our-clients-content {
-  box-shadow: 4px 4px 67.7px 25px rgba(146, 146, 146, 0.25);
-}
 .our-clients .container {
   display: flex;
   align-items: flex-start;
@@ -474,11 +512,8 @@ nav .nav-left-info .nav-menu-button-icon.show svg path:nth-of-type(3) {
   top: -190px;
   right: -70px;
 }
-.our-clients .container .right-container img {
-  max-width: 470px;
-  width: 100%;
-  margin: 45px 0 0;
-  z-index: 1;
+.our-clients .container .right-container .global-images {
+  box-shadow: 4px 4px 67.7px 25px rgba(146, 146, 146, 0.25);
 }
 .our-clients .container .right-container .bottom-bg {
   position: absolute;
@@ -734,13 +769,13 @@ footer .container .footer-bottom p {
   opacity: 0.4;
 }
 footer .container .personal-account {
-  margin: 0px -14px 7px 0px;
+  margin: 0px 10px 7px 0px;
 }
 
 .personal-account {
   background-repeat: no-repeat;
   background-position: center;
-  padding: 0.75rem 1.5625rem 0.75rem 0;
+  padding: 0.75rem 11px 0.75rem 0;
   transition: 0.3s;
   position: relative;
 }
@@ -924,6 +959,7 @@ footer .container .personal-account {
 .company-past-bottom .container .left-image-block h3 {
   transform-origin: 0 0;
   transform: translate(0%, 100%) rotate(-90deg);
+  width: 0;
 }
 .company-past-bottom .container .left-image-block .bottom-left-routing-icon {
   position: absolute;

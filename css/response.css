@@ -275,9 +275,6 @@
     padding: 10px 12px;
     line-height: normal;
   }
-  .reliable .container .reliable-left-img {
-    max-width: 400px;
-  }
   .fast .container .right-text-block h3 {
     font-size: 36px;
     line-height: normal;
@@ -290,6 +287,9 @@
   }
   .fast .container .fast-left-img {
     max-width: 400px;
+  }
+  .fast .container .fast-left-img .global-images {
+    width: 400px !important;
   }
   .organizations .container .organizations-title h3 {
     font-size: 36px;
@@ -562,6 +562,10 @@
     margin-bottom: 80px;
     align-items: self-start;
   }
+  .company-present .container .right-image-block .global-images {
+    width: 100% !important;
+    height: 267px !important;
+  }
   .company-present .container .right-image-block .company-present-right-block-img {
     max-width: 100%;
     width: 100%;
@@ -707,6 +711,10 @@
     max-width: 100%;
     margin-top: 50px;
   }
+  .reliable .container .reliable-left-img .global-images {
+    width: 100% !important;
+    height: 389px !important;
+  }
   .fast .container {
     flex-direction: column;
   }
@@ -727,6 +735,10 @@
     order: 2;
     max-width: 100%;
     margin-top: 50px;
+  }
+  .fast .container .fast-left-img .global-images {
+    width: 100% !important;
+    height: 389px !important;
   }
   .organizations .container .organizations-title h3 {
     font-size: 24px;
@@ -754,6 +766,10 @@
   }
   .company-past-bottom .container .left-image-block h3 {
     margin: 0;
+  }
+  .company-past-bottom .container .left-image-block .global-images {
+    width: 100% !important;
+    height: 268px !important;
   }
   .company-past-bottom .container .right-text-block h3 {
     margin: 20px 0 85px;
