@@ -690,7 +690,9 @@ printWordsInDiv('output', "Прошлое", 200);
 printWordsInDiv('secondText', "Настоящее", 200);
 printWordsInDiv('third-text', "Будущее", 200);
 
-
+printWordsInDiv('top-reliable', "Надёжно", 200);
+printWordsInDiv('fast-type', "Быстро", 200);
+printWordsInDiv('bottom-reliable', "Удобно", 200);
 
 const BtnAirplane = $('.btn-see-more.airplane-btn');
 const airplane = $('.airplane');

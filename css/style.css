@@ -2014,11 +2014,38 @@ footer .container .personal-account {
 }
 .organizations .container .text-item {
   padding: 20px 14px;
-  border-bottom: 1px solid #E8E8E8;
   color: #282828;
   font-family: Inter;
   font-size: 22px;
   font-weight: 600;
+  position: relative;
+}
+.organizations .container .text-item-left.changed:before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  background-color: #E8E8E8;
+  bottom: 0;
+  animation: organizations-border-left 2s ease-in forwards;
+}
+.organizations .container .text-item-right.changed:before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  background-color: #E8E8E8;
+  bottom: 0;
+  right: 0;
+  animation: organizations-border-left 2s ease-in forwards;
+}
+@keyframes organizations-border-left {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
 }
 .organizations .container .second {
   display: flex;
@@ -2056,21 +2083,78 @@ footer .container .personal-account {
   align-items: center;
   justify-content: center;
 }
-.advantages .container .advantages-tabele div {
+.advantages .container .advantages-tabele .advantages-tabele-border {
   width: 258px;
   height: 272px;
   padding: 20px;
-  border: 1px solid rgba(232, 232, 232, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  /* Top border */
+  /* Bottom border */
+  /* Left border */
+  /* Right border */
 }
-.advantages .container .advantages-tabele div p {
+.advantages .container .advantages-tabele .advantages-tabele-border p {
   color: #FFF;
   text-align: center;
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
+}
+.advantages .container .advantages-tabele .advantages-tabele-border.changed::before, .advantages .container .advantages-tabele .advantages-tabele-border.changed::after, .advantages .container .advantages-tabele .advantages-tabele-border.changed .advantages-tabele-div::before, .advantages .container .advantages-tabele .advantages-tabele-border.changed .advantages-tabele-div::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(232, 232, 232, 0.2);
+}
+.advantages .container .advantages-tabele .advantages-tabele-border.changed::before {
+  top: 0;
+  left: 0;
+  height: 1px;
+  width: 0;
+  animation: top-border 1.5s forwards;
+}
+.advantages .container .advantages-tabele .advantages-tabele-border.changed::after {
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  width: 0;
+  animation: bottom-border 1.5s forwards;
+}
+.advantages .container .advantages-tabele .advantages-tabele-border.changed .advantages-tabele-div::before {
+  bottom: 0;
+  left: 0;
+  width: 1px;
+  height: 0;
+  animation: left-border 1.5s forwards;
+}
+.advantages .container .advantages-tabele .advantages-tabele-border.changed .advantages-tabele-div::after {
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 0;
+  animation: right-border 1.5s forwards;
+}
+@keyframes top-border {
+  to {
+    width: 100%;
+  }
+}
+@keyframes bottom-border {
+  to {
+    width: 100%;
+  }
+}
+@keyframes left-border {
+  to {
+    height: 100%;
+  }
+}
+@keyframes right-border {
+  to {
+    height: 100%;
+  }
 }
 
 [data-aos=openRight] {
