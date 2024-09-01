@@ -763,3 +763,25 @@ const animeHome = document.querySelectorAll('[data-aos="anim-home"] path');
 animeHome.forEach((item, index) => {
   item.style.transitionDelay = `2.${Math.floor(index / 100 * 10.5)}s`
 })
+
+setTimeout(() => {
+  ZoomContactMap()
+}, 4000)
+
+const contactLeft = $('.contact-left');
+let moveStatus = false;
+
+function ZoomContactMap(){
+  contactLeft.addClass('zoom');
+
+  setTimeout(() => {
+    moveStatus = true;
+  }, 2800)
+}
+
+$(window).on('mouseover', function (){
+  if(moveStatus){
+    contactLeft.removeClass('zoom')
+    moveStatus = false
+  }
+})
