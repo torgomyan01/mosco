@@ -814,7 +814,7 @@ footer .container .personal-account {
   left: 0;
   top: 0;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   margin-top: 12.5rem;
   visibility: hidden;
   opacity: 0;
@@ -2206,6 +2206,7 @@ footer .container .personal-account {
 
 .contact {
   margin-top: 2.0625rem;
+  margin-bottom: 5.25rem;
 }
 .contact-body {
   display: flex;
@@ -2224,15 +2225,50 @@ footer .container .personal-account {
   display: flex;
   justify-content: center;
   align-items: start;
+  overflow: hidden;
+  position: relative;
+  height: 600px;
+  margin-left: -50px;
+}
+@media (max-width: 1325px) {
+  .contact-left {
+    margin-left: 0;
+  }
 }
 @media (max-width: 768px) {
   .contact-left {
     order: 2;
+    height: auto;
+    padding-top: 30px;
   }
 }
-.contact-left svg {
+.contact-left svg, .contact-left img {
   width: 100%;
+  visibility: unset;
 }
+.contact-left.zoom .contact-svg-min {
+  filter: blur(20px);
+  transform: scale(3) translateX(-100px) translateY(200px);
+  opacity: 0;
+}
+.contact-left.zoom .contact-svg-max {
+  opacity: 1;
+  filter: blur(0);
+  transform: scale(1) translateX(0) translateY(0);
+  transition-delay: 0.5s;
+}
+.contact-left:hover .contact-svg-min {
+  filter: blur(20px);
+  transform: scale(3) translateX(-100px) translateY(200px);
+  opacity: 0;
+}
+.contact-left:hover .contact-svg-max {
+  opacity: 1;
+  filter: blur(0);
+  transform: scale(1) translateX(0) translateY(0);
+  transition-delay: 0.5s;
+}
+@keyframes imageZoom {}
 .contact-right {
   width: 100%;
   padding-top: 26px;
@@ -2241,11 +2277,17 @@ footer .container .personal-account {
 @media (max-width: 768px) {
   .contact-right {
     order: 1;
+    padding-top: 36px;
   }
 }
 .contact-address {
   width: 100%;
   margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+  .contact-address {
+    margin-bottom: 24px;
+  }
 }
 .contact-address-title {
   color: #282828;
@@ -2258,12 +2300,17 @@ footer .container .personal-account {
 }
 .contact-address-title:after {
   content: "";
-  width: 100%;
+  width: 0;
   height: 1px;
   background: #E8E8E8;
   position: absolute;
-  left: 0;
+  right: 0;
   bottom: 0;
+  transition: 1s;
+  transition-delay: var(--delay);
+}
+.contact-address-title.aos-animate:after {
+  width: 100%;
 }
 .contact-address-value {
   color: #282828;
@@ -2272,6 +2319,11 @@ footer .container .personal-account {
   text-transform: uppercase;
   margin-top: 10px;
   text-align: right;
+}
+@media (max-width: 768px) {
+  .contact-address-value {
+    font-size: 14px;
+  }
 }
 
 [data-aos=anim-way] {
@@ -2315,6 +2367,36 @@ footer .container .personal-account {
 [data-aos=tree].aos-animate {
   opacity: 1;
   transform: translateY(0) translateZ(0);
+}
+
+[data-aos=fix].aos-animate {
+  animation: fix 2s cubic-bezier(0.7, 0.22, 0.28, 0.97);
+  animation-delay: 4s;
+}
+
+.contact-svg-min {
+  transition: 1s;
+}
+@media (max-width: 768px) {
+  .contact-svg-min {
+    height: 500px;
+  }
+}
+@media (max-width: 400px) {
+  .contact-svg-min {
+    height: 340px;
+  }
+}
+
+.contact-svg-max {
+  opacity: 0;
+  width: 100%;
+  transition: 0.5s;
+  transform: scale(1.3);
+  filter: blur(5px);
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
