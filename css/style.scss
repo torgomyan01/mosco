@@ -2165,12 +2165,43 @@ footer{
     }
     .text-item{
       padding: 20px 14px;
-      border-bottom: 1px solid #E8E8E8;
+      //border-bottom: 1px solid #E8E8E8;
       color: #282828;
       font-family: Inter;
       font-size: 22px;
       font-weight: 600;
+      position: relative;
     }
+    .text-item-left.changed:before{
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 1px;
+      background-color: #E8E8E8;
+      bottom: 0;
+      animation: organizations-border-left 2s ease-in forwards;
+    }
+
+    .text-item-right.changed:before{
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 1px;
+      background-color: #E8E8E8;
+      bottom: 0;
+      right: 0;
+      animation: organizations-border-left 2s ease-in forwards;
+    }
+
+    @keyframes organizations-border-left{
+      0%{
+        width: 0%;
+      }
+      100%{
+        width: 100%;
+      }
+    }
+
     .second{
       display: flex;
       align-items: center;
@@ -2205,18 +2236,20 @@ footer{
         text-align: center;
       }
     }
+
     .advantages-tabele{
       display: flex;
       align-items: center;
       justify-content: center;
-      div{
+      .advantages-tabele-border{
         width: 258px;
         height: 272px;
         padding: 20px;
-        border: 1px solid rgba(232, 232, 232, 0.20);
+        //border: 1px solid rgba(232, 232, 232, 0.20);
         display: flex;
         align-items: center;
         justify-content: center;
+        position: relative;
         p{
           color: #FFF;
           text-align: center;
@@ -2224,8 +2257,70 @@ footer{
           font-weight: 500;
           line-height: 16px;
         }
+
+        &.changed::before,
+        &.changed::after,
+        &.changed .advantages-tabele-div::before,
+        &.changed .advantages-tabele-div::after{
+          content: '';
+          position: absolute;
+          background-color: rgba(232, 232, 232, 0.2);
+        }
+
+          /* Top border */
+        &.changed::before {
+          top: 0;
+          left: 0;
+          height: 1px;
+          width: 0;
+          animation: top-border 1.5s forwards;
+        }
+
+        /* Bottom border */
+        &.changed::after {
+          bottom: 0;
+          right: 0;
+          height: 1px;
+          width: 0;
+          animation: bottom-border 1.5s forwards;
+        }
+
+        /* Left border */
+        &.changed .advantages-tabele-div::before {
+          bottom: 0;
+          left: 0;
+          width: 1px;
+          height: 0;
+          animation: left-border 1.5s forwards;
+        }
+
+        /* Right border */
+        &.changed .advantages-tabele-div::after {
+          top: 0;
+          right: 0;
+          width: 1px;
+          height: 0;
+          animation: right-border 1.5s forwards;
+        }
+
+        @keyframes top-border {
+          to { width: 100%; }
+        }
+
+        @keyframes bottom-border {
+          to { width: 100%;}
+        }
+
+        @keyframes left-border {
+          to { height: 100%; }
+        }
+
+        @keyframes right-border {
+          to { height: 100%; }
+        }
       }
     }
+
   }
 }
 
