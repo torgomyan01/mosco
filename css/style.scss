@@ -2113,6 +2113,21 @@ footer{
           bottom: -45px;
           width: 90%;
         }
+        .path {
+          stroke-dasharray: 1100;
+          stroke-dashoffset: 340;
+          animation: dash 2s ease-in alternate ;
+          stroke-width: 25px;
+        }
+
+        @keyframes dash {
+          from {
+            stroke-dashoffset: 1100;
+          }
+          to {
+            stroke-dashoffset: 340;
+          }
+        }
       }
     }
   }
@@ -2131,6 +2146,21 @@ footer{
         @media (max-width:768px) {
           bottom: -25px;
           width: 90%;
+        }
+        .path {
+          stroke-dasharray: 1600;
+          stroke-dashoffset: 340;
+          animation: dash 2s ease-in alternate ;
+          stroke-width: 20px;
+        }
+
+        @keyframes dash {
+          from {
+            stroke-dashoffset: 1600;
+          }
+          to {
+            stroke-dashoffset: 340;
+          }
         }
       }
     }

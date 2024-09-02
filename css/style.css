@@ -1962,6 +1962,20 @@ footer .container .personal-account {
     width: 90%;
   }
 }
+.top-section-reliable .container .reliable-left-img .top-section-reliable-icon .path {
+  stroke-dasharray: 1100;
+  stroke-dashoffset: 340;
+  animation: dash 2s ease-in alternate;
+  stroke-width: 25px;
+}
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1100;
+  }
+  to {
+    stroke-dashoffset: 340;
+  }
+}
 
 .bottom-section-reliable {
   overflow: hidden;
@@ -1979,6 +1993,20 @@ footer .container .personal-account {
   .bottom-section-reliable .container .reliable-left-img .bottom-section-reliable-icon {
     bottom: -25px;
     width: 90%;
+  }
+}
+.bottom-section-reliable .container .reliable-left-img .bottom-section-reliable-icon .path {
+  stroke-dasharray: 1600;
+  stroke-dashoffset: 340;
+  animation: dash 2s ease-in alternate;
+  stroke-width: 20px;
+}
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1600;
+  }
+  to {
+    stroke-dashoffset: 340;
   }
 }
 

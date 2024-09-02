@@ -683,7 +683,7 @@ function printWordsInDiv(targetDivId, sentence, interval) {
 
   function printWord() {
     if (wordIndex < words.length) {
-      const outputDiv = document.getElementById(targetDivId);
+      const outputDiv = document.querySelector(`#${targetDivId}.changed`);
       if(outputDiv){
         outputDiv.innerHTML += words[wordIndex];
 
