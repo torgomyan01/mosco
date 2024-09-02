@@ -729,7 +729,7 @@ footer .container .footer-top .footer-top-right {
   align-items: flex-end;
 }
 footer .container .footer-top .footer-top-right .footer-top-right-bgText {
-  font-family: "RF Dewi", sans-serif;
+  font-family: "RF Dewi", sans-serif !important;
   color: #282828;
   font-size: 24px;
   font-weight: 700;
@@ -1693,6 +1693,7 @@ footer .container .personal-account {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  overflow: hidden;
 }
 .news-section-cody .container .news-body :hover .hover-bg-fon {
   background-color: #fff;
@@ -2397,6 +2398,14 @@ footer .container .personal-account {
   position: absolute;
   left: 0;
   top: 0;
+}
+
+.i-right-anim i {
+  transform: translateX(0);
+  transition: 0.3s;
+}
+.i-right-anim:hover i {
+  transform: translateX(5px);
 }
 
 /*# sourceMappingURL=style.css.map */

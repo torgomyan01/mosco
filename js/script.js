@@ -96,6 +96,7 @@ function PrintItemsAnim(array, elem, count = 7) {
 }
 
 const icons = document.querySelectorAll('.content-item');
+const ourClientsImage = $('.our-clients .global-images')
 
 icons.forEach((icon, index) => {
   icon.addEventListener('mouseover', () => {
@@ -103,9 +104,13 @@ icons.forEach((icon, index) => {
       icons[i].querySelector('.checkboxIcon').classList.remove('icon-Frame-393');
       icons[i].querySelector('.checkboxIcon').classList.add('icon-Frame-394');
     }
+    changeOurClientsGlobalImage(index)
   });
 
   icon.addEventListener('mouseout', () => {
+    ourClientsImage.find('img').css({
+      opacity: '0.2'
+    })
     for (let i = 0; i <= index; i++) {
       icons[i].querySelector('.checkboxIcon').classList.remove('icon-Frame-394');
       icons[i].querySelector('.checkboxIcon').classList.add('icon-Frame-393');
@@ -113,6 +118,12 @@ icons.forEach((icon, index) => {
   });
 });
 
+function changeOurClientsGlobalImage(index){
+  const val = 0.2 - index / 12;
+  ourClientsImage.find('img').css({
+    opacity: val
+  })
+}
 
 paper.install(window);
 
