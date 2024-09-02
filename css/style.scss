@@ -2113,21 +2113,20 @@ footer{
           bottom: -45px;
           width: 90%;
         }
+
         .path {
           stroke-dasharray: 1100;
-          stroke-dashoffset: 340;
-          animation: dash 2s ease-in alternate ;
+          stroke-dashoffset: 1100;
           stroke-width: 25px;
+          transition: 2s ease-in;
         }
 
-        @keyframes dash {
-          from {
-            stroke-dashoffset: 1100;
-          }
-          to {
+        &.changed{
+          .path{
             stroke-dashoffset: 340;
           }
         }
+
       }
     }
   }
@@ -2147,21 +2146,20 @@ footer{
           bottom: -25px;
           width: 90%;
         }
+
         .path {
           stroke-dasharray: 1600;
-          stroke-dashoffset: 340;
-          animation: dash 2s ease-in alternate ;
+          stroke-dashoffset: 1600;
           stroke-width: 20px;
+          transition: 2s ease-in;
         }
 
-        @keyframes dash {
-          from {
-            stroke-dashoffset: 1600;
-          }
-          to {
+        &.changed{
+          .path{
             stroke-dashoffset: 340;
           }
         }
+
       }
     }
   }
@@ -2185,7 +2183,7 @@ footer{
         font-size: 48px;
         font-weight: 700;
         text-transform: uppercase;
-        margin-bottom: 45x;
+        margin-bottom: 45px;
       }
       .links-block{
         display: flex;

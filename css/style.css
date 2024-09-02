@@ -1964,17 +1964,12 @@ footer .container .personal-account {
 }
 .top-section-reliable .container .reliable-left-img .top-section-reliable-icon .path {
   stroke-dasharray: 1100;
-  stroke-dashoffset: 340;
-  animation: dash 2s ease-in alternate;
+  stroke-dashoffset: 1100;
   stroke-width: 25px;
+  transition: 2s ease-in;
 }
-@keyframes dash {
-  from {
-    stroke-dashoffset: 1100;
-  }
-  to {
-    stroke-dashoffset: 340;
-  }
+.top-section-reliable .container .reliable-left-img .top-section-reliable-icon.changed .path {
+  stroke-dashoffset: 340;
 }
 
 .bottom-section-reliable {
@@ -1997,17 +1992,12 @@ footer .container .personal-account {
 }
 .bottom-section-reliable .container .reliable-left-img .bottom-section-reliable-icon .path {
   stroke-dasharray: 1600;
-  stroke-dashoffset: 340;
-  animation: dash 2s ease-in alternate;
+  stroke-dashoffset: 1600;
   stroke-width: 20px;
+  transition: 2s ease-in;
 }
-@keyframes dash {
-  from {
-    stroke-dashoffset: 1600;
-  }
-  to {
-    stroke-dashoffset: 340;
-  }
+.bottom-section-reliable .container .reliable-left-img .bottom-section-reliable-icon.changed .path {
+  stroke-dashoffset: 340;
 }
 
 .fast {
@@ -2029,7 +2019,7 @@ footer .container .personal-account {
   font-size: 48px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 45x;
+  margin-bottom: 45px;
 }
 .fast .container .right-text-block .links-block {
   display: flex;
